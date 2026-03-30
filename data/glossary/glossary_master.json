@@ -1,0 +1,6020 @@
+{
+  "version": "2.0.0",
+  "updated_at": "2026-03-27",
+  "items": [
+    {
+      "id": "term-001",
+      "type": "glossary",
+      "term": "空き三角",
+      "term_variants": [
+        "あきさんかく"
+      ],
+      "definition": "三つの石がL字（三角形）に並び、内側に空点がある形。石の連絡は保てるが効率が悪く、囲碁の代表的な悪形とされる。",
+      "definition_for_operator": "三つの石がL字（三角形）に並び、内側に空点がある形",
+      "related_terms": [
+        "あきさんかく",
+        "悪形",
+        "三角形"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "あきさんかく",
+        "悪形",
+        "三角形"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "空き三角 あきさんかく あきさんかく 悪形 三角形 三つの石がL字（三角形）に並び、内側に空点がある形。石の連絡は保てるが効率が悪く、囲碁の代表的な悪形とされる。"
+    },
+    {
+      "id": "term-002",
+      "type": "glossary",
+      "term": "空き隅",
+      "term_variants": [
+        "あきすみ"
+      ],
+      "definition": "対局開始時に石が置かれていない四隅のこと。隅は最も地を囲いやすいため、布石で最初に着手する価値が高い。",
+      "definition_for_operator": "対局開始時に石が置かれていない四隅のこと",
+      "related_terms": [
+        "あきすみ",
+        "布石",
+        "隅"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "あきすみ",
+        "布石",
+        "隅"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "空き隅 あきすみ あきすみ 布石 隅 対局開始時に石が置かれていない四隅のこと。隅は最も地を囲いやすいため、布石で最初に着手する価値が高い。"
+    },
+    {
+      "id": "term-003",
+      "type": "glossary",
+      "term": "アゲハマ",
+      "term_variants": [],
+      "definition": "対局中に相手の石を取ったときに手元に置いておく石のこと。終局時の地の計算に使用する（日本ルール）。",
+      "definition_for_operator": "対局中に相手の石を取ったときに手元に置いておく石のこと",
+      "related_terms": [
+        "アゲハマ",
+        "取った石",
+        "ハマ",
+        "死石"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "アゲハマ",
+        "取った石",
+        "ハマ",
+        "死石"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "アゲハマ  アゲハマ 取った石 ハマ 死石 対局中に相手の石を取ったときに手元に置いておく石のこと。終局時の地の計算に使用する（日本ルール）。"
+    },
+    {
+      "id": "term-004",
+      "type": "glossary",
+      "term": "味",
+      "term_variants": [
+        "あじ"
+      ],
+      "definition": "石や形が持つ潜在的な可能性のこと。すぐには働かないが、後から有効な手段が生じる場合「味がある」と表現する。",
+      "definition_for_operator": "石や形が持つ潜在的な可能性のこと",
+      "related_terms": [
+        "あじ",
+        "潜在力",
+        "可能性"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "あじ",
+        "潜在力",
+        "可能性"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "味 あじ あじ 潜在力 可能性 石や形が持つ潜在的な可能性のこと。すぐには働かないが、後から有効な手段が生じる場合「味がある」と表現する。"
+    },
+    {
+      "id": "term-005",
+      "type": "glossary",
+      "term": "アタリ",
+      "term_variants": [],
+      "definition": "石または石の連なりの呼吸点（ダメ）が残り1つになった状態。次に相手が打てばその石は取られる。",
+      "definition_for_operator": "石または石の連なりの呼吸点（ダメ）が残り1つになった状態",
+      "related_terms": [
+        "アタリ",
+        "取られそう",
+        "呼吸点",
+        "一手"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "アタリ",
+        "取られそう",
+        "呼吸点",
+        "一手"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "アタリ  アタリ 取られそう 呼吸点 一手 石または石の連なりの呼吸点（ダメ）が残り1つになった状態。次に相手が打てばその石は取られる。"
+    },
+    {
+      "id": "term-006",
+      "type": "glossary",
+      "term": "厚み",
+      "term_variants": [
+        "あつみ"
+      ],
+      "definition": "取られる心配がなく安定した石の集まりが持つ強固な勢力。直接地になりにくいが、周囲への影響力が大きい。",
+      "definition_for_operator": "取られる心配がなく安定した石の集まりが持つ強固な勢力",
+      "related_terms": [
+        "あつみ",
+        "勢力",
+        "外勢",
+        "厚い"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "あつみ",
+        "勢力",
+        "外勢",
+        "厚い"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "厚み あつみ あつみ 勢力 外勢 厚い 取られる心配がなく安定した石の集まりが持つ強固な勢力。直接地になりにくいが、周囲への影響力が大きい。"
+    },
+    {
+      "id": "term-007",
+      "type": "glossary",
+      "term": "アテ",
+      "term_variants": [],
+      "definition": "相手の石をアタリにする手のこと。そのまま取ることを目的とせず、形の整備や石を連絡させるために活用することが多い。",
+      "definition_for_operator": "相手の石をアタリにする手のこと",
+      "related_terms": [
+        "アテ",
+        "アタリを利用",
+        "石を取る準備"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "アテ",
+        "アタリを利用",
+        "石を取る準備"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "アテ  アテ アタリを利用 石を取る準備 相手の石をアタリにする手のこと。そのまま取ることを目的とせず、形の整備や石を連絡させるために活用することが多い。"
+    },
+    {
+      "id": "term-008",
+      "type": "glossary",
+      "term": "アテコミ",
+      "term_variants": [],
+      "definition": "相手の石のダメを詰めるために、相手の石に隣接して打ち込む手。呼吸点を減らして取ることを狙う。",
+      "definition_for_operator": "相手の石のダメを詰めるために、相手の石に隣接して打ち込む手",
+      "related_terms": [
+        "アテコミ",
+        "打ち込み",
+        "ダメを詰める"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "アテコミ",
+        "打ち込み",
+        "ダメを詰める"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "アテコミ  アテコミ 打ち込み ダメを詰める 相手の石のダメを詰めるために、相手の石に隣接して打ち込む手。呼吸点を減らして取ることを狙う。"
+    },
+    {
+      "id": "term-009",
+      "type": "glossary",
+      "term": "一合マス",
+      "term_variants": [
+        "いちごうます"
+      ],
+      "definition": "盤上に正方形（2×2）の形で地が作られた状態。空点4つを囲んだ形で、中に石が打ち込まれると死に形となる。",
+      "definition_for_operator": "盤上に正方形（2×2）の形で地が作られた状態",
+      "related_terms": [
+        "いちごうます",
+        "四角の地",
+        "死に形"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "いちごうます",
+        "四角の地",
+        "死に形"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "一合マス いちごうます いちごうます 四角の地 死に形 盤上に正方形（2×2）の形で地が作られた状態。空点4つを囲んだ形で、中に石が打ち込まれると死に形となる。"
+    },
+    {
+      "id": "term-010",
+      "type": "glossary",
+      "term": "一間トビ",
+      "term_variants": [
+        "いっけんとび"
+      ],
+      "definition": "一つ石を飛ばして打つ手のこと（間に1路の空点がある）。連絡と展開を兼ねる基本的な手筋の一つ。",
+      "definition_for_operator": "一つ石を飛ばして打つ手のこと（間に1路の空点がある）",
+      "related_terms": [
+        "いっけんとび",
+        "トビ",
+        "一間",
+        "展開"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "いっけんとび",
+        "トビ",
+        "一間",
+        "展開"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "一間トビ いっけんとび いっけんとび トビ 一間 展開 一つ石を飛ばして打つ手のこと（間に1路の空点がある）。連絡と展開を兼ねる基本的な手筋の一つ。"
+    },
+    {
+      "id": "term-011",
+      "type": "glossary",
+      "term": "犬の顔",
+      "term_variants": [
+        "いぬのかお"
+      ],
+      "definition": "星と小目を組み合わせた布石のパターン。盤上での配置が犬の顔に似ていることからこの名前がついた。",
+      "definition_for_operator": "星と小目を組み合わせた布石のパターン",
+      "related_terms": [
+        "いぬのかお",
+        "星と小目",
+        "布石パターン"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "いぬのかお",
+        "星と小目",
+        "布石パターン"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "犬の顔 いぬのかお いぬのかお 星と小目 布石パターン 星と小目を組み合わせた布石のパターン。盤上での配置が犬の顔に似ていることからこの名前がついた。"
+    },
+    {
+      "id": "term-012",
+      "type": "glossary",
+      "term": "ウチカキ",
+      "term_variants": [],
+      "definition": "相手の石の呼吸点を2つにした後、一方を打ってアタリにし、もう一方を消してポン抜きを狙う手筋。",
+      "definition_for_operator": "相手の石の呼吸点を2つにした後、一方を打ってアタリにし、もう一方を消してポン抜きを狙う手筋",
+      "related_terms": [
+        "ウチカキ",
+        "ポン抜き準備",
+        "石を取る手筋"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ウチカキ",
+        "ポン抜き準備",
+        "石を取る手筋"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ウチカキ  ウチカキ ポン抜き準備 石を取る手筋 相手の石の呼吸点を2つにした後、一方を打ってアタリにし、もう一方を消してポン抜きを狙う手筋。"
+    },
+    {
+      "id": "term-013",
+      "type": "glossary",
+      "term": "ウチコミ",
+      "term_variants": [],
+      "definition": "相手が構築した地や模様の中に石を打ち込む手。侵入して根拠を持つか、外と連絡することを目指す。",
+      "definition_for_operator": "相手が構築した地や模様の中に石を打ち込む手",
+      "related_terms": [
+        "ウチコミ",
+        "侵入",
+        "相手の地に入る"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ウチコミ",
+        "侵入",
+        "相手の地に入る"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ウチコミ  ウチコミ 侵入 相手の地に入る 相手が構築した地や模様の中に石を打ち込む手。侵入して根拠を持つか、外と連絡することを目指す。"
+    },
+    {
+      "id": "term-014",
+      "type": "glossary",
+      "term": "内ダメ",
+      "term_variants": [
+        "うちだめ"
+      ],
+      "definition": "石に囲まれた地の内部にある共通のダメ（中立点）のこと。セキの状態では内ダメを埋めると自石が死ぬ場合がある。",
+      "definition_for_operator": "石に囲まれた地の内部にある共通のダメ（中立点）のこと",
+      "related_terms": [
+        "うちだめ",
+        "内部のダメ",
+        "セキ"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "うちだめ",
+        "内部のダメ",
+        "セキ"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "内ダメ うちだめ うちだめ 内部のダメ セキ 石に囲まれた地の内部にある共通のダメ（中立点）のこと。セキの状態では内ダメを埋めると自石が死ぬ場合がある。"
+    },
+    {
+      "id": "term-015",
+      "type": "glossary",
+      "term": "ウッテガエシ",
+      "term_variants": [],
+      "definition": "相手が石を取った直後、その取った石がある空点に打つと逆に相手の複数の石を取れる手筋。",
+      "definition_for_operator": "相手が石を取った直後、その取った石がある空点に打つと逆に相手の複数の石を取れる手筋",
+      "related_terms": [
+        "ウッテガエシ",
+        "スナップバック",
+        "手筋"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ウッテガエシ",
+        "スナップバック",
+        "手筋"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ウッテガエシ  ウッテガエシ スナップバック 手筋 相手が石を取った直後、その取った石がある空点に打つと逆に相手の複数の石を取れる手筋。"
+    },
+    {
+      "id": "term-016",
+      "type": "glossary",
+      "term": "馬の顔",
+      "term_variants": [
+        "うまのかお"
+      ],
+      "definition": "盤上の石の配置が馬の顔に似ているパターンの俗称。布石における着手の組み合わせを表すことが多い。",
+      "definition_for_operator": "盤上の石の配置が馬の顔に似ているパターンの俗称",
+      "related_terms": [
+        "うまのかお",
+        "布石パターン",
+        "星"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "うまのかお",
+        "布石パターン",
+        "星"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "馬の顔 うまのかお うまのかお 布石パターン 星 盤上の石の配置が馬の顔に似ているパターンの俗称。布石における着手の組み合わせを表すことが多い。"
+    },
+    {
+      "id": "term-017",
+      "type": "glossary",
+      "term": "梅鉢",
+      "term_variants": [
+        "うめばち"
+      ],
+      "definition": "六つの石が梅の花びら状に並んだ死に形。中の空点に打たれると両方の眼が偽眼になり死ぬ。",
+      "definition_for_operator": "六つの石が梅の花びら状に並んだ死に形",
+      "related_terms": [
+        "うめばち",
+        "死に形",
+        "六死",
+        "眼形"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "うめばち",
+        "死に形",
+        "六死",
+        "眼形"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "梅鉢 うめばち うめばち 死に形 六死 眼形 六つの石が梅の花びら状に並んだ死に形。中の空点に打たれると両方の眼が偽眼になり死ぬ。"
+    },
+    {
+      "id": "term-018",
+      "type": "glossary",
+      "term": "オイオトシ",
+      "term_variants": [],
+      "definition": "石を追いかけて最終的に取る手筋の一種。シチョウが成立しない場合でも、石を追いながら取れることがある。",
+      "definition_for_operator": "石を追いかけて最終的に取る手筋の一種",
+      "related_terms": [
+        "オイオトシ",
+        "追い落とし",
+        "シチョウ補完"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "オイオトシ",
+        "追い落とし",
+        "シチョウ補完"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "オイオトシ  オイオトシ 追い落とし シチョウ補完 石を追いかけて最終的に取る手筋の一種。シチョウが成立しない場合でも、石を追いながら取れることがある。"
+    },
+    {
+      "id": "term-019",
+      "type": "glossary",
+      "term": "大ゲイマ",
+      "term_variants": [
+        "おおげいま"
+      ],
+      "definition": "将棋の桂馬より大きく跳ぶ手（3路×2路の対角）。一間トビより広い展開ができるが、切断されやすい。",
+      "definition_for_operator": "将棋の桂馬より大きく跳ぶ手（3路×2路の対角）",
+      "related_terms": [
+        "おおげいま",
+        "桂馬の跳び",
+        "展開"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "intermediate",
+      "tags": [
+        "おおげいま",
+        "桂馬の跳び",
+        "展開"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "大ゲイマ おおげいま おおげいま 桂馬の跳び 展開 将棋の桂馬より大きく跳ぶ手（3路×2路の対角）。一間トビより広い展開ができるが、切断されやすい。"
+    },
+    {
+      "id": "term-020",
+      "type": "glossary",
+      "term": "大ザル",
+      "term_variants": [
+        "おおざる"
+      ],
+      "definition": "相手の石を広い範囲で包囲して取る手筋（大きなゲタ）。石が逃げようとしても全方向を塞がれている状態。",
+      "definition_for_operator": "相手の石を広い範囲で包囲して取る手筋（大きなゲタ）",
+      "related_terms": [
+        "おおざる",
+        "網",
+        "石を包囲"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "おおざる",
+        "網",
+        "石を包囲"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "大ザル おおざる おおざる 網 石を包囲 相手の石を広い範囲で包囲して取る手筋（大きなゲタ）。石が逃げようとしても全方向を塞がれている状態。"
+    },
+    {
+      "id": "term-021",
+      "type": "glossary",
+      "term": "大高目",
+      "term_variants": [
+        "おおたかもく"
+      ],
+      "definition": "隅の5の3の点（第5路と第3路の交点）への着手。積極的な布石で、大きな模様を張ることを目指す。",
+      "definition_for_operator": "隅の5の3の点（第5路と第3路の交点）への着手",
+      "related_terms": [
+        "おおたかもく",
+        "5の3",
+        "布石",
+        "隅"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "おおたかもく",
+        "5の3",
+        "布石",
+        "隅"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "大高目 おおたかもく おおたかもく 5の3 布石 隅 隅の5の3の点（第5路と第3路の交点）への着手。積極的な布石で、大きな模様を張ることを目指す。"
+    },
+    {
+      "id": "term-022",
+      "type": "glossary",
+      "term": "大場",
+      "term_variants": [
+        "おおば"
+      ],
+      "definition": "布石段階において特に価値が高い交点のこと。急場（今すぐ打つべき点）と対比して用いられる。",
+      "definition_for_operator": "布石段階において特に価値が高い交点のこと",
+      "related_terms": [
+        "おおば",
+        "価値の高い交点",
+        "布石"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "おおば",
+        "価値の高い交点",
+        "布石"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "大場 おおば おおば 価値の高い交点 布石 布石段階において特に価値が高い交点のこと。急場（今すぐ打つべき点）と対比して用いられる。"
+    },
+    {
+      "id": "term-023",
+      "type": "glossary",
+      "term": "大目ハズシ",
+      "term_variants": [
+        "おおもくはずし"
+      ],
+      "definition": "隅の5の4の点への着手。目ハズシ（4の3）より一路外側で、より広い展開を志向する布石の一手。",
+      "definition_for_operator": "隅の5の4の点への着手",
+      "related_terms": [
+        "おおもくはずし",
+        "5の4",
+        "布石",
+        "隅"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "おおもくはずし",
+        "5の4",
+        "布石",
+        "隅"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "大目ハズシ おおもくはずし おおもくはずし 5の4 布石 隅 隅の5の4の点への着手。目ハズシ（4の3）より一路外側で、より広い展開を志向する布石の一手。"
+    },
+    {
+      "id": "term-024",
+      "type": "glossary",
+      "term": "大ヨセ",
+      "term_variants": [
+        "おおよせ"
+      ],
+      "definition": "終盤（ヨセ）の中で特に目数（価値）が大きい手のこと。一般に10目以上の手を大ヨセと呼ぶことが多い。",
+      "definition_for_operator": "終盤（ヨセ）の中で特に目数（価値）が大きい手のこと",
+      "related_terms": [
+        "おおよせ",
+        "ヨセ",
+        "大きな寄せ",
+        "終盤"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "おおよせ",
+        "ヨセ",
+        "大きな寄せ",
+        "終盤"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "大ヨセ おおよせ おおよせ ヨセ 大きな寄せ 終盤 終盤（ヨセ）の中で特に目数（価値）が大きい手のこと。一般に10目以上の手を大ヨセと呼ぶことが多い。"
+    },
+    {
+      "id": "term-025",
+      "type": "glossary",
+      "term": "オキ",
+      "term_variants": [],
+      "definition": "相手の眼形を崩すために、相手の石の囲いの内部に打ち込む手。死活に深く関わる重要な手筋の一つ。",
+      "definition_for_operator": "相手の眼形を崩すために、相手の石の囲いの内部に打ち込む手",
+      "related_terms": [
+        "オキ",
+        "置き",
+        "相手の眼形に打つ"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "オキ",
+        "置き",
+        "相手の眼形に打つ"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "オキ  オキ 置き 相手の眼形に打つ 相手の眼形を崩すために、相手の石の囲いの内部に打ち込む手。死活に深く関わる重要な手筋の一つ。"
+    },
+    {
+      "id": "term-026",
+      "type": "glossary",
+      "term": "置き石",
+      "term_variants": [
+        "おきいし"
+      ],
+      "definition": "ハンデキャップとして盤上に事前に配置しておく石のこと。弱い方の先手として対局前に所定の位置に置く。",
+      "definition_for_operator": "ハンデキャップとして盤上に事前に配置しておく石のこと",
+      "related_terms": [
+        "おきいし",
+        "ハンデ",
+        "置き碁"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "おきいし",
+        "ハンデ",
+        "置き碁"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "置き石 おきいし おきいし ハンデ 置き碁 ハンデキャップとして盤上に事前に配置しておく石のこと。弱い方の先手として対局前に所定の位置に置く。"
+    },
+    {
+      "id": "term-027",
+      "type": "glossary",
+      "term": "置き碁",
+      "term_variants": [
+        "おきご"
+      ],
+      "definition": "棋力差がある場合に弱い方が盤上に石を置いてから対局するハンデキャップ戦の形式。",
+      "definition_for_operator": "棋力差がある場合に弱い方が盤上に石を置いてから対局するハンデキャップ戦の形式",
+      "related_terms": [
+        "おきご",
+        "ハンデ戦",
+        "初心者",
+        "段位差"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "おきご",
+        "ハンデ戦",
+        "初心者",
+        "段位差"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "置き碁 おきご おきご ハンデ戦 初心者 段位差 棋力差がある場合に弱い方が盤上に石を置いてから対局するハンデキャップ戦の形式。"
+    },
+    {
+      "id": "term-028",
+      "type": "glossary",
+      "term": "オサエ",
+      "term_variants": [],
+      "definition": "相手の石の進行を止める手。相手が伸びようとする方向に打って封鎖し、展開や連絡を防ぐ。",
+      "definition_for_operator": "相手の石の進行を止める手",
+      "related_terms": [
+        "オサエ",
+        "押さえ",
+        "遮断",
+        "封鎖"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "オサエ",
+        "押さえ",
+        "遮断",
+        "封鎖"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "オサエ  オサエ 押さえ 遮断 封鎖 相手の石の進行を止める手。相手が伸びようとする方向に打って封鎖し、展開や連絡を防ぐ。"
+    },
+    {
+      "id": "term-029",
+      "type": "glossary",
+      "term": "オシ",
+      "term_variants": [],
+      "definition": "相手の石の外側から接近して打ち、相手を後退させながら自石を前進させる手。",
+      "definition_for_operator": "相手の石の外側から接近して打ち、相手を後退させながら自石を前進させる手",
+      "related_terms": [
+        "オシ",
+        "押し",
+        "前進"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "オシ",
+        "押し",
+        "前進"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "オシ  オシ 押し 前進 相手の石の外側から接近して打ち、相手を後退させながら自石を前進させる手。"
+    },
+    {
+      "id": "term-030",
+      "type": "glossary",
+      "term": "カカエ",
+      "term_variants": [],
+      "definition": "相手の石を包むように打って、逃げ道を塞ぎながら取りに向かう手。または自石の安全を確保する守りの手。",
+      "definition_for_operator": "相手の石を包むように打って、逃げ道を塞ぎながら取りに向かう手",
+      "related_terms": [
+        "カカエ",
+        "抱え",
+        "包囲",
+        "守り"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "カカエ",
+        "抱え",
+        "包囲",
+        "守り"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "カカエ  カカエ 抱え 包囲 守り 相手の石を包むように打って、逃げ道を塞ぎながら取りに向かう手。または自石の安全を確保する守りの手。"
+    },
+    {
+      "id": "term-031",
+      "type": "glossary",
+      "term": "カカリ",
+      "term_variants": [],
+      "definition": "相手が打った隅の石に対して接近する手。定石の起点となることが多く、布石の基本的な着手の一つ。",
+      "definition_for_operator": "相手が打った隅の石に対して接近する手",
+      "related_terms": [
+        "カカリ",
+        "掛かり",
+        "隅への接近",
+        "布石"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "カカリ",
+        "掛かり",
+        "隅への接近",
+        "布石"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "カカリ  カカリ 掛かり 隅への接近 布石 相手が打った隅の石に対して接近する手。定石の起点となることが多く、布石の基本的な着手の一つ。"
+    },
+    {
+      "id": "term-032",
+      "type": "glossary",
+      "term": "確定地",
+      "term_variants": [
+        "かくていじ"
+      ],
+      "definition": "どちらが打っても変わらない、確実に一方のものになっている地のこと。死活や攻め合いが決着した地を指す。",
+      "definition_for_operator": "どちらが打っても変わらない、確実に一方のものになっている地のこと",
+      "related_terms": [
+        "かくていじ",
+        "地",
+        "確保した領域"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "かくていじ",
+        "地",
+        "確保した領域"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "確定地 かくていじ かくていじ 地 確保した領域 どちらが打っても変わらない、確実に一方のものになっている地のこと。死活や攻め合いが決着した地を指す。"
+    },
+    {
+      "id": "term-033",
+      "type": "glossary",
+      "term": "カケツギ",
+      "term_variants": [],
+      "definition": "斜め方向に打って連絡する手。ピンツギ（直線）より空間効率がよいが、切断される可能性がある。",
+      "definition_for_operator": "斜め方向に打って連絡する手",
+      "related_terms": [
+        "カケツギ",
+        "ノビツギ",
+        "斜めの連絡"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "カケツギ",
+        "ノビツギ",
+        "斜めの連絡"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "カケツギ  カケツギ ノビツギ 斜めの連絡 斜め方向に打って連絡する手。ピンツギ（直線）より空間効率がよいが、切断される可能性がある。"
+    },
+    {
+      "id": "term-034",
+      "type": "glossary",
+      "term": "欠け眼",
+      "term_variants": [
+        "かけめ"
+      ],
+      "definition": "眼のように見えるが、本当の眼（2点以上の独立した空間）になっていない偽の眼のこと。欠け眼では生きられない。",
+      "definition_for_operator": "眼のように見えるが、本当の眼（2点以上の独立した空間）になっていない偽の眼のこと",
+      "related_terms": [
+        "かけめ",
+        "偽眼",
+        "死活"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "かけめ",
+        "偽眼",
+        "死活"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "欠け眼 かけめ かけめ 偽眼 死活 眼のように見えるが、本当の眼（2点以上の独立した空間）になっていない偽の眼のこと。欠け眼では生きられない。"
+    },
+    {
+      "id": "term-035",
+      "type": "glossary",
+      "term": "カス石",
+      "term_variants": [
+        "かすいし"
+      ],
+      "definition": "盤上に残っているが、地の計算上ほとんど価値がない石。取られても大きな損にならない石のこと。",
+      "definition_for_operator": "盤上に残っているが、地の計算上ほとんど価値がない石",
+      "related_terms": [
+        "かすいし",
+        "価値のない石",
+        "捨て石"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "かすいし",
+        "価値のない石",
+        "捨て石"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "カス石 かすいし かすいし 価値のない石 捨て石 盤上に残っているが、地の計算上ほとんど価値がない石。取られても大きな損にならない石のこと。"
+    },
+    {
+      "id": "term-036",
+      "type": "glossary",
+      "term": "数え碁",
+      "term_variants": [
+        "かぞえご"
+      ],
+      "definition": "盤上の石と地（空点）の両方を数えて勝敗を決める計算方式。中国ルールに近い計算方法。",
+      "definition_for_operator": "盤上の石と地（空点）の両方を数えて勝敗を決める計算方式",
+      "related_terms": [
+        "かぞえご",
+        "中国ルール",
+        "地の計算"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "かぞえご",
+        "中国ルール",
+        "地の計算"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "数え碁 かぞえご かぞえご 中国ルール 地の計算 盤上の石と地（空点）の両方を数えて勝敗を決める計算方式。中国ルールに近い計算方法。"
+    },
+    {
+      "id": "term-037",
+      "type": "glossary",
+      "term": "カタツキ",
+      "term_variants": [],
+      "definition": "相手の石の斜め上（肩）に打つ手。相手の石の方向を変えさせたり、相手の展開を妨害する効果がある。",
+      "definition_for_operator": "相手の石の斜め上（肩）に打つ手",
+      "related_terms": [
+        "カタツキ",
+        "肩ツキ",
+        "軽くぶつかる"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "カタツキ",
+        "肩ツキ",
+        "軽くぶつかる"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "カタツキ  カタツキ 肩ツキ 軽くぶつかる 相手の石の斜め上（肩）に打つ手。相手の石の方向を変えさせたり、相手の展開を妨害する効果がある。"
+    },
+    {
+      "id": "term-038",
+      "type": "glossary",
+      "term": "カタツギ",
+      "term_variants": [],
+      "definition": "切られる心配がない確実な連絡の手。少し重いが切断のリスクなく石を繋ぐことができる。",
+      "definition_for_operator": "切られる心配がない確実な連絡の手",
+      "related_terms": [
+        "カタツギ",
+        "堅いつぎ",
+        "確実な連絡"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "カタツギ",
+        "堅いつぎ",
+        "確実な連絡"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "カタツギ  カタツギ 堅いつぎ 確実な連絡 切られる心配がない確実な連絡の手。少し重いが切断のリスクなく石を繋ぐことができる。"
+    },
+    {
+      "id": "term-039",
+      "type": "glossary",
+      "term": "勝手読み",
+      "term_variants": [
+        "かってよみ"
+      ],
+      "definition": "都合の良い展開だけを前提に読む誤った読みのこと。相手の最善手を考慮せず失敗する原因となる。",
+      "definition_for_operator": "都合の良い展開だけを前提に読む誤った読みのこと",
+      "related_terms": [
+        "かってよみ",
+        "誤読",
+        "思い込み"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "intermediate",
+      "tags": [
+        "かってよみ",
+        "誤読",
+        "思い込み"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "勝手読み かってよみ かってよみ 誤読 思い込み 都合の良い展開だけを前提に読む誤った読みのこと。相手の最善手を考慮せず失敗する原因となる。"
+    },
+    {
+      "id": "term-040",
+      "type": "glossary",
+      "term": "要石",
+      "term_variants": [
+        "かなめいし"
+      ],
+      "definition": "取られると自分の石群が壊滅的なダメージを受ける、最も重要な石のこと。要石を守ることが優先度が高い。",
+      "definition_for_operator": "取られると自分の石群が壊滅的なダメージを受ける、最も重要な石のこと",
+      "related_terms": [
+        "かなめいし",
+        "重要な石",
+        "キーストーン"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "かなめいし",
+        "重要な石",
+        "キーストーン"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "要石 かなめいし かなめいし 重要な石 キーストーン 取られると自分の石群が壊滅的なダメージを受ける、最も重要な石のこと。要石を守ることが優先度が高い。"
+    },
+    {
+      "id": "term-041",
+      "type": "glossary",
+      "term": "カミトリ",
+      "term_variants": [],
+      "definition": "相手の石の上側から包囲して取る手筋。または上方向への取りを指す俗称。",
+      "definition_for_operator": "相手の石の上側から包囲して取る手筋",
+      "related_terms": [
+        "カミトリ",
+        "上取り",
+        "石を取る"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "カミトリ",
+        "上取り",
+        "石を取る"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "カミトリ  カミトリ 上取り 石を取る 相手の石の上側から包囲して取る手筋。または上方向への取りを指す俗称。"
+    },
+    {
+      "id": "term-042",
+      "type": "glossary",
+      "term": "亀の甲",
+      "term_variants": [
+        "かめのこう"
+      ],
+      "definition": "6つの石が亀の甲羅状に配置された形。非常に強固で切られにくく、眼形も豊富な好形の一つ。",
+      "definition_for_operator": "6つの石が亀の甲羅状に配置された形",
+      "related_terms": [
+        "かめのこう",
+        "六角形",
+        "強い形"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "かめのこう",
+        "六角形",
+        "強い形"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "亀の甲 かめのこう かめのこう 六角形 強い形 6つの石が亀の甲羅状に配置された形。非常に強固で切られにくく、眼形も豊富な好形の一つ。"
+    },
+    {
+      "id": "term-043",
+      "type": "glossary",
+      "term": "~眼",
+      "term_variants": [
+        "がん"
+      ],
+      "definition": "石が生きるために必要な内部の空間のこと。2つの独立した眼があれば石は生きている状態（二眼活き）。",
+      "definition_for_operator": "石が生きるために必要な内部の空間のこと",
+      "related_terms": [
+        "がん",
+        "め",
+        "眼",
+        "生き"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "がん",
+        "め",
+        "眼",
+        "生き"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "~眼 がん がん め 眼 生き 石が生きるために必要な内部の空間のこと。2つの独立した眼があれば石は生きている状態（二眼活き）。"
+    },
+    {
+      "id": "term-044",
+      "type": "glossary",
+      "term": "眼形",
+      "term_variants": [
+        "がんけい/めがたち"
+      ],
+      "definition": "石が眼を作るための形の状態。眼形が豊富なほど生きやすく、相手に眼形を崩されると死に近づく。",
+      "definition_for_operator": "石が眼を作るための形の状態",
+      "related_terms": [
+        "がんけい",
+        "眼の形",
+        "生きの形",
+        "死活"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "がんけい",
+        "眼の形",
+        "生きの形",
+        "死活"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "眼形 がんけい/めがたち がんけい 眼の形 生きの形 死活 石が眼を作るための形の状態。眼形が豊富なほど生きやすく、相手に眼形を崩されると死に近づく。"
+    },
+    {
+      "id": "term-045",
+      "type": "glossary",
+      "term": "棋譜",
+      "term_variants": [
+        "きふ"
+      ],
+      "definition": "囲碁の対局における手順を記録したもの。座標と手番で各手を記録し、後から対局を再現できる。",
+      "definition_for_operator": "囲碁の対局における手順を記録したもの",
+      "related_terms": [
+        "きふ",
+        "ゲーム記録",
+        "対局記録"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "きふ",
+        "ゲーム記録",
+        "対局記録"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "棋譜 きふ きふ ゲーム記録 対局記録 囲碁の対局における手順を記録したもの。座標と手番で各手を記録し、後から対局を再現できる。"
+    },
+    {
+      "id": "term-046",
+      "type": "glossary",
+      "term": "棋風",
+      "term_variants": [
+        "きふう"
+      ],
+      "definition": "棋士が持つ独特の打ち方の傾向やスタイル。厚みを重視する「厚みの棋風」や地を重視する「実利の棋風」などがある。",
+      "definition_for_operator": "棋士が持つ独特の打ち方の傾向やスタイル",
+      "related_terms": [
+        "きふう",
+        "打ち方の傾向",
+        "スタイル"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "きふう",
+        "打ち方の傾向",
+        "スタイル"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "棋風 きふう きふう 打ち方の傾向 スタイル 棋士が持つ独特の打ち方の傾向やスタイル。厚みを重視する「厚みの棋風」や地を重視する「実利の棋風」などがある。"
+    },
+    {
+      "id": "term-047",
+      "type": "glossary",
+      "term": "急場",
+      "term_variants": [
+        "きゅうば"
+      ],
+      "definition": "すぐに打たないと大きな損をする、緊急度の高い場所のこと。大場（価値の高い場所）より優先して打つべき点。",
+      "definition_for_operator": "すぐに打たないと大きな損をする、緊急度の高い場所のこと",
+      "related_terms": [
+        "きゅうば",
+        "急ぎの一手",
+        "優先度"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "intermediate",
+      "tags": [
+        "きゅうば",
+        "急ぎの一手",
+        "優先度"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "急場 きゅうば きゅうば 急ぎの一手 優先度 すぐに打たないと大きな損をする、緊急度の高い場所のこと。大場（価値の高い場所）より優先して打つべき点。"
+    },
+    {
+      "id": "term-048",
+      "type": "glossary",
+      "term": "キリ",
+      "term_variants": [],
+      "definition": "相手の石と石の間に打ち込んで連絡を断つ手。相手の石群を分断してそれぞれを攻める狙いがある。",
+      "definition_for_operator": "相手の石と石の間に打ち込んで連絡を断つ手",
+      "related_terms": [
+        "キリ",
+        "切り",
+        "分断",
+        "切断"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "キリ",
+        "切り",
+        "分断",
+        "切断"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "キリ  キリ 切り 分断 切断 相手の石と石の間に打ち込んで連絡を断つ手。相手の石群を分断してそれぞれを攻める狙いがある。"
+    },
+    {
+      "id": "term-049",
+      "type": "glossary",
+      "term": "キリチガイ",
+      "term_variants": [],
+      "definition": "お互いが相手の石を切り合う形になる手の交換。複雑な変化が生じやすく、有利不利の読みが重要。",
+      "definition_for_operator": "お互いが相手の石を切り合う形になる手の交換",
+      "related_terms": [
+        "キリチガイ",
+        "切り違い",
+        "交差切り"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "キリチガイ",
+        "切り違い",
+        "交差切り"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "キリチガイ  キリチガイ 切り違い 交差切り お互いが相手の石を切り合う形になる手の交換。複雑な変化が生じやすく、有利不利の読みが重要。"
+    },
+    {
+      "id": "term-050",
+      "type": "glossary",
+      "term": "棋力",
+      "term_variants": [
+        "きりょく"
+      ],
+      "definition": "囲碁の実力のこと。日本では段・級で表され、初段以上が「段」、初段未満が「級」で表される。",
+      "definition_for_operator": "囲碁の実力のこと",
+      "related_terms": [
+        "きりょく",
+        "強さ",
+        "段位",
+        "級位"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "きりょく",
+        "強さ",
+        "段位",
+        "級位"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "棋力 きりょく きりょく 強さ 段位 級位 囲碁の実力のこと。日本では段・級で表され、初段以上が「段」、初段未満が「級」で表される。"
+    },
+    {
+      "id": "term-051",
+      "type": "glossary",
+      "term": "キリンの顔",
+      "term_variants": [
+        "きりんのかお"
+      ],
+      "definition": "盤上の石の配置がキリンの顔に似ているパターンの俗称。特定の布石形や石の連なりを指す。",
+      "definition_for_operator": "盤上の石の配置がキリンの顔に似ているパターンの俗称",
+      "related_terms": [
+        "きりんのかお",
+        "布石パターン",
+        "形"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "きりんのかお",
+        "布石パターン",
+        "形"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "キリンの顔 きりんのかお きりんのかお 布石パターン 形 盤上の石の配置がキリンの顔に似ているパターンの俗称。特定の布石形や石の連なりを指す。"
+    },
+    {
+      "id": "term-052",
+      "type": "glossary",
+      "term": "キリンの首",
+      "term_variants": [
+        "きりんのくび"
+      ],
+      "definition": "石が細長く伸びた形の俗称。首が細くキリンの首に似た、切断されやすい危ない形を指す。",
+      "definition_for_operator": "石が細長く伸びた形の俗称",
+      "related_terms": [
+        "きりんのくび",
+        "細長い形",
+        "弱い形"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "きりんのくび",
+        "細長い形",
+        "弱い形"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "キリンの首 きりんのくび きりんのくび 細長い形 弱い形 石が細長く伸びた形の俗称。首が細くキリンの首に似た、切断されやすい危ない形を指す。"
+    },
+    {
+      "id": "term-053",
+      "type": "glossary",
+      "term": "逆コミ",
+      "term_variants": [
+        "ぎゃくこみ"
+      ],
+      "definition": "白がコミを出すのではなく、逆に黒がコミを出す特殊なハンデ戦の形式。白に大きなハンデを与える場合に用いる。",
+      "definition_for_operator": "白がコミを出すのではなく、逆に黒がコミを出す特殊なハンデ戦の形式",
+      "related_terms": [
+        "ぎゃくこみ",
+        "ハンデ",
+        "コミ"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ぎゃくこみ",
+        "ハンデ",
+        "コミ"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "逆コミ ぎゃくこみ ぎゃくこみ ハンデ コミ 白がコミを出すのではなく、逆に黒がコミを出す特殊なハンデ戦の形式。白に大きなハンデを与える場合に用いる。"
+    },
+    {
+      "id": "term-054",
+      "type": "glossary",
+      "term": "逆ヨセ",
+      "term_variants": [
+        "ぎゃくよせ"
+      ],
+      "definition": "相手にとって先手（打ちたい手）となるヨセの手のこと。相手が打てば大きく得するため、先に打つ価値がある。",
+      "definition_for_operator": "相手にとって先手（打ちたい手）となるヨセの手のこと",
+      "related_terms": [
+        "ぎゃくよせ",
+        "先手ヨセ",
+        "相手の先手"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "ぎゃくよせ",
+        "先手ヨセ",
+        "相手の先手"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "逆ヨセ ぎゃくよせ ぎゃくよせ 先手ヨセ 相手の先手 相手にとって先手（打ちたい手）となるヨセの手のこと。相手が打てば大きく得するため、先に打つ価値がある。"
+    },
+    {
+      "id": "term-055",
+      "type": "glossary",
+      "term": "車の後押し",
+      "term_variants": [
+        "くるまのあとおし"
+      ],
+      "definition": "すでに進もうとしている相手の石をさらに後押ししてしまう、自分に不利な手の比喩。相手を助けてしまう悪手。",
+      "definition_for_operator": "すでに進もうとしている相手の石をさらに後押ししてしまう、自分に不利な手の比喩",
+      "related_terms": [
+        "くるまのあとおし",
+        "無駄な手",
+        "悪手"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "くるまのあとおし",
+        "無駄な手",
+        "悪手"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "車の後押し くるまのあとおし くるまのあとおし 無駄な手 悪手 すでに進もうとしている相手の石をさらに後押ししてしまう、自分に不利な手の比喩。相手を助けてしまう悪手。"
+    },
+    {
+      "id": "term-056",
+      "type": "glossary",
+      "term": "グズミ",
+      "term_variants": [],
+      "definition": "石に囲まれた内側に打つ手。相手の眼形を崩す目的や、自分の石の連絡を整備するために使われる。",
+      "definition_for_operator": "石に囲まれた内側に打つ手",
+      "related_terms": [
+        "グズミ",
+        "内側の手",
+        "眼形を崩す"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "グズミ",
+        "内側の手",
+        "眼形を崩す"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "グズミ  グズミ 内側の手 眼形を崩す 石に囲まれた内側に打つ手。相手の眼形を崩す目的や、自分の石の連絡を整備するために使われる。"
+    },
+    {
+      "id": "term-057",
+      "type": "glossary",
+      "term": "ケイマ",
+      "term_variants": [],
+      "definition": "将棋の桂馬のように2路と1路の対角に打つ手。展開と連絡を兼ねる効率的な手で、囲碁で頻繁に使われる。",
+      "definition_for_operator": "将棋の桂馬のように2路と1路の対角に打つ手",
+      "related_terms": [
+        "ケイマ",
+        "桂馬",
+        "2路×1路の跳び"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ケイマ",
+        "桂馬",
+        "2路×1路の跳び"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ケイマ  ケイマ 桂馬 2路×1路の跳び 将棋の桂馬のように2路と1路の対角に打つ手。展開と連絡を兼ねる効率的な手で、囲碁で頻繁に使われる。"
+    },
+    {
+      "id": "term-058",
+      "type": "glossary",
+      "term": "~間",
+      "term_variants": [
+        "けん"
+      ],
+      "definition": "石と石の間の距離を表す単位。「一間（いっけん）」は石の間に1路の空点がある状態を指す。",
+      "definition_for_operator": "石と石の間の距離を表す単位",
+      "related_terms": [
+        "けん",
+        "石の間隔",
+        "一間",
+        "二間"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "けん",
+        "石の間隔",
+        "一間",
+        "二間"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "~間 けん けん 石の間隔 一間 二間 石と石の間の距離を表す単位。「一間（いっけん）」は石の間に1路の空点がある状態を指す。"
+    },
+    {
+      "id": "term-059",
+      "type": "glossary",
+      "term": "けんか小目",
+      "term_variants": [
+        "けんかこもく"
+      ],
+      "definition": "お互いに同じ側（例えばどちらも右側）の小目に着手する布石形。積極的な争いを志向するスタイル。",
+      "definition_for_operator": "お互いに同じ側（例えばどちらも右側）の小目に着手する布石形",
+      "related_terms": [
+        "けんかこもく",
+        "向かい小目",
+        "布石"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "けんかこもく",
+        "向かい小目",
+        "布石"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "けんか小目 けんかこもく けんかこもく 向かい小目 布石 お互いに同じ側（例えばどちらも右側）の小目に着手する布石形。積極的な争いを志向するスタイル。"
+    },
+    {
+      "id": "term-060",
+      "type": "glossary",
+      "term": "ゲタ",
+      "term_variants": [],
+      "definition": "石を網で包むように追い詰めて取る手筋。取られる石がどこに逃げても包囲できる形が完成している状態。",
+      "definition_for_operator": "石を網で包むように追い詰めて取る手筋",
+      "related_terms": [
+        "ゲタ",
+        "網",
+        "石を包む",
+        "逃げられない"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ゲタ",
+        "網",
+        "石を包む",
+        "逃げられない"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ゲタ  ゲタ 網 石を包む 逃げられない 石を網で包むように追い詰めて取る手筋。取られる石がどこに逃げても包囲できる形が完成している状態。"
+    },
+    {
+      "id": "term-061",
+      "type": "glossary",
+      "term": "コウ",
+      "term_variants": [],
+      "definition": "直前の手で取られた場所に即座に打ち返すことを禁じるルール。また、そのような状況そのものをコウと呼ぶ。",
+      "definition_for_operator": "直前の手で取られた場所に即座に打ち返すことを禁じるルール",
+      "related_terms": [
+        "コウ",
+        "劫",
+        "繰り返し禁止",
+        "無限ループ防止"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "コウ",
+        "劫",
+        "繰り返し禁止",
+        "無限ループ防止"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "コウ  コウ 劫 繰り返し禁止 無限ループ防止 直前の手で取られた場所に即座に打ち返すことを禁じるルール。また、そのような状況そのものをコウと呼ぶ。"
+    },
+    {
+      "id": "term-062",
+      "type": "glossary",
+      "term": "コウ材",
+      "term_variants": [
+        "こうざい"
+      ],
+      "definition": "コウ争いで相手を脅すために使う手のこと。コウ材が多い方がコウ争いで有利になる。",
+      "definition_for_operator": "コウ争いで相手を脅すために使う手のこと",
+      "related_terms": [
+        "こうざい",
+        "コウの脅し",
+        "コウ争い"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "こうざい",
+        "コウの脅し",
+        "コウ争い"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "コウ材 こうざい こうざい コウの脅し コウ争い コウ争いで相手を脅すために使う手のこと。コウ材が多い方がコウ争いで有利になる。"
+    },
+    {
+      "id": "term-063",
+      "type": "glossary",
+      "term": "コウ立て",
+      "term_variants": [
+        "こうだて"
+      ],
+      "definition": "コウ争い中に相手に応じさせるための脅しの手。コウ立てをして相手が応じた隙にコウを取り返す。",
+      "definition_for_operator": "コウ争い中に相手に応じさせるための脅しの手",
+      "related_terms": [
+        "こうだて",
+        "コウの脅し",
+        "コウ材"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "こうだて",
+        "コウの脅し",
+        "コウ材"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "コウ立て こうだて こうだて コウの脅し コウ材 コウ争い中に相手に応じさせるための脅しの手。コウ立てをして相手が応じた隙にコウを取り返す。"
+    },
+    {
+      "id": "term-064",
+      "type": "glossary",
+      "term": "呼吸点",
+      "term_variants": [
+        "こきゅうてん"
+      ],
+      "definition": "石または連なった石に隣接する空点（ダメ）のこと。呼吸点がゼロになると石は取られる。",
+      "definition_for_operator": "石または連なった石に隣接する空点（ダメ）のこと",
+      "related_terms": [
+        "こきゅうてん",
+        "ダメ",
+        "自由な空点",
+        "石の息"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "こきゅうてん",
+        "ダメ",
+        "自由な空点",
+        "石の息"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "呼吸点 こきゅうてん こきゅうてん ダメ 自由な空点 石の息 石または連なった石に隣接する空点（ダメ）のこと。呼吸点がゼロになると石は取られる。"
+    },
+    {
+      "id": "term-065",
+      "type": "glossary",
+      "term": "小ゲイマ",
+      "term_variants": [
+        "こげいま"
+      ],
+      "definition": "1路と2路の対角に打つ最も小さいケイマの手。手堅い連絡や展開に使われる基本的な着手形。",
+      "definition_for_operator": "1路と2路の対角に打つ最も小さいケイマの手",
+      "related_terms": [
+        "こげいま",
+        "小桂馬",
+        "1路×2路の跳び"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "こげいま",
+        "小桂馬",
+        "1路×2路の跳び"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "小ゲイマ こげいま こげいま 小桂馬 1路×2路の跳び 1路と2路の対角に打つ最も小さいケイマの手。手堅い連絡や展開に使われる基本的な着手形。"
+    },
+    {
+      "id": "term-066",
+      "type": "glossary",
+      "term": "小ザル",
+      "term_variants": [
+        "こざる"
+      ],
+      "definition": "小さなゲタ（網）の手筋。少数の石を包んで取る手筋で、大ザルより狭い包囲を指す。",
+      "definition_for_operator": "小さなゲタ（網）の手筋",
+      "related_terms": [
+        "こざる",
+        "小さい網",
+        "石を包む"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "こざる",
+        "小さい網",
+        "石を包む"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "小ザル こざる こざる 小さい網 石を包む 小さなゲタ（網）の手筋。少数の石を包んで取る手筋で、大ザルより狭い包囲を指す。"
+    },
+    {
+      "id": "term-067",
+      "type": "glossary",
+      "term": "コスミ",
+      "term_variants": [],
+      "definition": "自分の石の斜め隣に打つ手。石の連絡を保ちながら効率よく展開する基本的な手の一つ。",
+      "definition_for_operator": "自分の石の斜め隣に打つ手",
+      "related_terms": [
+        "コスミ",
+        "斜め",
+        "対角線の着手"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "コスミ",
+        "斜め",
+        "対角線の着手"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "コスミ  コスミ 斜め 対角線の着手 自分の石の斜め隣に打つ手。石の連絡を保ちながら効率よく展開する基本的な手の一つ。"
+    },
+    {
+      "id": "term-068",
+      "type": "glossary",
+      "term": "コスミツケ",
+      "term_variants": [],
+      "definition": "相手の石の斜め方向に密着して打つ手。相手の形を乱したり、自石の根拠を作るために使われる。",
+      "definition_for_operator": "相手の石の斜め方向に密着して打つ手",
+      "related_terms": [
+        "コスミツケ",
+        "斜めに接触",
+        "手筋"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "コスミツケ",
+        "斜めに接触",
+        "手筋"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "コスミツケ  コスミツケ 斜めに接触 手筋 相手の石の斜め方向に密着して打つ手。相手の形を乱したり、自石の根拠を作るために使われる。"
+    },
+    {
+      "id": "term-069",
+      "type": "glossary",
+      "term": "細かい",
+      "term_variants": [
+        "こまかい"
+      ],
+      "definition": "終盤において地の差が非常に小さい状態のこと。「細かい碁」は接戦で勝敗の行方がわからない対局を指す。",
+      "definition_for_operator": "終盤において地の差が非常に小さい状態のこと",
+      "related_terms": [
+        "こまかい",
+        "接戦",
+        "目数差が少ない"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "こまかい",
+        "接戦",
+        "目数差が少ない"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "細かい こまかい こまかい 接戦 目数差が少ない 終盤において地の差が非常に小さい状態のこと。「細かい碁」は接戦で勝敗の行方がわからない対局を指す。"
+    },
+    {
+      "id": "term-070",
+      "type": "glossary",
+      "term": "コミ",
+      "term_variants": [],
+      "definition": "白番（後手）のハンデとして黒番が白に与える目数のこと。日本ルールでは通常6.5目（コミ出し）。",
+      "definition_for_operator": "白番（後手）のハンデとして黒番が白に与える目数のこと",
+      "related_terms": [
+        "コミ",
+        "ハンデ",
+        "後手補償",
+        "6.5目"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "コミ",
+        "ハンデ",
+        "後手補償",
+        "6.5目"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "コミ  コミ ハンデ 後手補償 6.5目 白番（後手）のハンデとして黒番が白に与える目数のこと。日本ルールでは通常6.5目（コミ出し）。"
+    },
+    {
+      "id": "term-071",
+      "type": "glossary",
+      "term": "小目",
+      "term_variants": [
+        "こもく"
+      ],
+      "definition": "隅の3路と4路の交点への着手。バランスのよい布石の着点で、定石の種類が最も多い着手の一つ。",
+      "definition_for_operator": "隅の3路と4路の交点への着手",
+      "related_terms": [
+        "こもく",
+        "3の4",
+        "布石",
+        "隅"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "こもく",
+        "3の4",
+        "布石",
+        "隅"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "小目 こもく こもく 3の4 布石 隅 隅の3路と4路の交点への着手。バランスのよい布石の着点で、定石の種類が最も多い着手の一つ。"
+    },
+    {
+      "id": "term-072",
+      "type": "glossary",
+      "term": "小ヨセ",
+      "term_variants": [
+        "こよせ"
+      ],
+      "definition": "終盤のヨセの中で価値が小さい手のこと。大ヨセが終わった後に行う細かい寄せを指す。",
+      "definition_for_operator": "終盤のヨセの中で価値が小さい手のこと",
+      "related_terms": [
+        "こよせ",
+        "細かいヨセ",
+        "終盤"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "こよせ",
+        "細かいヨセ",
+        "終盤"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "小ヨセ こよせ こよせ 細かいヨセ 終盤 終盤のヨセの中で価値が小さい手のこと。大ヨセが終わった後に行う細かい寄せを指す。"
+    },
+    {
+      "id": "term-073",
+      "type": "glossary",
+      "term": "凝り形",
+      "term_variants": [
+        "こりがたち"
+      ],
+      "definition": "石が一か所に集中しすぎて効率が悪い形。地に対して石の数が多すぎる過剰投資の状態。",
+      "definition_for_operator": "石が一か所に集中しすぎて効率が悪い形",
+      "related_terms": [
+        "こりがたち",
+        "重い形",
+        "過剰な集中"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "こりがたち",
+        "重い形",
+        "過剰な集中"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "凝り形 こりがたち こりがたち 重い形 過剰な集中 石が一か所に集中しすぎて効率が悪い形。地に対して石の数が多すぎる過剰投資の状態。"
+    },
+    {
+      "id": "term-074",
+      "type": "glossary",
+      "term": "碁笥",
+      "term_variants": [
+        "ごけ"
+      ],
+      "definition": "碁石を入れておく蓋付きの容器のこと。黒と白それぞれ1個ずつ用意する。SenseRobotでは自動回収される。",
+      "definition_for_operator": "碁石を入れておく蓋付きの容器のこと",
+      "related_terms": [
+        "ごけ",
+        "石入れ",
+        "碁石の容器"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ごけ",
+        "石入れ",
+        "碁石の容器"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "碁笥 ごけ ごけ 石入れ 碁石の容器 碁石を入れておく蓋付きの容器のこと。黒と白それぞれ1個ずつ用意する。SenseRobotでは自動回収される。"
+    },
+    {
+      "id": "term-075",
+      "type": "glossary",
+      "term": "後手",
+      "term_variants": [
+        "ごて"
+      ],
+      "definition": "打った後に相手が応じる必要がない手（先手の反対）。後手の手は相手に他の場所を打たれるため損になりやすい。",
+      "definition_for_operator": "打った後に相手が応じる必要がない手（先手の反対）",
+      "related_terms": [
+        "ごて",
+        "後手",
+        "非先手",
+        "応じ手"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "intermediate",
+      "tags": [
+        "ごて",
+        "後手",
+        "非先手",
+        "応じ手"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "後手 ごて ごて 後手 非先手 応じ手 打った後に相手が応じる必要がない手（先手の反対）。後手の手は相手に他の場所を打たれるため損になりやすい。"
+    },
+    {
+      "id": "term-076",
+      "type": "glossary",
+      "term": "五の五",
+      "term_variants": [
+        "ごのご"
+      ],
+      "definition": "隅の5路と5路の交点への着手。隅よりやや中央寄りで、特殊な布石や死活問題で現れる着点。",
+      "definition_for_operator": "隅の5路と5路の交点への着手",
+      "related_terms": [
+        "ごのご",
+        "5の5",
+        "天元近く",
+        "隅の交点"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ごのご",
+        "5の5",
+        "天元近く",
+        "隅の交点"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "五の五 ごのご ごのご 5の5 天元近く 隅の交点 隅の5路と5路の交点への着手。隅よりやや中央寄りで、特殊な布石や死活問題で現れる着点。"
+    },
+    {
+      "id": "term-077",
+      "type": "glossary",
+      "term": "裂かれ形",
+      "term_variants": [
+        "さかれがたち"
+      ],
+      "definition": "石が切断されて分かれてしまった形。孤立した石それぞれが弱くなり、攻め合いに負けやすい状態。",
+      "definition_for_operator": "石が切断されて分かれてしまった形",
+      "related_terms": [
+        "さかれがたち",
+        "分断",
+        "弱い形"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "さかれがたち",
+        "分断",
+        "弱い形"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "裂かれ形 さかれがたち さかれがたち 分断 弱い形 石が切断されて分かれてしまった形。孤立した石それぞれが弱くなり、攻め合いに負けやすい状態。"
+    },
+    {
+      "id": "term-078",
+      "type": "glossary",
+      "term": "サガリ",
+      "term_variants": [],
+      "definition": "石から一路内側（盤の中央方向ではなく端方向）に打つ手。守りや眼形の確保に使われることが多い。",
+      "definition_for_operator": "石から一路内側（盤の中央方向ではなく端方向）に打つ手",
+      "related_terms": [
+        "サガリ",
+        "下がり",
+        "一路内側"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "サガリ",
+        "下がり",
+        "一路内側"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "サガリ  サガリ 下がり 一路内側 石から一路内側（盤の中央方向ではなく端方向）に打つ手。守りや眼形の確保に使われることが多い。"
+    },
+    {
+      "id": "term-079",
+      "type": "glossary",
+      "term": "サシコミ",
+      "term_variants": [],
+      "definition": "相手の石と石の間の隙間に打ち込む手。相手の連絡を断ったり、眼形を崩す効果がある。",
+      "definition_for_operator": "相手の石と石の間の隙間に打ち込む手",
+      "related_terms": [
+        "サシコミ",
+        "差し込み",
+        "相手の石の間に"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "サシコミ",
+        "差し込み",
+        "相手の石の間に"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "サシコミ  サシコミ 差し込み 相手の石の間に 相手の石と石の間の隙間に打ち込む手。相手の連絡を断ったり、眼形を崩す効果がある。"
+    },
+    {
+      "id": "term-080",
+      "type": "glossary",
+      "term": "サルスベリ",
+      "term_variants": [],
+      "definition": "辺の端から相手の石の下をスベるように広がる手。辺の地を効率よく確保する手筋。",
+      "definition_for_operator": "辺の端から相手の石の下をスベるように広がる手",
+      "related_terms": [
+        "サルスベリ",
+        "猿滑り",
+        "辺への展開"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "サルスベリ",
+        "猿滑り",
+        "辺への展開"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "サルスベリ  サルスベリ 猿滑り 辺への展開 辺の端から相手の石の下をスベるように広がる手。辺の地を効率よく確保する手筋。"
+    },
+    {
+      "id": "term-081",
+      "type": "glossary",
+      "term": "三間トビ",
+      "term_variants": [
+        "さんけんとび"
+      ],
+      "definition": "石と石の間に2路の空点がある（3路分飛ぶ）手。大きく展開できるが、間を切られるリスクもある。",
+      "definition_for_operator": "石と石の間に2路の空点がある（3路分飛ぶ）手",
+      "related_terms": [
+        "さんけんとび",
+        "三間",
+        "大きな展開"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "さんけんとび",
+        "三間",
+        "大きな展開"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "三間トビ さんけんとび さんけんとび 三間 大きな展開 石と石の間に2路の空点がある（3路分飛ぶ）手。大きく展開できるが、間を切られるリスクもある。"
+    },
+    {
+      "id": "term-082",
+      "type": "glossary",
+      "term": "三間ビラキ",
+      "term_variants": [
+        "さんけんびらき"
+      ],
+      "definition": "辺の石から3路離れた場所に展開する手。根拠を広げながら辺の地を確保するバランスのよい着手。",
+      "definition_for_operator": "辺の石から3路離れた場所に展開する手",
+      "related_terms": [
+        "さんけんびらき",
+        "3間開き",
+        "辺の展開"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "さんけんびらき",
+        "3間開き",
+        "辺の展開"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "三間ビラキ さんけんびらき さんけんびらき 3間開き 辺の展開 辺の石から3路離れた場所に展開する手。根拠を広げながら辺の地を確保するバランスのよい着手。"
+    },
+    {
+      "id": "term-083",
+      "type": "glossary",
+      "term": "三コウ",
+      "term_variants": [
+        "さんこう"
+      ],
+      "definition": "3か所のコウが同時に発生し、どちらも解決できない特殊な状態。日本ルールでは通常「無勝負（持碁）」となる。",
+      "definition_for_operator": "3か所のコウが同時に発生し、どちらも解決できない特殊な状態",
+      "related_terms": [
+        "さんこう",
+        "無勝負",
+        "引き分け",
+        "コウ"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "さんこう",
+        "無勝負",
+        "引き分け",
+        "コウ"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "三コウ さんこう さんこう 無勝負 引き分け コウ 3か所のコウが同時に発生し、どちらも解決できない特殊な状態。日本ルールでは通常「無勝負（持碁）」となる。"
+    },
+    {
+      "id": "term-084",
+      "type": "glossary",
+      "term": "三々",
+      "term_variants": [
+        "さんさん"
+      ],
+      "definition": "隅の3路と3路の交点への着手。堅く地を確保できるが発展性が低い。また相手の星（4の4）の下への侵入点。",
+      "definition_for_operator": "隅の3路と3路の交点への着手",
+      "related_terms": [
+        "さんさん",
+        "3の3",
+        "隅",
+        "侵入"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "さんさん",
+        "3の3",
+        "隅",
+        "侵入"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "三々 さんさん さんさん 3の3 隅 侵入 隅の3路と3路の交点への着手。堅く地を確保できるが発展性が低い。また相手の星（4の4）の下への侵入点。"
+    },
+    {
+      "id": "term-085",
+      "type": "glossary",
+      "term": "三連星",
+      "term_variants": [
+        "さんれんせい"
+      ],
+      "definition": "自分の石を3つの星（4の4点）に並べる布石戦略。広大な模様を張るが、相手に三々に入られやすい。",
+      "definition_for_operator": "自分の石を3つの星（4の4点）に並べる布石戦略",
+      "related_terms": [
+        "さんれんせい",
+        "星三つ",
+        "模様",
+        "布石"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "さんれんせい",
+        "星三つ",
+        "模様",
+        "布石"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "三連星 さんれんせい さんれんせい 星三つ 模様 布石 自分の石を3つの星（4の4点）に並べる布石戦略。広大な模様を張るが、相手に三々に入られやすい。"
+    },
+    {
+      "id": "term-086",
+      "type": "glossary",
+      "term": "~子",
+      "term_variants": [
+        "~し"
+      ],
+      "definition": "置き碁におけるハンデの石の数を表す単位。「2子局」は2個の置き石がある対局を指す。",
+      "definition_for_operator": "置き碁におけるハンデの石の数を表す単位",
+      "related_terms": [
+        "し",
+        "石の数",
+        "置き石の数"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "し",
+        "石の数",
+        "置き石の数"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "~子 ~し し 石の数 置き石の数 置き碁におけるハンデの石の数を表す単位。「2子局」は2個の置き石がある対局を指す。"
+    },
+    {
+      "id": "term-087",
+      "type": "glossary",
+      "term": "死活",
+      "term_variants": [
+        "しかつ"
+      ],
+      "definition": "石が生きているか死んでいるかを判定する概念。2つの真の眼があれば「生き」、眼がなければ「死に」。",
+      "definition_for_operator": "石が生きているか死んでいるかを判定する概念",
+      "related_terms": [
+        "しかつ",
+        "生死",
+        "石の生き死に"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "しかつ",
+        "生死",
+        "石の生き死に"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "死活 しかつ しかつ 生死 石の生き死に 石が生きているか死んでいるかを判定する概念。2つの真の眼があれば「生き」、眼がなければ「死に」。"
+    },
+    {
+      "id": "term-088",
+      "type": "glossary",
+      "term": "~子局",
+      "term_variants": [
+        "~しきょく"
+      ],
+      "definition": "置き碁において石の数で対局形式を表す呼び方。「9子局」は9個の置き石で打つ対局。",
+      "definition_for_operator": "置き碁において石の数で対局形式を表す呼び方",
+      "related_terms": [
+        "しきょく",
+        "ハンデ戦",
+        "置き碁"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "しきょく",
+        "ハンデ戦",
+        "置き碁"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "~子局 ~しきょく しきょく ハンデ戦 置き碁 置き碁において石の数で対局形式を表す呼び方。「9子局」は9個の置き石で打つ対局。"
+    },
+    {
+      "id": "term-089",
+      "type": "glossary",
+      "term": "シチョウ",
+      "term_variants": [],
+      "definition": "相手の石が逃げるたびにアタリにし続け、最終的に盤の端で取る手筋。事前にシチョウが成立するか確認が必要。",
+      "definition_for_operator": "相手の石が逃げるたびにアタリにし続け、最終的に盤の端で取る手筋",
+      "related_terms": [
+        "シチョウ",
+        "梯子",
+        "逃げられない取り"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "シチョウ",
+        "梯子",
+        "逃げられない取り"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "シチョウ  シチョウ 梯子 逃げられない取り 相手の石が逃げるたびにアタリにし続け、最終的に盤の端で取る手筋。事前にシチョウが成立するか確認が必要。"
+    },
+    {
+      "id": "term-090",
+      "type": "glossary",
+      "term": "シチョウアタリ",
+      "term_variants": [],
+      "definition": "シチョウの進行を妨害する石（シチョウを崩す効果を持つ石）のこと。布石でシチョウアタリを打つことがある。",
+      "definition_for_operator": "シチョウの進行を妨害する石（シチョウを崩す効果を持つ石）のこと",
+      "related_terms": [
+        "シチョウアタリ",
+        "シチョウ崩し",
+        "布石"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "シチョウアタリ",
+        "シチョウ崩し",
+        "布石"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "シチョウアタリ  シチョウアタリ シチョウ崩し 布石 シチョウの進行を妨害する石（シチョウを崩す効果を持つ石）のこと。布石でシチョウアタリを打つことがある。"
+    },
+    {
+      "id": "term-091",
+      "type": "glossary",
+      "term": "シノギ",
+      "term_variants": [],
+      "definition": "不利な状況でも何とか生き延びる手のこと。石が弱い状況で眼を作ったり、逃げ延びることをシノギと呼ぶ。",
+      "definition_for_operator": "不利な状況でも何とか生き延びる手のこと",
+      "related_terms": [
+        "シノギ",
+        "生き残り",
+        "逃げ延びる"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "シノギ",
+        "生き残り",
+        "逃げ延びる"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "シノギ  シノギ 生き残り 逃げ延びる 不利な状況でも何とか生き延びる手のこと。石が弱い状況で眼を作ったり、逃げ延びることをシノギと呼ぶ。"
+    },
+    {
+      "id": "term-092",
+      "type": "glossary",
+      "term": "シボリ",
+      "term_variants": [],
+      "definition": "相手に無駄なつぎを強いることで石を効率なく使わせる手筋。手数を稼いで自分の石を強化する。",
+      "definition_for_operator": "相手に無駄なつぎを強いることで石を効率なく使わせる手筋",
+      "related_terms": [
+        "シボリ",
+        "絞り",
+        "石を無駄に使わせる"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "シボリ",
+        "絞り",
+        "石を無駄に使わせる"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "シボリ  シボリ 絞り 石を無駄に使わせる 相手に無駄なつぎを強いることで石を効率なく使わせる手筋。手数を稼いで自分の石を強化する。"
+    },
+    {
+      "id": "term-093",
+      "type": "glossary",
+      "term": "シマリ",
+      "term_variants": [],
+      "definition": "隅に石を打って根拠を確保する手のこと。小ゲイマシマリ・一間シマリなど種類がある。",
+      "definition_for_operator": "隅に石を打って根拠を確保する手のこと",
+      "related_terms": [
+        "シマリ",
+        "隅の守り",
+        "根拠",
+        "二間"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "シマリ",
+        "隅の守り",
+        "根拠",
+        "二間"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "シマリ  シマリ 隅の守り 根拠 二間 隅に石を打って根拠を確保する手のこと。小ゲイマシマリ・一間シマリなど種類がある。"
+    },
+    {
+      "id": "term-094",
+      "type": "glossary",
+      "term": "地",
+      "term_variants": [
+        "じ"
+      ],
+      "definition": "自分の石で囲んだ空点のこと。終局後に地の数が多い方が勝ちとなる（日本ルール）。",
+      "definition_for_operator": "自分の石で囲んだ空点のこと",
+      "related_terms": [
+        "じ",
+        "領域",
+        "確保した空点"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "じ",
+        "領域",
+        "確保した空点"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "地 じ じ 領域 確保した空点 自分の石で囲んだ空点のこと。終局後に地の数が多い方が勝ちとなる（日本ルール）。"
+    },
+    {
+      "id": "term-095",
+      "type": "glossary",
+      "term": "地合",
+      "term_variants": [
+        "じあい"
+      ],
+      "definition": "お互いの地の量を比較した状態のこと。「地合がよい」は自分の方が地が多いことを意味する。",
+      "definition_for_operator": "お互いの地の量を比較した状態のこと",
+      "related_terms": [
+        "じあい",
+        "地の比較",
+        "形勢"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "じあい",
+        "地の比較",
+        "形勢"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "地合 じあい じあい 地の比較 形勢 お互いの地の量を比較した状態のこと。「地合がよい」は自分の方が地が多いことを意味する。"
+    },
+    {
+      "id": "term-096",
+      "type": "glossary",
+      "term": "持碁",
+      "term_variants": [
+        "じご"
+      ],
+      "definition": "双方の地が同じになって引き分けになること。コミがある場合はコミ分の差がなければ持碁にならない。",
+      "definition_for_operator": "双方の地が同じになって引き分けになること",
+      "related_terms": [
+        "じご",
+        "引き分け",
+        "同目数"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "じご",
+        "引き分け",
+        "同目数"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "持碁 じご じご 引き分け 同目数 双方の地が同じになって引き分けになること。コミがある場合はコミ分の差がなければ持碁にならない。"
+    },
+    {
+      "id": "term-097",
+      "type": "glossary",
+      "term": "実利",
+      "term_variants": [
+        "じつり"
+      ],
+      "definition": "模様や厚みと対比される、確定した地（実際の得）のこと。実利派の棋士は確実な地を優先して打つ。",
+      "definition_for_operator": "模様や厚みと対比される、確定した地（実際の得）のこと",
+      "related_terms": [
+        "じつり",
+        "地",
+        "目に見える得"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "じつり",
+        "地",
+        "目に見える得"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "実利 じつり じつり 地 目に見える得 模様や厚みと対比される、確定した地（実際の得）のこと。実利派の棋士は確実な地を優先して打つ。"
+    },
+    {
+      "id": "term-098",
+      "type": "glossary",
+      "term": "自由置き碁",
+      "term_variants": [
+        "じゆうおきご"
+      ],
+      "definition": "置き石の位置を自由に決めることができる特殊な置き碁の形式。通常の置き碁より戦略の幅が広い。",
+      "definition_for_operator": "置き石の位置を自由に決めることができる特殊な置き碁の形式",
+      "related_terms": [
+        "じゆうおきご",
+        "ハンデ戦",
+        "自由配置"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "じゆうおきご",
+        "ハンデ戦",
+        "自由配置"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "自由置き碁 じゆうおきご じゆうおきご ハンデ戦 自由配置 置き石の位置を自由に決めることができる特殊な置き碁の形式。通常の置き碁より戦略の幅が広い。"
+    },
+    {
+      "id": "term-099",
+      "type": "glossary",
+      "term": "定石",
+      "term_variants": [
+        "じょうせき"
+      ],
+      "definition": "長年の研究で最善とされてきた局所的な着手の手順。主に隅での攻防で使われ、種類は非常に多い。",
+      "definition_for_operator": "長年の研究で最善とされてきた局所的な着手の手順",
+      "related_terms": [
+        "じょうせき",
+        "定型手順",
+        "最善の変化"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "じょうせき",
+        "定型手順",
+        "最善の変化"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "定石 じょうせき じょうせき 定型手順 最善の変化 長年の研究で最善とされてきた局所的な着手の手順。主に隅での攻防で使われ、種類は非常に多い。"
+    },
+    {
+      "id": "term-100",
+      "type": "glossary",
+      "term": "定先",
+      "term_variants": [
+        "じょうせん"
+      ],
+      "definition": "ハンデとして常に特定の一方が黒（先手）を持つ対局形式。棋力差が小さい場合のハンデ戦に使われる。",
+      "definition_for_operator": "ハンデとして常に特定の一方が黒（先手）を持つ対局形式",
+      "related_terms": [
+        "じょうせん",
+        "固定先番",
+        "ハンデ"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "じょうせん",
+        "固定先番",
+        "ハンデ"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "定先 じょうせん じょうせん 固定先番 ハンデ ハンデとして常に特定の一方が黒（先手）を持つ対局形式。棋力差が小さい場合のハンデ戦に使われる。"
+    },
+    {
+      "id": "term-101",
+      "type": "glossary",
+      "term": "陣笠",
+      "term_variants": [
+        "じんがさ"
+      ],
+      "definition": "上から傘をかぶせたような石の形。内側の石が死ぬ形や、特定の包囲形を指す場合がある。",
+      "definition_for_operator": "上から傘をかぶせたような石の形",
+      "related_terms": [
+        "じんがさ",
+        "傘形",
+        "死に形"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "じんがさ",
+        "傘形",
+        "死に形"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "陣笠 じんがさ じんがさ 傘形 死に形 上から傘をかぶせたような石の形。内側の石が死ぬ形や、特定の包囲形を指す場合がある。"
+    },
+    {
+      "id": "term-102",
+      "type": "glossary",
+      "term": "スーパーコウ",
+      "term_variants": [],
+      "definition": "通常のコウに限らず、局面の繰り返しを一切禁止するルール。中国ルール等で採用されることがある。",
+      "definition_for_operator": "通常のコウに限らず、局面の繰り返しを一切禁止するルール",
+      "related_terms": [
+        "スーパーコウ",
+        "超コウ",
+        "繰り返し禁止"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "スーパーコウ",
+        "超コウ",
+        "繰り返し禁止"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "スーパーコウ  スーパーコウ 超コウ 繰り返し禁止 通常のコウに限らず、局面の繰り返しを一切禁止するルール。中国ルール等で採用されることがある。"
+    },
+    {
+      "id": "term-103",
+      "type": "glossary",
+      "term": "裾空き",
+      "term_variants": [
+        "すそあき"
+      ],
+      "definition": "辺の石の下部が空いており、相手が滑り込んで侵入できる状態。根拠が不安定になる弱点を指す。",
+      "definition_for_operator": "辺の石の下部が空いており、相手が滑り込んで侵入できる状態",
+      "related_terms": [
+        "すそあき",
+        "下が空いている",
+        "侵入可能"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "すそあき",
+        "下が空いている",
+        "侵入可能"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "裾空き すそあき すそあき 下が空いている 侵入可能 辺の石の下部が空いており、相手が滑り込んで侵入できる状態。根拠が不安定になる弱点を指す。"
+    },
+    {
+      "id": "term-104",
+      "type": "glossary",
+      "term": "捨石",
+      "term_variants": [
+        "すていし"
+      ],
+      "definition": "意図的に相手に取らせて別の利益を得るための石。手筋・捨て石により形を整えたり先手を取ることができる。",
+      "definition_for_operator": "意図的に相手に取らせて別の利益を得るための石",
+      "related_terms": [
+        "すていし",
+        "犠牲石",
+        "手筋"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "すていし",
+        "犠牲石",
+        "手筋"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "捨石 すていし すていし 犠牲石 手筋 意図的に相手に取らせて別の利益を得るための石。手筋・捨て石により形を整えたり先手を取ることができる。"
+    },
+    {
+      "id": "term-105",
+      "type": "glossary",
+      "term": "スベリ",
+      "term_variants": [],
+      "definition": "相手の石の下辺を滑るように展開する手。辺の地を確保しながら相手の根拠を削る効果がある。",
+      "definition_for_operator": "相手の石の下辺を滑るように展開する手",
+      "related_terms": [
+        "スベリ",
+        "滑り",
+        "辺に沿った展開"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "スベリ",
+        "滑り",
+        "辺に沿った展開"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "スベリ  スベリ 滑り 辺に沿った展開 相手の石の下辺を滑るように展開する手。辺の地を確保しながら相手の根拠を削る効果がある。"
+    },
+    {
+      "id": "term-106",
+      "type": "glossary",
+      "term": "隅",
+      "term_variants": [
+        "すみ"
+      ],
+      "definition": "盤の四つの角のこと。2辺に囲まれているため少ない石で大きな地を囲みやすく、最も重要な場所。",
+      "definition_for_operator": "盤の四つの角のこと",
+      "related_terms": [
+        "すみ",
+        "コーナー",
+        "地を囲みやすい場所"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "すみ",
+        "コーナー",
+        "地を囲みやすい場所"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "隅 すみ すみ コーナー 地を囲みやすい場所 盤の四つの角のこと。2辺に囲まれているため少ない石で大きな地を囲みやすく、最も重要な場所。"
+    },
+    {
+      "id": "term-107",
+      "type": "glossary",
+      "term": "隅の曲がり四目",
+      "term_variants": [
+        "すみのまがりよんもく"
+      ],
+      "definition": "隅で曲がり四目の形になると、ダメ詰めされた後に死ぬ特殊な死に形。セキではなく死になる点に注意。",
+      "definition_for_operator": "隅で曲がり四目の形になると、ダメ詰めされた後に死ぬ特殊な死に形",
+      "related_terms": [
+        "すみのまがりよんもく",
+        "死に形",
+        "死活"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "すみのまがりよんもく",
+        "死に形",
+        "死活"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "隅の曲がり四目 すみのまがりよんもく すみのまがりよんもく 死に形 死活 隅で曲がり四目の形になると、ダメ詰めされた後に死ぬ特殊な死に形。セキではなく死になる点に注意。"
+    },
+    {
+      "id": "term-108",
+      "type": "glossary",
+      "term": "整地",
+      "term_variants": [
+        "せいち"
+      ],
+      "definition": "終局後に双方の地を計算するための作業。死石を除き、地を整理して目数を数える。日本ルールで行う。",
+      "definition_for_operator": "終局後に双方の地を計算するための作業",
+      "related_terms": [
+        "せいち",
+        "地の計算",
+        "終局後の確認"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "せいち",
+        "地の計算",
+        "終局後の確認"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "整地 せいち せいち 地の計算 終局後の確認 終局後に双方の地を計算するための作業。死石を除き、地を整理して目数を数える。日本ルールで行う。"
+    },
+    {
+      "id": "term-109",
+      "type": "glossary",
+      "term": "井目",
+      "term_variants": [
+        "せいもく"
+      ],
+      "definition": "9路の置き石をすべての星（9カ所）に並べる対局形式。最大ハンデの置き碁で、井の字に石が並ぶ。",
+      "definition_for_operator": "9路の置き石をすべての星（9カ所）に並べる対局形式",
+      "related_terms": [
+        "せいもく",
+        "9子置き碁",
+        "井の字"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "せいもく",
+        "9子置き碁",
+        "井の字"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "井目 せいもく せいもく 9子置き碁 井の字 9路の置き石をすべての星（9カ所）に並べる対局形式。最大ハンデの置き碁で、井の字に石が並ぶ。"
+    },
+    {
+      "id": "term-110",
+      "type": "glossary",
+      "term": "セキ",
+      "term_variants": [],
+      "definition": "両方の石が眼を持たないが、お互いに打つと死ぬため共存する特殊な生き方。セキの石の地は数えない。",
+      "definition_for_operator": "両方の石が眼を持たないが、お互いに打つと死ぬため共存する特殊な生き方",
+      "related_terms": [
+        "セキ",
+        "互いに生き",
+        "共存",
+        "中立"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "セキ",
+        "互いに生き",
+        "共存",
+        "中立"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "セキ  セキ 互いに生き 共存 中立 両方の石が眼を持たないが、お互いに打つと死ぬため共存する特殊な生き方。セキの石の地は数えない。"
+    },
+    {
+      "id": "term-111",
+      "type": "glossary",
+      "term": "攻め合い",
+      "term_variants": [
+        "せめあい"
+      ],
+      "definition": "互いの石が眼を持たない状態でダメ（呼吸点）を詰め合い、先にダメがなくなった方が負ける争い。",
+      "definition_for_operator": "互いの石が眼を持たない状態でダメ（呼吸点）を詰め合い、先にダメがなくなった方が負ける争い",
+      "related_terms": [
+        "せめあい",
+        "ダメ詰め",
+        "呼吸点の争い"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "せめあい",
+        "ダメ詰め",
+        "呼吸点の争い"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "攻め合い せめあい せめあい ダメ詰め 呼吸点の争い 互いの石が眼を持たない状態でダメ（呼吸点）を詰め合い、先にダメがなくなった方が負ける争い。"
+    },
+    {
+      "id": "term-112",
+      "type": "glossary",
+      "term": "~線",
+      "term_variants": [
+        "~せん"
+      ],
+      "definition": "盤上の縦横の線を指す単位。19路盤には19本ずつ縦横の線があり、1線が端、天元が10線の交点。",
+      "definition_for_operator": "盤上の縦横の線を指す単位",
+      "related_terms": [
+        "せん",
+        "ライン",
+        "路",
+        "座標"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "intermediate",
+      "tags": [
+        "せん",
+        "ライン",
+        "路",
+        "座標"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "~線 ~せん せん ライン 路 座標 盤上の縦横の線を指す単位。19路盤には19本ずつ縦横の線があり、1線が端、天元が10線の交点。"
+    },
+    {
+      "id": "term-113",
+      "type": "glossary",
+      "term": "先",
+      "term_variants": [
+        "せん"
+      ],
+      "definition": "対局での手番の優先権。「先」は黒番（先手）を持つことで、定先は常に同じ人が黒を持つ形式。",
+      "definition_for_operator": "対局での手番の優先権",
+      "related_terms": [
+        "せん",
+        "先番",
+        "黒番",
+        "ハンデ形式"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "せん",
+        "先番",
+        "黒番",
+        "ハンデ形式"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "先 せん せん 先番 黒番 ハンデ形式 対局での手番の優先権。「先」は黒番（先手）を持つことで、定先は常に同じ人が黒を持つ形式。"
+    },
+    {
+      "id": "term-114",
+      "type": "glossary",
+      "term": "先手",
+      "term_variants": [
+        "せんて"
+      ],
+      "definition": "打った後に相手が必ず応じなければならない手。先手を連続して打つことで主導権を握ることができる。",
+      "definition_for_operator": "打った後に相手が必ず応じなければならない手",
+      "related_terms": [
+        "せんて",
+        "先手",
+        "相手が応じる手"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "intermediate",
+      "tags": [
+        "せんて",
+        "先手",
+        "相手が応じる手"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "先手 せんて せんて 先手 相手が応じる手 打った後に相手が必ず応じなければならない手。先手を連続して打つことで主導権を握ることができる。"
+    },
+    {
+      "id": "term-115",
+      "type": "glossary",
+      "term": "ソイ",
+      "term_variants": [],
+      "definition": "相手の石の隣接点に打つ密着した手。接触することで相手の形を乱したり、自分の石を強化する。",
+      "definition_for_operator": "相手の石の隣接点に打つ密着した手",
+      "related_terms": [
+        "ソイ",
+        "添い",
+        "相手に近づく"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ソイ",
+        "添い",
+        "相手に近づく"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ソイ  ソイ 添い 相手に近づく 相手の石の隣接点に打つ密着した手。接触することで相手の形を乱したり、自分の石を強化する。"
+    },
+    {
+      "id": "term-116",
+      "type": "glossary",
+      "term": "外ダメ",
+      "term_variants": [
+        "そとだめ"
+      ],
+      "definition": "石に囲まれた地の外側にある、双方共通のダメのこと。攻め合いでは外ダメを先に詰めた方が不利。",
+      "definition_for_operator": "石に囲まれた地の外側にある、双方共通のダメのこと",
+      "related_terms": [
+        "そとだめ",
+        "外部のダメ",
+        "共有の空点"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "そとだめ",
+        "外部のダメ",
+        "共有の空点"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "外ダメ そとだめ そとだめ 外部のダメ 共有の空点 石に囲まれた地の外側にある、双方共通のダメのこと。攻め合いでは外ダメを先に詰めた方が不利。"
+    },
+    {
+      "id": "term-117",
+      "type": "glossary",
+      "term": "そばコウ",
+      "term_variants": [],
+      "definition": "争点の近くで発生するコウのこと。そばコウは影響範囲が広く、コウ争いが激しくなる傾向がある。",
+      "definition_for_operator": "争点の近くで発生するコウのこと",
+      "related_terms": [
+        "そばコウ",
+        "近くのコウ",
+        "コウの種類"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "そばコウ",
+        "近くのコウ",
+        "コウの種類"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "そばコウ  そばコウ 近くのコウ コウの種類 争点の近くで発生するコウのこと。そばコウは影響範囲が広く、コウ争いが激しくなる傾向がある。"
+    },
+    {
+      "id": "term-118",
+      "type": "glossary",
+      "term": "損コウ",
+      "term_variants": [
+        "そんこう"
+      ],
+      "definition": "コウを勝っても得が少なく、コウ材を消費して損になりやすいコウのこと。積極的に争うべきでない。",
+      "definition_for_operator": "コウを勝っても得が少なく、コウ材を消費して損になりやすいコウのこと",
+      "related_terms": [
+        "そんこう",
+        "損なコウ",
+        "価値の低いコウ"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "そんこう",
+        "損なコウ",
+        "価値の低いコウ"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "損コウ そんこう そんこう 損なコウ 価値の低いコウ コウを勝っても得が少なく、コウ材を消費して損になりやすいコウのこと。積極的に争うべきでない。"
+    },
+    {
+      "id": "term-119",
+      "type": "glossary",
+      "term": "大局観",
+      "term_variants": [
+        "たいきょくかん"
+      ],
+      "definition": "碁盤全体を俯瞰して、どこが重要かを判断する広い視野と感覚。局所の読みと並んで棋力の重要な要素。",
+      "definition_for_operator": "碁盤全体を俯瞰して、どこが重要かを判断する広い視野と感覚",
+      "related_terms": [
+        "たいきょくかん",
+        "全体の見通し",
+        "方針"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "intermediate",
+      "tags": [
+        "たいきょくかん",
+        "全体の見通し",
+        "方針"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "大局観 たいきょくかん たいきょくかん 全体の見通し 方針 碁盤全体を俯瞰して、どこが重要かを判断する広い視野と感覚。局所の読みと並んで棋力の重要な要素。"
+    },
+    {
+      "id": "term-120",
+      "type": "glossary",
+      "term": "大石",
+      "term_variants": [
+        "たいせき"
+      ],
+      "definition": "盤上で多数の石がつながった大きな石の塊のこと。大石を取られると勝敗に大きく影響する。",
+      "definition_for_operator": "盤上で多数の石がつながった大きな石の塊のこと",
+      "related_terms": [
+        "たいせき",
+        "大きな石",
+        "まとまった石群"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "たいせき",
+        "大きな石",
+        "まとまった石群"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "大石 たいせき たいせき 大きな石 まとまった石群 盤上で多数の石がつながった大きな石の塊のこと。大石を取られると勝敗に大きく影響する。"
+    },
+    {
+      "id": "term-121",
+      "type": "glossary",
+      "term": "高い中国流",
+      "term_variants": [
+        "たかいちゅうごくりゅう"
+      ],
+      "definition": "星・小目・高目を組み合わせた布石形の一つ。通常の中国流より1路高い位置に石を置く積極的な形。",
+      "definition_for_operator": "星・小目・高目を組み合わせた布石形の一つ",
+      "related_terms": [
+        "たかいちゅうごくりゅう",
+        "布石",
+        "模様"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "たかいちゅうごくりゅう",
+        "布石",
+        "模様"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "高い中国流 たかいちゅうごくりゅう たかいちゅうごくりゅう 布石 模様 星・小目・高目を組み合わせた布石形の一つ。通常の中国流より1路高い位置に石を置く積極的な形。"
+    },
+    {
+      "id": "term-122",
+      "type": "glossary",
+      "term": "高目",
+      "term_variants": [
+        "たかもく"
+      ],
+      "definition": "隅の4路と3路の交点（4-3点）への着手。やや高い位置への着手で、外側への影響を重視した布石。",
+      "definition_for_operator": "隅の4路と3路の交点（4-3点）への着手",
+      "related_terms": [
+        "たかもく",
+        "4の3",
+        "隅",
+        "布石"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "たかもく",
+        "4の3",
+        "隅",
+        "布石"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "高目 たかもく たかもく 4の3 隅 布石 隅の4路と3路の交点（4-3点）への着手。やや高い位置への着手で、外側への影響を重視した布石。"
+    },
+    {
+      "id": "term-123",
+      "type": "glossary",
+      "term": "互先",
+      "term_variants": [
+        "たがいせん"
+      ],
+      "definition": "棋力が同等とみなして置き石なしで打つ対局形式。コミあり互先が現代の標準的な対局形式。",
+      "definition_for_operator": "棋力が同等とみなして置き石なしで打つ対局形式",
+      "related_terms": [
+        "たがいせん",
+        "対等な対局",
+        "置き石なし"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "たがいせん",
+        "対等な対局",
+        "置き石なし"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "互先 たがいせん たがいせん 対等な対局 置き石なし 棋力が同等とみなして置き石なしで打つ対局形式。コミあり互先が現代の標準的な対局形式。"
+    },
+    {
+      "id": "term-124",
+      "type": "glossary",
+      "term": "タケフ",
+      "term_variants": [],
+      "definition": "石が交互にずれながら連絡する形（竹の節に似た形）。非常に強固で切られにくい連絡の形。",
+      "definition_for_operator": "石が交互にずれながら連絡する形（竹の節に似た形）",
+      "related_terms": [
+        "タケフ",
+        "竹節",
+        "強い連絡"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "タケフ",
+        "竹節",
+        "強い連絡"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "タケフ  タケフ 竹節 強い連絡 石が交互にずれながら連絡する形（竹の節に似た形）。非常に強固で切られにくい連絡の形。"
+    },
+    {
+      "id": "term-125",
+      "type": "glossary",
+      "term": "タネ石",
+      "term_variants": [
+        "たねいし"
+      ],
+      "definition": "将来的に大きな働きが期待できる石のこと。現時点では小さな石でも、布石の展開次第で活きる石を指す。",
+      "definition_for_operator": "将来的に大きな働きが期待できる石のこと",
+      "related_terms": [
+        "たねいし",
+        "種石",
+        "潜在力のある石"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "たねいし",
+        "種石",
+        "潜在力のある石"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "タネ石 たねいし たねいし 種石 潜在力のある石 将来的に大きな働きが期待できる石のこと。現時点では小さな石でも、布石の展開次第で活きる石を指す。"
+    },
+    {
+      "id": "term-126",
+      "type": "glossary",
+      "term": "大大ゲイマ",
+      "term_variants": [
+        "だいだいげいま"
+      ],
+      "definition": "大ゲイマよりさらに大きく跳ぶ手（3路×3路の対角など）。大きく展開できるが弱くなりやすい。",
+      "definition_for_operator": "大ゲイマよりさらに大きく跳ぶ手（3路×3路の対角など）",
+      "related_terms": [
+        "だいだいげいま",
+        "大きな跳び",
+        "展開"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "intermediate",
+      "tags": [
+        "だいだいげいま",
+        "大きな跳び",
+        "展開"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "大大ゲイマ だいだいげいま だいだいげいま 大きな跳び 展開 大ゲイマよりさらに大きく跳ぶ手（3路×3路の対角など）。大きく展開できるが弱くなりやすい。"
+    },
+    {
+      "id": "term-127",
+      "type": "glossary",
+      "term": "ダメ",
+      "term_variants": [],
+      "definition": "二つの意味がある。①石の呼吸点（隣接する空点）②終局後に双方の地の間にある中立点。",
+      "definition_for_operator": "二つの意味がある",
+      "related_terms": [
+        "ダメ",
+        "呼吸点",
+        "中立点",
+        "空点"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ダメ",
+        "呼吸点",
+        "中立点",
+        "空点"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ダメ  ダメ 呼吸点 中立点 空点 二つの意味がある。①石の呼吸点（隣接する空点）②終局後に双方の地の間にある中立点。"
+    },
+    {
+      "id": "term-128",
+      "type": "glossary",
+      "term": "ダメ詰め",
+      "term_variants": [],
+      "definition": "終局後に中立のダメを埋めていく作業。または攻め合いで相手の呼吸点を詰めて取りに行くこと。",
+      "definition_for_operator": "終局後に中立のダメを埋めていく作業",
+      "related_terms": [
+        "ダメ詰め",
+        "呼吸点を埋める",
+        "終局作業"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ダメ詰め",
+        "呼吸点を埋める",
+        "終局作業"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ダメ詰め  ダメ詰め 呼吸点を埋める 終局作業 終局後に中立のダメを埋めていく作業。または攻め合いで相手の呼吸点を詰めて取りに行くこと。"
+    },
+    {
+      "id": "term-129",
+      "type": "glossary",
+      "term": "団子石",
+      "term_variants": [
+        "だんごいし"
+      ],
+      "definition": "石が一か所にかたまりすぎた非効率な形の俗称。団子状に固まることで石の効率が著しく落ちる悪形。",
+      "definition_for_operator": "石が一か所にかたまりすぎた非効率な形の俗称",
+      "related_terms": [
+        "だんごいし",
+        "悪形",
+        "固まりすぎ"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "だんごいし",
+        "悪形",
+        "固まりすぎ"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "団子石 だんごいし だんごいし 悪形 固まりすぎ 石が一か所にかたまりすぎた非効率な形の俗称。団子状に固まることで石の効率が著しく落ちる悪形。"
+    },
+    {
+      "id": "term-130",
+      "type": "glossary",
+      "term": "段点",
+      "term_variants": [
+        "だんてん"
+      ],
+      "definition": "段位を認定するために必要なポイントのこと。対局の勝敗によってポイントが増減し、昇段の基準となる。",
+      "definition_for_operator": "段位を認定するために必要なポイントのこと",
+      "related_terms": [
+        "だんてん",
+        "段のポイント",
+        "棋力認定"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "だんてん",
+        "段のポイント",
+        "棋力認定"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "段点 だんてん だんてん 段のポイント 棋力認定 段位を認定するために必要なポイントのこと。対局の勝敗によってポイントが増減し、昇段の基準となる。"
+    },
+    {
+      "id": "term-131",
+      "type": "glossary",
+      "term": "チキリトビ",
+      "term_variants": [],
+      "definition": "離れた石同士が間接的に連絡している形の跳び。完全に繋がってはいないが互いに支援できる配置。",
+      "definition_for_operator": "離れた石同士が間接的に連絡している形の跳び",
+      "related_terms": [
+        "チキリトビ",
+        "繋がりの跳び",
+        "連絡"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "チキリトビ",
+        "繋がりの跳び",
+        "連絡"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "チキリトビ  チキリトビ 繋がりの跳び 連絡 離れた石同士が間接的に連絡している形の跳び。完全に繋がってはいないが互いに支援できる配置。"
+    },
+    {
+      "id": "term-132",
+      "type": "glossary",
+      "term": "中央",
+      "term_variants": [
+        "ちゅうおう"
+      ],
+      "definition": "盤の中心部分のこと。隅や辺と比べて地を囲みにくいが、厚みや模様の争いで重要な場所になる。",
+      "definition_for_operator": "盤の中心部分のこと",
+      "related_terms": [
+        "ちゅうおう",
+        "中心",
+        "盤の真ん中"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ちゅうおう",
+        "中心",
+        "盤の真ん中"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "中央 ちゅうおう ちゅうおう 中心 盤の真ん中 盤の中心部分のこと。隅や辺と比べて地を囲みにくいが、厚みや模様の争いで重要な場所になる。"
+    },
+    {
+      "id": "term-133",
+      "type": "glossary",
+      "term": "中押し",
+      "term_variants": [
+        "ちゅうおし"
+      ],
+      "definition": "終局まで打たずに、形勢の差が明らかになった時点で負けた方が投了して終わること。または大差の勝利。",
+      "definition_for_operator": "終局まで打たずに、形勢の差が明らかになった時点で負けた方が投了して終わること",
+      "related_terms": [
+        "ちゅうおし",
+        "途中での勝利",
+        "大差"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ちゅうおし",
+        "途中での勝利",
+        "大差"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "中押し ちゅうおし ちゅうおし 途中での勝利 大差 終局まで打たずに、形勢の差が明らかになった時点で負けた方が投了して終わること。または大差の勝利。"
+    },
+    {
+      "id": "term-134",
+      "type": "glossary",
+      "term": "中国流",
+      "term_variants": [
+        "ちゅうごくりゅう"
+      ],
+      "definition": "星・小目・高目の組み合わせによる現代布石の一形。広大な模様を張る積極的な布石戦略。",
+      "definition_for_operator": "星・小目・高目の組み合わせによる現代布石の一形",
+      "related_terms": [
+        "ちゅうごくりゅう",
+        "布石",
+        "模様",
+        "星"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ちゅうごくりゅう",
+        "布石",
+        "模様",
+        "星"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "中国流 ちゅうごくりゅう ちゅうごくりゅう 布石 模様 星 星・小目・高目の組み合わせによる現代布石の一形。広大な模様を張る積極的な布石戦略。"
+    },
+    {
+      "id": "term-135",
+      "type": "glossary",
+      "term": "中国ルール",
+      "term_variants": [
+        "ちゅうごくるーる"
+      ],
+      "definition": "盤上の石と空の地を合計して勝敗を決める計算ルール。コミは7.5目でスーパーコウを採用することが多い。",
+      "definition_for_operator": "盤上の石と空の地を合計して勝敗を決める計算ルール",
+      "related_terms": [
+        "ちゅうごくるーる",
+        "計算方法",
+        "地と石"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "ちゅうごくるーる",
+        "計算方法",
+        "地と石"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "中国ルール ちゅうごくるーる ちゅうごくるーる 計算方法 地と石 盤上の石と空の地を合計して勝敗を決める計算ルール。コミは7.5目でスーパーコウを採用することが多い。"
+    },
+    {
+      "id": "term-136",
+      "type": "glossary",
+      "term": "長考",
+      "term_variants": [
+        "ちょうこう"
+      ],
+      "definition": "一手に長時間をかけて考えること。時間制限がある対局では長考によって時間を消費するリスクがある。",
+      "definition_for_operator": "一手に長時間をかけて考えること",
+      "related_terms": [
+        "ちょうこう",
+        "長時間の考慮",
+        "熟考"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ちょうこう",
+        "長時間の考慮",
+        "熟考"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "長考 ちょうこう ちょうこう 長時間の考慮 熟考 一手に長時間をかけて考えること。時間制限がある対局では長考によって時間を消費するリスクがある。"
+    },
+    {
+      "id": "term-137",
+      "type": "glossary",
+      "term": "超コウ",
+      "term_variants": [
+        "ちょうこう"
+      ],
+      "definition": "局面の繰り返しをすべて禁止するルール。三コウや万年コウなど複雑なコウ問題を防ぐために設けられる。",
+      "definition_for_operator": "局面の繰り返しをすべて禁止するルール",
+      "related_terms": [
+        "ちょうこう",
+        "スーパーコウ",
+        "繰り返し禁止"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "ちょうこう",
+        "スーパーコウ",
+        "繰り返し禁止"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "超コウ ちょうこう ちょうこう スーパーコウ 繰り返し禁止 局面の繰り返しをすべて禁止するルール。三コウや万年コウなど複雑なコウ問題を防ぐために設けられる。"
+    },
+    {
+      "id": "term-138",
+      "type": "glossary",
+      "term": "ツキアタリ",
+      "term_variants": [],
+      "definition": "相手の石の隣に直接当たるように打つ手。相手の行動を制限したり、形を乱すために使われる。",
+      "definition_for_operator": "相手の石の隣に直接当たるように打つ手",
+      "related_terms": [
+        "ツキアタリ",
+        "突き当り",
+        "石にぶつかる"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ツキアタリ",
+        "突き当り",
+        "石にぶつかる"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ツキアタリ  ツキアタリ 突き当り 石にぶつかる 相手の石の隣に直接当たるように打つ手。相手の行動を制限したり、形を乱すために使われる。"
+    },
+    {
+      "id": "term-139",
+      "type": "glossary",
+      "term": "ツギ",
+      "term_variants": [],
+      "definition": "切断されそうな自石を繋ぐ手のこと。ピンツギ・カケツギなど形によって種類がある。",
+      "definition_for_operator": "切断されそうな自石を繋ぐ手のこと",
+      "related_terms": [
+        "ツギ",
+        "継ぎ",
+        "石を繋ぐ"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "ツギ",
+        "継ぎ",
+        "石を繋ぐ"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ツギ  ツギ 継ぎ 石を繋ぐ 切断されそうな自石を繋ぐ手のこと。ピンツギ・カケツギなど形によって種類がある。"
+    },
+    {
+      "id": "term-140",
+      "type": "glossary",
+      "term": "作り碁",
+      "term_variants": [
+        "つくりご"
+      ],
+      "definition": "終盤に地を整理して確実に勝ちを確定させる打ち方。または形勢が明らかな状態で地を数えること。",
+      "definition_for_operator": "終盤に地を整理して確実に勝ちを確定させる打ち方",
+      "related_terms": [
+        "つくりご",
+        "勝ちを作る",
+        "終盤の整地"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "つくりご",
+        "勝ちを作る",
+        "終盤の整地"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "作り碁 つくりご つくりご 勝ちを作る 終盤の整地 終盤に地を整理して確実に勝ちを確定させる打ち方。または形勢が明らかな状態で地を数えること。"
+    },
+    {
+      "id": "term-141",
+      "type": "glossary",
+      "term": "ツケ",
+      "term_variants": [],
+      "definition": "相手の石に直接密着して打つ手。定石の起点となることが多く、攻守両面で重要な着手形。",
+      "definition_for_operator": "相手の石に直接密着して打つ手",
+      "related_terms": [
+        "ツケ",
+        "相手に密着する手",
+        "定石の起点"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "ツケ",
+        "相手に密着する手",
+        "定石の起点"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ツケ  ツケ 相手に密着する手 定石の起点 相手の石に直接密着して打つ手。定石の起点となることが多く、攻守両面で重要な着手形。"
+    },
+    {
+      "id": "term-142",
+      "type": "glossary",
+      "term": "ツケコシ",
+      "term_variants": [],
+      "definition": "相手の石にツケた後、切られる前に別の方向に回り込む手筋。巧みに相手を交わしながら連絡する。",
+      "definition_for_operator": "相手の石にツケた後、切られる前に別の方向に回り込む手筋",
+      "related_terms": [
+        "ツケコシ",
+        "ツケて交わす",
+        "手筋"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "ツケコシ",
+        "ツケて交わす",
+        "手筋"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ツケコシ  ツケコシ ツケて交わす 手筋 相手の石にツケた後、切られる前に別の方向に回り込む手筋。巧みに相手を交わしながら連絡する。"
+    },
+    {
+      "id": "term-143",
+      "type": "glossary",
+      "term": "ツケヒキ",
+      "term_variants": [],
+      "definition": "相手の石にツケてから一路引く手の組み合わせ。守りながら形を整える定石的な着手の流れ。",
+      "definition_for_operator": "相手の石にツケてから一路引く手の組み合わせ",
+      "related_terms": [
+        "ツケヒキ",
+        "ツケて引く",
+        "定石形"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "ツケヒキ",
+        "ツケて引く",
+        "定石形"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ツケヒキ  ツケヒキ ツケて引く 定石形 相手の石にツケてから一路引く手の組み合わせ。守りながら形を整える定石的な着手の流れ。"
+    },
+    {
+      "id": "term-144",
+      "type": "glossary",
+      "term": "ツナギ",
+      "term_variants": [],
+      "definition": "切断の危機にある自石を安全に繋ぐ手のこと。ツギと同義で使われることが多い。",
+      "definition_for_operator": "切断の危機にある自石を安全に繋ぐ手のこと",
+      "related_terms": [
+        "ツナギ",
+        "繋ぎ",
+        "連絡確保"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ツナギ",
+        "繋ぎ",
+        "連絡確保"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ツナギ  ツナギ 繋ぎ 連絡確保 切断の危機にある自石を安全に繋ぐ手のこと。ツギと同義で使われることが多い。"
+    },
+    {
+      "id": "term-145",
+      "type": "glossary",
+      "term": "ツメ",
+      "term_variants": [],
+      "definition": "相手の石に接近して根拠を奪ったり行動を制限する手。または石を追い詰めて取りに行く手。",
+      "definition_for_operator": "相手の石に接近して根拠を奪ったり行動を制限する手",
+      "related_terms": [
+        "ツメ",
+        "詰め",
+        "接近して圧迫"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ツメ",
+        "詰め",
+        "接近して圧迫"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ツメ  ツメ 詰め 接近して圧迫 相手の石に接近して根拠を奪ったり行動を制限する手。または石を追い詰めて取りに行く手。"
+    },
+    {
+      "id": "term-146",
+      "type": "glossary",
+      "term": "詰め碁",
+      "term_variants": [
+        "つめご"
+      ],
+      "definition": "石の死活や手筋を問う練習問題のこと。特定の石を生かしたり殺したりする手順を見つける訓練。",
+      "definition_for_operator": "石の死活や手筋を問う練習問題のこと",
+      "related_terms": [
+        "つめご",
+        "死活問題",
+        "手筋練習"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "つめご",
+        "死活問題",
+        "手筋練習"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "詰め碁 つめご つめご 死活問題 手筋練習 石の死活や手筋を問う練習問題のこと。特定の石を生かしたり殺したりする手順を見つける訓練。"
+    },
+    {
+      "id": "term-147",
+      "type": "glossary",
+      "term": "鶴の巣ごもり",
+      "term_variants": [
+        "つるのすごもり"
+      ],
+      "definition": "相手の大石を包囲して取る大がかりな手筋の俗称。鶴が巣に石を集めるように相手の石を取り込む形。",
+      "definition_for_operator": "相手の大石を包囲して取る大がかりな手筋の俗称",
+      "related_terms": [
+        "つるのすごもり",
+        "取り手筋",
+        "大石を取る"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "つるのすごもり",
+        "取り手筋",
+        "大石を取る"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "鶴の巣ごもり つるのすごもり つるのすごもり 取り手筋 大石を取る 相手の大石を包囲して取る大がかりな手筋の俗称。鶴が巣に石を集めるように相手の石を取り込む形。"
+    },
+    {
+      "id": "term-148",
+      "type": "glossary",
+      "term": "手入れ",
+      "term_variants": [
+        "ていれ"
+      ],
+      "definition": "弱い石を補強したり、欠陥を修正するために打つ手のこと。手入れを省くと後から問題が生じる。",
+      "definition_for_operator": "弱い石を補強したり、欠陥を修正するために打つ手のこと",
+      "related_terms": [
+        "ていれ",
+        "補強",
+        "守りの手"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ていれ",
+        "補強",
+        "守りの手"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "手入れ ていれ ていれ 補強 守りの手 弱い石を補強したり、欠陥を修正するために打つ手のこと。手入れを省くと後から問題が生じる。"
+    },
+    {
+      "id": "term-149",
+      "type": "glossary",
+      "term": "手筋",
+      "term_variants": [
+        "てすじ"
+      ],
+      "definition": "局面において最も効果的・効率的な手のこと。相手の急所を突く、形の急所など様々な場面で使われる。",
+      "definition_for_operator": "局面において最も効果的・効率的な手のこと",
+      "related_terms": [
+        "てすじ",
+        "妙手",
+        "効果的な手"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "intermediate",
+      "tags": [
+        "てすじ",
+        "妙手",
+        "効果的な手"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "手筋 てすじ てすじ 妙手 効果的な手 局面において最も効果的・効率的な手のこと。相手の急所を突く、形の急所など様々な場面で使われる。"
+    },
+    {
+      "id": "term-150",
+      "type": "glossary",
+      "term": "鉄柱",
+      "term_variants": [
+        "てっちゅう"
+      ],
+      "definition": "辺や隅で鉄柱のように堅固に構えた石の形の俗称。崩れにくい守りの形や特定の石の配置を指す。",
+      "definition_for_operator": "辺や隅で鉄柱のように堅固に構えた石の形の俗称",
+      "related_terms": [
+        "てっちゅう",
+        "鉄の柱",
+        "強固な形"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "てっちゅう",
+        "鉄の柱",
+        "強固な形"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "鉄柱 てっちゅう てっちゅう 鉄の柱 強固な形 辺や隅で鉄柱のように堅固に構えた石の形の俗称。崩れにくい守りの形や特定の石の配置を指す。"
+    },
+    {
+      "id": "term-151",
+      "type": "glossary",
+      "term": "手どころ",
+      "term_variants": [
+        "てどころ"
+      ],
+      "definition": "その局面で最も効果的に打つべき場所のこと。形の急所や地の要所を「手どころ」と表現する。",
+      "definition_for_operator": "その局面で最も効果的に打つべき場所のこと",
+      "related_terms": [
+        "てどころ",
+        "打つべき場所",
+        "着手点"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "てどころ",
+        "打つべき場所",
+        "着手点"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "手どころ てどころ てどころ 打つべき場所 着手点 その局面で最も効果的に打つべき場所のこと。形の急所や地の要所を「手どころ」と表現する。"
+    },
+    {
+      "id": "term-152",
+      "type": "glossary",
+      "term": "手止まり",
+      "term_variants": [
+        "てどまり"
+      ],
+      "definition": "これ以上打つ手がなくなること。ヨセが終わって中立のダメのみが残った状態を指すことが多い。",
+      "definition_for_operator": "これ以上打つ手がなくなること",
+      "related_terms": [
+        "てどまり",
+        "打ち止め",
+        "ヨセの終わり"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "てどまり",
+        "打ち止め",
+        "ヨセの終わり"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "手止まり てどまり てどまり 打ち止め ヨセの終わり これ以上打つ手がなくなること。ヨセが終わって中立のダメのみが残った状態を指すことが多い。"
+    },
+    {
+      "id": "term-153",
+      "type": "glossary",
+      "term": "手抜き",
+      "term_variants": [
+        "てぬき"
+      ],
+      "definition": "相手の手に応じずに別の重要な場所に打つこと。相手の攻撃を無視してより大きな場所を取る戦略。",
+      "definition_for_operator": "相手の手に応じずに別の重要な場所に打つこと",
+      "related_terms": [
+        "てぬき",
+        "別の場所に打つ",
+        "無視"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "intermediate",
+      "tags": [
+        "てぬき",
+        "別の場所に打つ",
+        "無視"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "手抜き てぬき てぬき 別の場所に打つ 無視 相手の手に応じずに別の重要な場所に打つこと。相手の攻撃を無視してより大きな場所を取る戦略。"
+    },
+    {
+      "id": "term-154",
+      "type": "glossary",
+      "term": "手拍子",
+      "term_variants": [
+        "てびょうし"
+      ],
+      "definition": "十分に考えずに反射的・衝動的に打ってしまう手のこと。手拍子は悪手の原因になりやすい。",
+      "definition_for_operator": "十分に考えずに反射的・衝動的に打ってしまう手のこと",
+      "related_terms": [
+        "てびょうし",
+        "軽率な手",
+        "考えずに打つ"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "intermediate",
+      "tags": [
+        "てびょうし",
+        "軽率な手",
+        "考えずに打つ"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "手拍子 てびょうし てびょうし 軽率な手 考えずに打つ 十分に考えずに反射的・衝動的に打ってしまう手のこと。手拍子は悪手の原因になりやすい。"
+    },
+    {
+      "id": "term-155",
+      "type": "glossary",
+      "term": "天元",
+      "term_variants": [
+        "てんげん"
+      ],
+      "definition": "19路盤の中心点（10の10の点）のこと。布石での天元打ちは特殊な戦略で、バランスを重視した着手。",
+      "definition_for_operator": "19路盤の中心点（10の10の点）のこと",
+      "related_terms": [
+        "てんげん",
+        "盤の中心",
+        "10の10"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "てんげん",
+        "盤の中心",
+        "10の10"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "天元 てんげん てんげん 盤の中心 10の10 19路盤の中心点（10の10の点）のこと。布石での天元打ちは特殊な戦略で、バランスを重視した着手。"
+    },
+    {
+      "id": "term-156",
+      "type": "glossary",
+      "term": "デ",
+      "term_variants": [],
+      "definition": "相手の石と石の間から外側に向かって打ち出す手。相手を切断する狙いや、展開を求める手。",
+      "definition_for_operator": "相手の石と石の間から外側に向かって打ち出す手",
+      "related_terms": [
+        "デ",
+        "出",
+        "相手の石の間から出る"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "デ",
+        "出",
+        "相手の石の間から出る"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "デ  デ 出 相手の石の間から出る 相手の石と石の間から外側に向かって打ち出す手。相手を切断する狙いや、展開を求める手。"
+    },
+    {
+      "id": "term-157",
+      "type": "glossary",
+      "term": "デギリ",
+      "term_variants": [],
+      "definition": "相手の石の間から出た後に切る手筋。出ることで切断の効果を高めた強力な手。",
+      "definition_for_operator": "相手の石の間から出た後に切る手筋",
+      "related_terms": [
+        "デギリ",
+        "出て切る",
+        "切断の手筋"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "デギリ",
+        "出て切る",
+        "切断の手筋"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "デギリ  デギリ 出て切る 切断の手筋 相手の石の間から出た後に切る手筋。出ることで切断の効果を高めた強力な手。"
+    },
+    {
+      "id": "term-158",
+      "type": "glossary",
+      "term": "投了",
+      "term_variants": [
+        "とうりょう"
+      ],
+      "definition": "形勢が大差で不利と判断した時に打つのをやめて負けを認めること。SenseRobotでは投了の手順がある。",
+      "definition_for_operator": "形勢が大差で不利と判断した時に打つのをやめて負けを認めること",
+      "related_terms": [
+        "とうりょう",
+        "負け認め",
+        "ゲーム終了"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "とうりょう",
+        "負け認め",
+        "ゲーム終了"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "投了 とうりょう とうりょう 負け認め ゲーム終了 形勢が大差で不利と判断した時に打つのをやめて負けを認めること。SenseRobotでは投了の手順がある。"
+    },
+    {
+      "id": "term-159",
+      "type": "glossary",
+      "term": "トックリ形",
+      "term_variants": [
+        "とっくりがたち"
+      ],
+      "definition": "徳利（とっくり）の形に似た石の配置。内側に打たれると眼が作れなくなる死に形の一種。",
+      "definition_for_operator": "徳利（とっくり）の形に似た石の配置",
+      "related_terms": [
+        "とっくりがたち",
+        "徳利形",
+        "死に形"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "とっくりがたち",
+        "徳利形",
+        "死に形"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "トックリ形 とっくりがたち とっくりがたち 徳利形 死に形 徳利（とっくり）の形に似た石の配置。内側に打たれると眼が作れなくなる死に形の一種。"
+    },
+    {
+      "id": "term-160",
+      "type": "glossary",
+      "term": "トビ",
+      "term_variants": [],
+      "definition": "石と石の間を空けて打つ手の総称。一間トビ・二間トビ・ケイマなど間隔や方向で種類が分かれる。",
+      "definition_for_operator": "石と石の間を空けて打つ手の総称",
+      "related_terms": [
+        "トビ",
+        "跳び",
+        "間を空けて打つ"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "トビ",
+        "跳び",
+        "間を空けて打つ"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "トビ  トビ 跳び 間を空けて打つ 石と石の間を空けて打つ手の総称。一間トビ・二間トビ・ケイマなど間隔や方向で種類が分かれる。"
+    },
+    {
+      "id": "term-161",
+      "type": "glossary",
+      "term": "トビサガリ",
+      "term_variants": [],
+      "definition": "斜め下方向に跳ぶ手。展開しながら辺の地を確保したり、相手の侵入を防ぐ効果がある。",
+      "definition_for_operator": "斜め下方向に跳ぶ手",
+      "related_terms": [
+        "トビサガリ",
+        "跳び下がり",
+        "展開と守り"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "トビサガリ",
+        "跳び下がり",
+        "展開と守り"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "トビサガリ  トビサガリ 跳び下がり 展開と守り 斜め下方向に跳ぶ手。展開しながら辺の地を確保したり、相手の侵入を防ぐ効果がある。"
+    },
+    {
+      "id": "term-162",
+      "type": "glossary",
+      "term": "トントン",
+      "term_variants": [],
+      "definition": "お互いの利益が均等で損得がない状態や手の交換のこと。「トントンの交換」は双方同等の利益。",
+      "definition_for_operator": "お互いの利益が均等で損得がない状態や手の交換のこと",
+      "related_terms": [
+        "トントン",
+        "互角",
+        "互いに損得なし"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "intermediate",
+      "tags": [
+        "トントン",
+        "互角",
+        "互いに損得なし"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "トントン  トントン 互角 互いに損得なし お互いの利益が均等で損得がない状態や手の交換のこと。「トントンの交換」は双方同等の利益。"
+    },
+    {
+      "id": "term-163",
+      "type": "glossary",
+      "term": "中手",
+      "term_variants": [
+        "なかで"
+      ],
+      "definition": "石の眼形や死活の急所となる点のこと。「ナカデ」とも読む。相手の眼を奪う中手は死活の重要な手。",
+      "definition_for_operator": "石の眼形や死活の急所となる点のこと",
+      "related_terms": [
+        "なかで",
+        "急所",
+        "死活の中心点"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "なかで",
+        "急所",
+        "死活の中心点"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "中手 なかで なかで 急所 死活の中心点 石の眼形や死活の急所となる点のこと。「ナカデ」とも読む。相手の眼を奪う中手は死活の重要な手。"
+    },
+    {
+      "id": "term-164",
+      "type": "glossary",
+      "term": "ナダレ",
+      "term_variants": [],
+      "definition": "小目の定石の一つで、石が雪崩のように流れる複雑な変化を持つ定石の俗称。多くの変化がある。",
+      "definition_for_operator": "小目の定石の一つで、石が雪崩のように流れる複雑な変化を持つ定石の俗称",
+      "related_terms": [
+        "ナダレ",
+        "雪崩",
+        "定石名"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ナダレ",
+        "雪崩",
+        "定石名"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ナダレ  ナダレ 雪崩 定石名 小目の定石の一つで、石が雪崩のように流れる複雑な変化を持つ定石の俗称。多くの変化がある。"
+    },
+    {
+      "id": "term-165",
+      "type": "glossary",
+      "term": "ナラビ",
+      "term_variants": [],
+      "definition": "石が縦または横に一直線に並んだ形のこと。効率は高くないが連絡は確実な形。",
+      "definition_for_operator": "石が縦または横に一直線に並んだ形のこと",
+      "related_terms": [
+        "ナラビ",
+        "並び",
+        "一直線に並ぶ"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "ナラビ",
+        "並び",
+        "一直線に並ぶ"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ナラビ  ナラビ 並び 一直線に並ぶ 石が縦または横に一直線に並んだ形のこと。効率は高くないが連絡は確実な形。"
+    },
+    {
+      "id": "term-166",
+      "type": "glossary",
+      "term": "ニギリ",
+      "term_variants": [],
+      "definition": "対局前に黒番・白番を決める方法。一方が碁石を一握りして、もう一方が奇数か偶数かを予想する。",
+      "definition_for_operator": "対局前に黒番・白番を決める方法",
+      "related_terms": [
+        "ニギリ",
+        "握り",
+        "先後の決め方"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ニギリ",
+        "握り",
+        "先後の決め方"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ニギリ  ニギリ 握り 先後の決め方 対局前に黒番・白番を決める方法。一方が碁石を一握りして、もう一方が奇数か偶数かを予想する。"
+    },
+    {
+      "id": "term-167",
+      "type": "glossary",
+      "term": "二間トビ",
+      "term_variants": [
+        "にけんとび"
+      ],
+      "definition": "石と石の間に1路の空点がある（2路分飛ぶ）手。一間トビより大きく展開できる着手形。",
+      "definition_for_operator": "石と石の間に1路の空点がある（2路分飛ぶ）手",
+      "related_terms": [
+        "にけんとび",
+        "二間",
+        "展開"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "にけんとび",
+        "二間",
+        "展開"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "二間トビ にけんとび にけんとび 二間 展開 石と石の間に1路の空点がある（2路分飛ぶ）手。一間トビより大きく展開できる着手形。"
+    },
+    {
+      "id": "term-168",
+      "type": "glossary",
+      "term": "二間ビラキ",
+      "term_variants": [
+        "にけんびらき"
+      ],
+      "definition": "辺の石から2路離れた場所に展開する手。根拠を広げながら効率よく展開できる着手形。",
+      "definition_for_operator": "辺の石から2路離れた場所に展開する手",
+      "related_terms": [
+        "にけんびらき",
+        "2間開き",
+        "辺の展開"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "にけんびらき",
+        "2間開き",
+        "辺の展開"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "二間ビラキ にけんびらき にけんびらき 2間開き 辺の展開 辺の石から2路離れた場所に展開する手。根拠を広げながら効率よく展開できる着手形。"
+    },
+    {
+      "id": "term-169",
+      "type": "glossary",
+      "term": "二段バネ",
+      "term_variants": [
+        "にだんばね"
+      ],
+      "definition": "同じ方向にハネを2回繰り返す手筋。相手の石を切断したり、形を崩す効果がある。",
+      "definition_for_operator": "同じ方向にハネを2回繰り返す手筋",
+      "related_terms": [
+        "にだんばね",
+        "二度の跳ね",
+        "手筋"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "にだんばね",
+        "二度の跳ね",
+        "手筋"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "二段バネ にだんばね にだんばね 二度の跳ね 手筋 同じ方向にハネを2回繰り返す手筋。相手の石を切断したり、形を崩す効果がある。"
+    },
+    {
+      "id": "term-170",
+      "type": "glossary",
+      "term": "日本ルール",
+      "term_variants": [
+        "にほんるーる"
+      ],
+      "definition": "地の数と取った石（死石）で勝敗を決めるルール。コミは6.5目で、セキの地は数えない。",
+      "definition_for_operator": "地の数と取った石（死石）で勝敗を決めるルール",
+      "related_terms": [
+        "にほんるーる",
+        "地と死石",
+        "コミ6.5目"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "にほんるーる",
+        "地と死石",
+        "コミ6.5目"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "日本ルール にほんるーる にほんるーる 地と死石 コミ6.5目 地の数と取った石（死石）で勝敗を決めるルール。コミは6.5目で、セキの地は数えない。"
+    },
+    {
+      "id": "term-171",
+      "type": "glossary",
+      "term": "二連星",
+      "term_variants": [
+        "にれんせい"
+      ],
+      "definition": "同じ辺に星を2つ並べる布石形。模様を重視した積極的な展開を目指す布石戦略の一つ。",
+      "definition_for_operator": "同じ辺に星を2つ並べる布石形",
+      "related_terms": [
+        "にれんせい",
+        "星二つ",
+        "布石"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "にれんせい",
+        "星二つ",
+        "布石"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "二連星 にれんせい にれんせい 星二つ 布石 同じ辺に星を2つ並べる布石形。模様を重視した積極的な展開を目指す布石戦略の一つ。"
+    },
+    {
+      "id": "term-172",
+      "type": "glossary",
+      "term": "ヌキ",
+      "term_variants": [],
+      "definition": "相手の石を取ること全般を指す。または取った直後の状態。「一眼ヌキ」などコウ関連で使われることも。",
+      "definition_for_operator": "相手の石を取ること全般を指す",
+      "related_terms": [
+        "ヌキ",
+        "抜き",
+        "石を取る"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "ヌキ",
+        "抜き",
+        "石を取る"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ヌキ  ヌキ 抜き 石を取る 相手の石を取ること全般を指す。または取った直後の状態。「一眼ヌキ」などコウ関連で使われることも。"
+    },
+    {
+      "id": "term-173",
+      "type": "glossary",
+      "term": "猫の顔",
+      "term_variants": [
+        "ねこのかお"
+      ],
+      "definition": "盤上の石の配置が猫の顔に似ているパターンの俗称。特定の布石形や石の連なりを表す。",
+      "definition_for_operator": "盤上の石の配置が猫の顔に似ているパターンの俗称",
+      "related_terms": [
+        "ねこのかお",
+        "布石パターン",
+        "配置"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ねこのかお",
+        "布石パターン",
+        "配置"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "猫の顔 ねこのかお ねこのかお 布石パターン 配置 盤上の石の配置が猫の顔に似ているパターンの俗称。特定の布石形や石の連なりを表す。"
+    },
+    {
+      "id": "term-174",
+      "type": "glossary",
+      "term": "ノータイム",
+      "term_variants": [],
+      "definition": "考える時間をほとんど使わずに即座に打つこと。読みが完了していた場合や、明らかな手では有効。",
+      "definition_for_operator": "考える時間をほとんど使わずに即座に打つこと",
+      "related_terms": [
+        "ノータイム",
+        "即打ち",
+        "素早い着手"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ノータイム",
+        "即打ち",
+        "素早い着手"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ノータイム  ノータイム 即打ち 素早い着手 考える時間をほとんど使わずに即座に打つこと。読みが完了していた場合や、明らかな手では有効。"
+    },
+    {
+      "id": "term-175",
+      "type": "glossary",
+      "term": "ノゾキ",
+      "term_variants": [],
+      "definition": "相手の石の連絡点に隣接して打ち、次に切ることを予告する手。相手はツギを強いられることが多い。",
+      "definition_for_operator": "相手の石の連絡点に隣接して打ち、次に切ることを予告する手",
+      "related_terms": [
+        "ノゾキ",
+        "覗き",
+        "切断の予告"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ノゾキ",
+        "覗き",
+        "切断の予告"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ノゾキ  ノゾキ 覗き 切断の予告 相手の石の連絡点に隣接して打ち、次に切ることを予告する手。相手はツギを強いられることが多い。"
+    },
+    {
+      "id": "term-176",
+      "type": "glossary",
+      "term": "ノビ",
+      "term_variants": [],
+      "definition": "自分の石を一路伸ばして連絡を保ちながら展開する手。堅実な着手で連絡と展開を確保する。",
+      "definition_for_operator": "自分の石を一路伸ばして連絡を保ちながら展開する手",
+      "related_terms": [
+        "ノビ",
+        "伸び",
+        "一路延長"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ノビ",
+        "伸び",
+        "一路延長"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ノビ  ノビ 伸び 一路延長 自分の石を一路伸ばして連絡を保ちながら展開する手。堅実な着手で連絡と展開を確保する。"
+    },
+    {
+      "id": "term-177",
+      "type": "glossary",
+      "term": "ハイ",
+      "term_variants": [],
+      "definition": "辺に沿って低い位置（2線や1線）に打つ手。相手の地を削ったり、辺の地を確保するために使う。",
+      "definition_for_operator": "辺に沿って低い位置（2線や1線）に打つ手",
+      "related_terms": [
+        "ハイ",
+        "這い",
+        "低く這う手"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ハイ",
+        "這い",
+        "低く這う手"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ハイ  ハイ 這い 低く這う手 辺に沿って低い位置（2線や1線）に打つ手。相手の地を削ったり、辺の地を確保するために使う。"
+    },
+    {
+      "id": "term-178",
+      "type": "glossary",
+      "term": "ハサミ",
+      "term_variants": [],
+      "definition": "相手のカカリに対し、相手の石を挟むように打つ手。相手の根拠を奪いながら自分の石を強化する。",
+      "definition_for_operator": "相手のカカリに対し、相手の石を挟むように打つ手",
+      "related_terms": [
+        "ハサミ",
+        "挟み",
+        "相手の石を挟む"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ハサミ",
+        "挟み",
+        "相手の石を挟む"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ハサミ  ハサミ 挟み 相手の石を挟む 相手のカカリに対し、相手の石を挟むように打つ手。相手の根拠を奪いながら自分の石を強化する。"
+    },
+    {
+      "id": "term-179",
+      "type": "glossary",
+      "term": "ハサミツケ",
+      "term_variants": [],
+      "definition": "相手の石を挟みながら密着して打つ手筋。挟みとツケを組み合わせた複合的な着手形。",
+      "definition_for_operator": "相手の石を挟みながら密着して打つ手筋",
+      "related_terms": [
+        "ハサミツケ",
+        "挟み付け",
+        "手筋"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "ハサミツケ",
+        "挟み付け",
+        "手筋"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ハサミツケ  ハサミツケ 挟み付け 手筋 相手の石を挟みながら密着して打つ手筋。挟みとツケを組み合わせた複合的な着手形。"
+    },
+    {
+      "id": "term-180",
+      "type": "glossary",
+      "term": "ハザマ",
+      "term_variants": [],
+      "definition": "石と石の斜め方向の隙間のこと。ハザマに打つと双方向への進出が可能な効率のよい着手になる。",
+      "definition_for_operator": "石と石の斜め方向の隙間のこと",
+      "related_terms": [
+        "ハザマ",
+        "間",
+        "斜めの空点"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ハザマ",
+        "間",
+        "斜めの空点"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ハザマ  ハザマ 間 斜めの空点 石と石の斜め方向の隙間のこと。ハザマに打つと双方向への進出が可能な効率のよい着手になる。"
+    },
+    {
+      "id": "term-181",
+      "type": "glossary",
+      "term": "ハザマトビ",
+      "term_variants": [],
+      "definition": "斜め方向の隙間（ハザマ）に打つ跳びの手。縦横の連絡と斜めの影響力を両立できる着手形。",
+      "definition_for_operator": "斜め方向の隙間（ハザマ）に打つ跳びの手",
+      "related_terms": [
+        "ハザマトビ",
+        "間トビ",
+        "斜め方向の跳び"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ハザマトビ",
+        "間トビ",
+        "斜め方向の跳び"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ハザマトビ  ハザマトビ 間トビ 斜め方向の跳び 斜め方向の隙間（ハザマ）に打つ跳びの手。縦横の連絡と斜めの影響力を両立できる着手形。"
+    },
+    {
+      "id": "term-182",
+      "type": "glossary",
+      "term": "花見コウ",
+      "term_variants": [
+        "はなみこう"
+      ],
+      "definition": "コウを勝った場合の利益が一方に偏ったコウのこと。不利な方はコウ材を消費するが見返りが少ない。",
+      "definition_for_operator": "コウを勝った場合の利益が一方に偏ったコウのこと",
+      "related_terms": [
+        "はなみこう",
+        "一方的なコウ",
+        "損得不均衡"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "はなみこう",
+        "一方的なコウ",
+        "損得不均衡"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "花見コウ はなみこう はなみこう 一方的なコウ 損得不均衡 コウを勝った場合の利益が一方に偏ったコウのこと。不利な方はコウ材を消費するが見返りが少ない。"
+    },
+    {
+      "id": "term-183",
+      "type": "glossary",
+      "term": "ハネ",
+      "term_variants": [],
+      "definition": "相手の石の端に接して曲がるように打つ手。地を確保したり相手の進行を止める基本的な着手形。",
+      "definition_for_operator": "相手の石の端に接して曲がるように打つ手",
+      "related_terms": [
+        "ハネ",
+        "跳ね",
+        "相手の石の横を曲がる"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ハネ",
+        "跳ね",
+        "相手の石の横を曲がる"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ハネ  ハネ 跳ね 相手の石の横を曲がる 相手の石の端に接して曲がるように打つ手。地を確保したり相手の進行を止める基本的な着手形。"
+    },
+    {
+      "id": "term-184",
+      "type": "glossary",
+      "term": "ハマ",
+      "term_variants": [],
+      "definition": "アゲハマと同義で、取られた石のこと。または相手に打ち込まれて取られてしまった石を指す。",
+      "definition_for_operator": "アゲハマと同義で、取られた石のこと",
+      "related_terms": [
+        "ハマ",
+        "打ち込まれた石",
+        "アゲハマ"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ハマ",
+        "打ち込まれた石",
+        "アゲハマ"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ハマ  ハマ 打ち込まれた石 アゲハマ アゲハマと同義で、取られた石のこと。または相手に打ち込まれて取られてしまった石を指す。"
+    },
+    {
+      "id": "term-185",
+      "type": "glossary",
+      "term": "半コウ",
+      "term_variants": [
+        "はんこう"
+      ],
+      "definition": "通常のコウより争いが小さい、半分の規模のコウのこと。コウ争いの利益が通常コウの半分程度。",
+      "definition_for_operator": "通常のコウより争いが小さい、半分の規模のコウのこと",
+      "related_terms": [
+        "はんこう",
+        "半分のコウ",
+        "コウの種類"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "はんこう",
+        "半分のコウ",
+        "コウの種類"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "半コウ はんこう はんこう 半分のコウ コウの種類 通常のコウより争いが小さい、半分の規模のコウのこと。コウ争いの利益が通常コウの半分程度。"
+    },
+    {
+      "id": "term-186",
+      "type": "glossary",
+      "term": "ヒキ",
+      "term_variants": [],
+      "definition": "前に出た石を一歩引く手。後退しながら形を整えたり、無理な攻めを回避するために使われる。",
+      "definition_for_operator": "前に出た石を一歩引く手",
+      "related_terms": [
+        "ヒキ",
+        "引き",
+        "石を引く"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ヒキ",
+        "引き",
+        "石を引く"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ヒキ  ヒキ 引き 石を引く 前に出た石を一歩引く手。後退しながら形を整えたり、無理な攻めを回避するために使われる。"
+    },
+    {
+      "id": "term-187",
+      "type": "glossary",
+      "term": "ヒラキ",
+      "term_variants": [],
+      "definition": "辺に沿って石を広げる手。根拠を確保しながら辺の地を効率よく拡張する基本的な着手形。",
+      "definition_for_operator": "辺に沿って石を広げる手",
+      "related_terms": [
+        "ヒラキ",
+        "開き",
+        "辺への展開"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ヒラキ",
+        "開き",
+        "辺への展開"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ヒラキ  ヒラキ 開き 辺への展開 辺に沿って石を広げる手。根拠を確保しながら辺の地を効率よく拡張する基本的な着手形。"
+    },
+    {
+      "id": "term-188",
+      "type": "glossary",
+      "term": "ピンツギ",
+      "term_variants": [],
+      "definition": "石を一直線に繋ぐ手。切断されない最も確実な連絡の形だが、形が固まりすぎることもある。",
+      "definition_for_operator": "石を一直線に繋ぐ手",
+      "related_terms": [
+        "ピンツギ",
+        "直線のつぎ",
+        "堅い連絡"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ピンツギ",
+        "直線のつぎ",
+        "堅い連絡"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ピンツギ  ピンツギ 直線のつぎ 堅い連絡 石を一直線に繋ぐ手。切断されない最も確実な連絡の形だが、形が固まりすぎることもある。"
+    },
+    {
+      "id": "term-189",
+      "type": "glossary",
+      "term": "フクラミ",
+      "term_variants": [],
+      "definition": "辺の石を外側に膨らませるように展開する手。地を広げながら相手の侵入を防ぐ守りの手。",
+      "definition_for_operator": "辺の石を外側に膨らませるように展開する手",
+      "related_terms": [
+        "フクラミ",
+        "膨らみ",
+        "辺への拡張"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "フクラミ",
+        "膨らみ",
+        "辺への拡張"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "フクラミ  フクラミ 膨らみ 辺への拡張 辺の石を外側に膨らませるように展開する手。地を広げながら相手の侵入を防ぐ守りの手。"
+    },
+    {
+      "id": "term-190",
+      "type": "glossary",
+      "term": "布石",
+      "term_variants": [
+        "ふせき"
+      ],
+      "definition": "対局の序盤において石を効率よく盤上に配置する戦略的な段階。全体の方針を決める重要な局面。",
+      "definition_for_operator": "対局の序盤において石を効率よく盤上に配置する戦略的な段階",
+      "related_terms": [
+        "ふせき",
+        "序盤",
+        "大局的な配置"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ふせき",
+        "序盤",
+        "大局的な配置"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "布石 ふせき ふせき 序盤 大局的な配置 対局の序盤において石を効率よく盤上に配置する戦略的な段階。全体の方針を決める重要な局面。"
+    },
+    {
+      "id": "term-191",
+      "type": "glossary",
+      "term": "フリカワリ",
+      "term_variants": [],
+      "definition": "一方が地を取り、他方が実利を得るような大規模な交換のこと。双方の主張が変わる大局的な手。",
+      "definition_for_operator": "一方が地を取り、他方が実利を得るような大規模な交換のこと",
+      "related_terms": [
+        "フリカワリ",
+        "振り替わり",
+        "等価交換"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "フリカワリ",
+        "振り替わり",
+        "等価交換"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "フリカワリ  フリカワリ 振り替わり 等価交換 一方が地を取り、他方が実利を得るような大規模な交換のこと。双方の主張が変わる大局的な手。"
+    },
+    {
+      "id": "term-192",
+      "type": "glossary",
+      "term": "ブツカリ",
+      "term_variants": [],
+      "definition": "相手の石に直接ぶつかるように打つ手。攻撃的な着手で相手の形を乱す狙いがある。",
+      "definition_for_operator": "相手の石に直接ぶつかるように打つ手",
+      "related_terms": [
+        "ブツカリ",
+        "ぶつかり",
+        "石に当たる"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ブツカリ",
+        "ぶつかり",
+        "石に当たる"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ブツカリ  ブツカリ ぶつかり 石に当たる 相手の石に直接ぶつかるように打つ手。攻撃的な着手で相手の形を乱す狙いがある。"
+    },
+    {
+      "id": "term-193",
+      "type": "glossary",
+      "term": "辺",
+      "term_variants": [
+        "へん"
+      ],
+      "definition": "盤の4つの端の直線部分のこと。隅より地を囲いにくいが、辺の展開も重要な布石の要素。",
+      "definition_for_operator": "盤の4つの端の直線部分のこと",
+      "related_terms": [
+        "へん",
+        "辺",
+        "盤の端",
+        "4辺"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "へん",
+        "辺",
+        "盤の端",
+        "4辺"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "辺 へん へん 辺 盤の端 4辺 盤の4つの端の直線部分のこと。隅より地を囲いにくいが、辺の展開も重要な布石の要素。"
+    },
+    {
+      "id": "term-194",
+      "type": "glossary",
+      "term": "ホウリコミ",
+      "term_variants": [],
+      "definition": "相手の眼形の中に石を打ち込んで眼を偽眼にする手筋。取られることを前提にした捨て石の一種。",
+      "definition_for_operator": "相手の眼形の中に石を打ち込んで眼を偽眼にする手筋",
+      "related_terms": [
+        "ホウリコミ",
+        "放り込み",
+        "捨て石の打ち込み"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ホウリコミ",
+        "放り込み",
+        "捨て石の打ち込み"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ホウリコミ  ホウリコミ 放り込み 捨て石の打ち込み 相手の眼形の中に石を打ち込んで眼を偽眼にする手筋。取られることを前提にした捨て石の一種。"
+    },
+    {
+      "id": "term-195",
+      "type": "glossary",
+      "term": "星",
+      "term_variants": [
+        "ほし"
+      ],
+      "definition": "4路と4路の交点（4-4点）への着手。現代の布石で最も多く使われる着点の一つ。模様の展開に優れる。",
+      "definition_for_operator": "4路と4路の交点（4-4点）への着手",
+      "related_terms": [
+        "ほし",
+        "4の4",
+        "ヒ",
+        "布石"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ほし",
+        "4の4",
+        "ヒ",
+        "布石"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "星 ほし ほし 4の4 ヒ 布石 4路と4路の交点（4-4点）への着手。現代の布石で最も多く使われる着点の一つ。模様の展開に優れる。"
+    },
+    {
+      "id": "term-196",
+      "type": "glossary",
+      "term": "星下",
+      "term_variants": [
+        "ほしした"
+      ],
+      "definition": "星（4の4）の一路下（4の3）への着手。星を補強しながら辺の地も意識した着点。",
+      "definition_for_operator": "星（4の4）の一路下（4の3）への着手",
+      "related_terms": [
+        "ほしした",
+        "星の下",
+        "4の3"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ほしした",
+        "星の下",
+        "4の3"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "星下 ほしした ほしした 星の下 4の3 星（4の4）の一路下（4の3）への着手。星を補強しながら辺の地も意識した着点。"
+    },
+    {
+      "id": "term-197",
+      "type": "glossary",
+      "term": "本コウ",
+      "term_variants": [
+        "ほんこう"
+      ],
+      "definition": "コウを取った直後に打ち返せないという制約のある通常のコウのこと。ヨセコウ・花見コウと区別される。",
+      "definition_for_operator": "コウを取った直後に打ち返せないという制約のある通常のコウのこと",
+      "related_terms": [
+        "ほんこう",
+        "直接コウ",
+        "通常のコウ"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "ほんこう",
+        "直接コウ",
+        "通常のコウ"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "本コウ ほんこう ほんこう 直接コウ 通常のコウ コウを取った直後に打ち返せないという制約のある通常のコウのこと。ヨセコウ・花見コウと区別される。"
+    },
+    {
+      "id": "term-198",
+      "type": "glossary",
+      "term": "本手",
+      "term_variants": [
+        "ほんて"
+      ],
+      "definition": "その局面において形や原則に則った正しい手のこと。無理をしない確実な着手を「本手」と表現する。",
+      "definition_for_operator": "その局面において形や原則に則った正しい手のこと",
+      "related_terms": [
+        "ほんて",
+        "正しい手",
+        "基本的な着手"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ほんて",
+        "正しい手",
+        "基本的な着手"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "本手 ほんて ほんて 正しい手 基本的な着手 その局面において形や原則に則った正しい手のこと。無理をしない確実な着手を「本手」と表現する。"
+    },
+    {
+      "id": "term-199",
+      "type": "glossary",
+      "term": "ボウシ",
+      "term_variants": [],
+      "definition": "相手の石の真上に乗るように打つ手（帽子を被せる形）。相手の展開を止めて圧力をかける手。",
+      "definition_for_operator": "相手の石の真上に乗るように打つ手（帽子を被せる形）",
+      "related_terms": [
+        "ボウシ",
+        "帽子",
+        "石の上に打つ"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ボウシ",
+        "帽子",
+        "石の上に打つ"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ボウシ  ボウシ 帽子 石の上に打つ 相手の石の真上に乗るように打つ手（帽子を被せる形）。相手の展開を止めて圧力をかける手。"
+    },
+    {
+      "id": "term-200",
+      "type": "glossary",
+      "term": "棒ツギ",
+      "term_variants": [
+        "ぼうつぎ"
+      ],
+      "definition": "石が一直線に並んで繋がる形。確実な連絡だが非効率で、相手から利用されることもある形。",
+      "definition_for_operator": "石が一直線に並んで繋がる形",
+      "related_terms": [
+        "ぼうつぎ",
+        "棒状の連絡",
+        "ナラビ"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "ぼうつぎ",
+        "棒状の連絡",
+        "ナラビ"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "棒ツギ ぼうつぎ ぼうつぎ 棒状の連絡 ナラビ 石が一直線に並んで繋がる形。確実な連絡だが非効率で、相手から利用されることもある形。"
+    },
+    {
+      "id": "term-201",
+      "type": "glossary",
+      "term": "ポン抜き",
+      "term_variants": [
+        "ぽんぬき"
+      ],
+      "definition": "アタリになっている相手の1個の石を取ること。または取られそうな1石を助ける手を指す場合もある。",
+      "definition_for_operator": "アタリになっている相手の1個の石を取ること",
+      "related_terms": [
+        "ぽんぬき",
+        "一石を取る",
+        "簡単な取り"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ぽんぬき",
+        "一石を取る",
+        "簡単な取り"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ポン抜き ぽんぬき ぽんぬき 一石を取る 簡単な取り アタリになっている相手の1個の石を取ること。または取られそうな1石を助ける手を指す場合もある。"
+    },
+    {
+      "id": "term-202",
+      "type": "glossary",
+      "term": "マガリ",
+      "term_variants": [],
+      "definition": "石の方向を変えてL字状に打つ手。辺や隅で地を確保しながら方向を転換する基本的な着手形。",
+      "definition_for_operator": "石の方向を変えてL字状に打つ手",
+      "related_terms": [
+        "マガリ",
+        "曲がり",
+        "L字方向に打つ"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "マガリ",
+        "曲がり",
+        "L字方向に打つ"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "マガリ  マガリ 曲がり L字方向に打つ 石の方向を変えてL字状に打つ手。辺や隅で地を確保しながら方向を転換する基本的な着手形。"
+    },
+    {
+      "id": "term-203",
+      "type": "glossary",
+      "term": "マグサ場",
+      "term_variants": [
+        "まぐさば"
+      ],
+      "definition": "相手を誘い込んでわざと取らせることで利益を得る場所。捨て石を絡めた戦略的な着点。",
+      "definition_for_operator": "相手を誘い込んでわざと取らせることで利益を得る場所",
+      "related_terms": [
+        "まぐさば",
+        "餌場",
+        "誘いの場所"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "まぐさば",
+        "餌場",
+        "誘いの場所"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "マグサ場 まぐさば まぐさば 餌場 誘いの場所 相手を誘い込んでわざと取らせることで利益を得る場所。捨て石を絡めた戦略的な着点。"
+    },
+    {
+      "id": "term-204",
+      "type": "glossary",
+      "term": "マゲ",
+      "term_variants": [],
+      "definition": "相手の石の進路を変えさせるように打つ手。または自分の石がL字に曲がって進む形を指す。",
+      "definition_for_operator": "相手の石の進路を変えさせるように打つ手",
+      "related_terms": [
+        "マゲ",
+        "曲げ",
+        "相手を曲げさせる"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "マゲ",
+        "曲げ",
+        "相手を曲げさせる"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "マゲ  マゲ 曲げ 相手を曲げさせる 相手の石の進路を変えさせるように打つ手。または自分の石がL字に曲がって進む形を指す。"
+    },
+    {
+      "id": "term-205",
+      "type": "glossary",
+      "term": "真似碁",
+      "term_variants": [
+        "まねご"
+      ],
+      "definition": "相手の手を盤の対称点に真似して打つ戦法。天元に打たれると真似が崩れる弱点があり現在は否定的。",
+      "definition_for_operator": "相手の手を盤の対称点に真似して打つ戦法",
+      "related_terms": [
+        "まねご",
+        "ミラー碁",
+        "対称な手"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "intermediate",
+      "tags": [
+        "まねご",
+        "ミラー碁",
+        "対称な手"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "真似碁 まねご まねご ミラー碁 対称な手 相手の手を盤の対称点に真似して打つ戦法。天元に打たれると真似が崩れる弱点があり現在は否定的。"
+    },
+    {
+      "id": "term-206",
+      "type": "glossary",
+      "term": "見合い",
+      "term_variants": [
+        "みあい"
+      ],
+      "definition": "二か所の着点のうちどちらを取ってもほぼ同等の価値がある状態。相手の一方を取れば他方を取れる関係。",
+      "definition_for_operator": "二か所の着点のうちどちらを取ってもほぼ同等の価値がある状態",
+      "related_terms": [
+        "みあい",
+        "どちらを取っても同等",
+        "選択"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "intermediate",
+      "tags": [
+        "みあい",
+        "どちらを取っても同等",
+        "選択"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "見合い みあい みあい どちらを取っても同等 選択 二か所の着点のうちどちらを取ってもほぼ同等の価値がある状態。相手の一方を取れば他方を取れる関係。"
+    },
+    {
+      "id": "term-207",
+      "type": "glossary",
+      "term": "見損じ",
+      "term_variants": [
+        "みそんじ"
+      ],
+      "definition": "地の計算や形勢判断を誤ること。終盤での見損じは勝敗を逆転させることがある。",
+      "definition_for_operator": "地の計算や形勢判断を誤ること",
+      "related_terms": [
+        "みそんじ",
+        "読み間違い",
+        "計算ミス"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "みそんじ",
+        "読み間違い",
+        "計算ミス"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "見損じ みそんじ みそんじ 読み間違い 計算ミス 地の計算や形勢判断を誤ること。終盤での見損じは勝敗を逆転させることがある。"
+    },
+    {
+      "id": "term-208",
+      "type": "glossary",
+      "term": "ミニ中国流",
+      "term_variants": [
+        "みにちゅうごくりゅう"
+      ],
+      "definition": "通常の中国流より内側（中央寄り）の位置に石を置く布石形。堅実で安定した展開を目指す。",
+      "definition_for_operator": "通常の中国流より内側（中央寄り）の位置に石を置く布石形",
+      "related_terms": [
+        "みにちゅうごくりゅう",
+        "布石",
+        "小さい中国流"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "みにちゅうごくりゅう",
+        "布石",
+        "小さい中国流"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ミニ中国流 みにちゅうごくりゅう みにちゅうごくりゅう 布石 小さい中国流 通常の中国流より内側（中央寄り）の位置に石を置く布石形。堅実で安定した展開を目指す。"
+    },
+    {
+      "id": "term-209",
+      "type": "glossary",
+      "term": "向い小目",
+      "term_variants": [
+        "むかいこもく"
+      ],
+      "definition": "同じ辺の両端の小目に石を置く布石形。または対局者双方が同じ辺の小目に着手した状態。",
+      "definition_for_operator": "同じ辺の両端の小目に石を置く布石形",
+      "related_terms": [
+        "むかいこもく",
+        "相向き",
+        "布石"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "むかいこもく",
+        "相向き",
+        "布石"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "向い小目 むかいこもく むかいこもく 相向き 布石 同じ辺の両端の小目に石を置く布石形。または対局者双方が同じ辺の小目に着手した状態。"
+    },
+    {
+      "id": "term-210",
+      "type": "glossary",
+      "term": "眼",
+      "term_variants": [
+        "め"
+      ],
+      "definition": "石が完全に囲んだ内部の空点のこと。真の眼を2つ以上持つことで石は生きている状態になる。",
+      "definition_for_operator": "石が完全に囲んだ内部の空点のこと",
+      "related_terms": [
+        "め",
+        "生きの条件",
+        "空点の空間"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "め",
+        "生きの条件",
+        "空点の空間"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "眼 め め 生きの条件 空点の空間 石が完全に囲んだ内部の空点のこと。真の眼を2つ以上持つことで石は生きている状態になる。"
+    },
+    {
+      "id": "term-211",
+      "type": "glossary",
+      "term": "眼あり眼なし",
+      "term_variants": [
+        "めありめなし"
+      ],
+      "definition": "攻め合いの状況で一方が眼を持ち他方が持たない状態。眼を持つ方がダメの数を1つ多く数えられる。",
+      "definition_for_operator": "攻め合いの状況で一方が眼を持ち他方が持たない状態",
+      "related_terms": [
+        "めありめなし",
+        "攻め合い",
+        "呼吸点"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "intermediate",
+      "tags": [
+        "めありめなし",
+        "攻め合い",
+        "呼吸点"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "眼あり眼なし めありめなし めありめなし 攻め合い 呼吸点 攻め合いの状況で一方が眼を持ち他方が持たない状態。眼を持つ方がダメの数を1つ多く数えられる。"
+    },
+    {
+      "id": "term-212",
+      "type": "glossary",
+      "term": "~目",
+      "term_variants": [
+        "もく"
+      ],
+      "definition": "囲碁における地の単位。一つの空点が1目に相当し、対局の勝敗は目数の差で決まる。",
+      "definition_for_operator": "囲碁における地の単位",
+      "related_terms": [
+        "もく",
+        "目数",
+        "地の単位"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "もく",
+        "目数",
+        "地の単位"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "~目 もく もく 目数 地の単位 囲碁における地の単位。一つの空点が1目に相当し、対局の勝敗は目数の差で決まる。"
+    },
+    {
+      "id": "term-213",
+      "type": "glossary",
+      "term": "目算",
+      "term_variants": [
+        "もくさん"
+      ],
+      "definition": "対局途中に双方の地を概算して形勢を判断すること。正確な目算は優れた棋士の重要な能力。",
+      "definition_for_operator": "対局途中に双方の地を概算して形勢を判断すること",
+      "related_terms": [
+        "もくさん",
+        "地の計算",
+        "形勢判断"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "もくさん",
+        "地の計算",
+        "形勢判断"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "目算 もくさん もくさん 地の計算 形勢判断 対局途中に双方の地を概算して形勢を判断すること。正確な目算は優れた棋士の重要な能力。"
+    },
+    {
+      "id": "term-214",
+      "type": "glossary",
+      "term": "目ハズシ",
+      "term_variants": [
+        "もくはずし"
+      ],
+      "definition": "隅の4路と3路の交点への着手（一般には高目と同義）。やや外側寄りの着点で積極的な布石を目指す。",
+      "definition_for_operator": "隅の4路と3路の交点への着手（一般には高目と同義）",
+      "related_terms": [
+        "もくはずし",
+        "4の3",
+        "隅",
+        "布石"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "もくはずし",
+        "4の3",
+        "隅",
+        "布石"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "目ハズシ もくはずし もくはずし 4の3 隅 布石 隅の4路と3路の交点への着手（一般には高目と同義）。やや外側寄りの着点で積極的な布石を目指す。"
+    },
+    {
+      "id": "term-215",
+      "type": "glossary",
+      "term": "持ち込み",
+      "term_variants": [
+        "もちこみ"
+      ],
+      "definition": "コウ争いでコウの中に石を打ち込む手。コウが解決した後に不要になる石を先に処理する手順。",
+      "definition_for_operator": "コウ争いでコウの中に石を打ち込む手",
+      "related_terms": [
+        "もちこみ",
+        "コウに石を打つ",
+        "コウ手順"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "もちこみ",
+        "コウに石を打つ",
+        "コウ手順"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "持ち込み もちこみ もちこみ コウに石を打つ コウ手順 コウ争いでコウの中に石を打ち込む手。コウが解決した後に不要になる石を先に処理する手順。"
+    },
+    {
+      "id": "term-216",
+      "type": "glossary",
+      "term": "模様",
+      "term_variants": [
+        "もよう"
+      ],
+      "definition": "確定してはいないが将来的に地になりそうな勢力範囲のこと。模様を張って相手の侵入を防ぐ戦略がある。",
+      "definition_for_operator": "確定してはいないが将来的に地になりそうな勢力範囲のこと",
+      "related_terms": [
+        "もよう",
+        "勢力圏",
+        "将来の地"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "もよう",
+        "勢力圏",
+        "将来の地"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "模様 もよう もよう 勢力圏 将来の地 確定してはいないが将来的に地になりそうな勢力範囲のこと。模様を張って相手の侵入を防ぐ戦略がある。"
+    },
+    {
+      "id": "term-217",
+      "type": "glossary",
+      "term": "ヨセ",
+      "term_variants": [],
+      "definition": "布石・中盤が終わった後の終盤戦のこと。地の境界を確定させながら目数を稼ぐ段階。",
+      "definition_for_operator": "布石・中盤が終わった後の終盤戦のこと",
+      "related_terms": [
+        "ヨセ",
+        "終盤",
+        "地の境界を決める"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "ヨセ",
+        "終盤",
+        "地の境界を決める"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ヨセ  ヨセ 終盤 地の境界を決める 布石・中盤が終わった後の終盤戦のこと。地の境界を確定させながら目数を稼ぐ段階。"
+    },
+    {
+      "id": "term-218",
+      "type": "glossary",
+      "term": "ヨセコウ",
+      "term_variants": [],
+      "definition": "コウを取った後、相手がコウを取り返す前に1手余裕がある（後手の）コウのこと。本コウより争いが小さい。",
+      "definition_for_operator": "コウを取った後、相手がコウを取り返す前に1手余裕がある（後手の）コウのこと",
+      "related_terms": [
+        "ヨセコウ",
+        "後手コウ",
+        "コウの種類"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "ヨセコウ",
+        "後手コウ",
+        "コウの種類"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ヨセコウ  ヨセコウ 後手コウ コウの種類 コウを取った後、相手がコウを取り返す前に1手余裕がある（後手の）コウのこと。本コウより争いが小さい。"
+    },
+    {
+      "id": "term-219",
+      "type": "glossary",
+      "term": "両アタリ",
+      "term_variants": [
+        "りょうあたり"
+      ],
+      "definition": "一手で相手の二か所の石を同時にアタリにする手。片方を助けると他方が取られる強力な手筋。",
+      "definition_for_operator": "一手で相手の二か所の石を同時にアタリにする手",
+      "related_terms": [
+        "りょうあたり",
+        "二方向のアタリ",
+        "手筋"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "りょうあたり",
+        "二方向のアタリ",
+        "手筋"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "両アタリ りょうあたり りょうあたり 二方向のアタリ 手筋 一手で相手の二か所の石を同時にアタリにする手。片方を助けると他方が取られる強力な手筋。"
+    },
+    {
+      "id": "term-220",
+      "type": "glossary",
+      "term": "両先手",
+      "term_variants": [
+        "りょうせんて"
+      ],
+      "definition": "打った後も打ち返された後も双方に先手になるヨセの手のこと。最も価値が高いヨセの形。",
+      "definition_for_operator": "打った後も打ち返された後も双方に先手になるヨセの手のこと",
+      "related_terms": [
+        "りょうせんて",
+        "先手と先手",
+        "大きいヨセ"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "advanced",
+      "tags": [
+        "りょうせんて",
+        "先手と先手",
+        "大きいヨセ"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "両先手 りょうせんて りょうせんて 先手と先手 大きいヨセ 打った後も打ち返された後も双方に先手になるヨセの手のこと。最も価値が高いヨセの形。"
+    },
+    {
+      "id": "term-221",
+      "type": "glossary",
+      "term": "~路",
+      "term_variants": [
+        "~ろ"
+      ],
+      "definition": "盤上の縦または横の線の番号を表す単位。「1路」は盤の端の線、「19路」は19路盤の反対側の端の線。",
+      "definition_for_operator": "盤上の縦または横の線の番号を表す単位",
+      "related_terms": [
+        "ろ",
+        "線の番号",
+        "縦横の位置"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "intermediate",
+      "tags": [
+        "ろ",
+        "線の番号",
+        "縦横の位置"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "~路 ~ろ ろ 線の番号 縦横の位置 盤上の縦または横の線の番号を表す単位。「1路」は盤の端の線、「19路」は19路盤の反対側の端の線。"
+    },
+    {
+      "id": "term-222",
+      "type": "glossary",
+      "term": "六死八活",
+      "term_variants": [
+        "ろくしはっかつ"
+      ],
+      "definition": "隅や辺で内部の空点が6個以下なら死に、8個以上なら生きという死活の基本法則（一般的な目安）。",
+      "definition_for_operator": "隅や辺で内部の空点が6個以下なら死に、8個以上なら生きという死活の基本法則（一般的な目安）",
+      "related_terms": [
+        "ろくしはっかつ",
+        "生死の基本",
+        "内側の空点"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ろくしはっかつ",
+        "生死の基本",
+        "内側の空点"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "六死八活 ろくしはっかつ ろくしはっかつ 生死の基本 内側の空点 隅や辺で内部の空点が6個以下なら死に、8個以上なら生きという死活の基本法則（一般的な目安）。"
+    },
+    {
+      "id": "term-223",
+      "type": "glossary",
+      "term": "六死八生",
+      "term_variants": [
+        "ろくしはっしょう"
+      ],
+      "definition": "六死八活と同義。内側の空点の数によって石の生死が決まる囲碁の基本的な死活の考え方。",
+      "definition_for_operator": "六死八活と同義",
+      "related_terms": [
+        "ろくしはっしょう",
+        "六死八活",
+        "死活の法則"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ろくしはっしょう",
+        "六死八活",
+        "死活の法則"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "六死八生 ろくしはっしょう ろくしはっしょう 六死八活 死活の法則 六死八活と同義。内側の空点の数によって石の生死が決まる囲碁の基本的な死活の考え方。"
+    },
+    {
+      "id": "term-224",
+      "type": "glossary",
+      "term": "~路盤",
+      "term_variants": [
+        "~ろばん"
+      ],
+      "definition": "盤の縦横の線の数を表す単位。SenseRobotは9路・13路・19路の3サイズに対応している。",
+      "definition_for_operator": "盤の縦横の線の数を表す単位",
+      "related_terms": [
+        "ろばん",
+        "盤のサイズ",
+        "9路",
+        "13路",
+        "19路"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "intermediate",
+      "tags": [
+        "ろばん",
+        "盤のサイズ",
+        "9路",
+        "13路",
+        "19路"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "~路盤 ~ろばん ろばん 盤のサイズ 9路 13路 19路 盤の縦横の線の数を表す単位。SenseRobotは9路・13路・19路の3サイズに対応している。"
+    },
+    {
+      "id": "term-225",
+      "type": "glossary",
+      "term": "ワタリ",
+      "term_variants": [],
+      "definition": "辺の石が相手の石の下を通って別の自石と連絡する手。相手を分断しながら自石の連絡を確保する。",
+      "definition_for_operator": "辺の石が相手の石の下を通って別の自石と連絡する手",
+      "related_terms": [
+        "ワタリ",
+        "渡り",
+        "辺に沿って連絡"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ワタリ",
+        "渡り",
+        "辺に沿って連絡"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ワタリ  ワタリ 渡り 辺に沿って連絡 辺の石が相手の石の下を通って別の自石と連絡する手。相手を分断しながら自石の連絡を確保する。"
+    },
+    {
+      "id": "term-226",
+      "type": "glossary",
+      "term": "ワタリコミ",
+      "term_variants": [],
+      "definition": "相手の石の間を通り抜けながら連絡する特殊な渡りの手筋。相手の包囲を破って連絡する。",
+      "definition_for_operator": "相手の石の間を通り抜けながら連絡する特殊な渡りの手筋",
+      "related_terms": [
+        "ワタリコミ",
+        "渡り込み",
+        "相手の中を通る"
+      ],
+      "related_faq_ids": [],
+      "category": "囲碁用語",
+      "difficulty_level": "beginner",
+      "tags": [
+        "ワタリコミ",
+        "渡り込み",
+        "相手の中を通る"
+      ],
+      "srcc_specific": false,
+      "source": "囲碁用語集.xlsx",
+      "verified_at": "2026-03-24",
+      "embedding_text": "ワタリコミ  ワタリコミ 渡り込み 相手の中を通る 相手の石の間を通り抜けながら連絡する特殊な渡りの手筋。相手の包囲を破って連絡する。"
+    }
+  ]
+}

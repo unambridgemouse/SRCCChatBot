@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+dist/
+build/
+*.pkl
+!data/bm25_index.pkl
+
+# Environment
+.env.local
+.env
+
+# Node
+node_modules/
+.next/
+frontend/.next/
+frontend/node_modules/
+
+# Vercel
+.vercel/
+
+# Misc
+.DS_Store
+*.log
+
+# Claude Code
+.claude/
