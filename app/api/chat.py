@@ -51,7 +51,7 @@ async def chat(req: ChatRequest):
             try:
                 async with client.messages.stream(
                     model=settings.llm_model,
-                    max_tokens=1024,
+                    max_tokens=4096,
                     system=result["system_prompt"],
                     messages=result["messages"],
                 ) as stream:
