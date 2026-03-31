@@ -9,7 +9,7 @@ type Source = {
 export default function SourceCitation({ sources }: { sources: Source[] }) {
   if (!sources || sources.length === 0) return null;
 
-  const MIN_SCORE = 0.05;
+  const MIN_SCORE = 0.01;
 
   // スコアが低いものは関連ナレッジなしとみなして非表示。source があるものだけ取り出し重複除去
   const manuals = Array.from(
