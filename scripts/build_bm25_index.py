@@ -39,7 +39,7 @@ def load_documents(base: Path) -> list[dict]:
             "text": item["embedding_text"],
             "category": item.get("category", ""),
             "tags": item.get("tags", []),
-            "source": "",
+            "source": item.get("source", ""),
         })
 
     return docs
