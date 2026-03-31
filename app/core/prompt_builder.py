@@ -140,7 +140,9 @@ def build_retrieved_context(nodes: list) -> str:
     lines = []
     for i, node in enumerate(nodes, 1):
         meta = node.node.metadata if hasattr(node, "node") else node.metadata
-        text = node.node.text if hasattr(node, "node") else node.text
+        fallback_text = node.node.text if hasattr(node, "node") else node.text
+        # embedding_textは途中で切れる場合があるため、answerフィールドを優先する
+        text = meta.get("answer") or fallback_text
         doc_id = meta.get("doc_id", "unknown")
         doc_type = meta.get("type", "")
         score = getattr(node, "score", 0.0) or 0.0
