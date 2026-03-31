@@ -154,7 +154,15 @@ class RAGPipeline:
         return {
             "system_prompt": system_prompt,
             "messages": [{"role": "user", "content": query}],
-            "sources": [],
+            "sources": [
+                SourceItem(
+                    doc_id="store",
+                    type="store",
+                    title="store",
+                    score=1.0,
+                    source="https://www.senserobot-jp.com/store",
+                ).model_dump()
+            ],
             "extracted_entities": [],
             "expanded_query": query,
             "session_id": session_id,
