@@ -24,6 +24,7 @@ def load_documents(base: Path) -> list[dict]:
             "doc_id": item["id"],
             "type": "faq",
             "text": item["embedding_text"],
+            "answer": item.get("answer", ""),
             "category": item.get("category", ""),
             "tags": item.get("tags", []),
             "source": item.get("source", ""),
