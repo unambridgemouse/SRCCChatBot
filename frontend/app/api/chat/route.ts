@@ -9,14 +9,25 @@ const BACKEND_URL = process.env.BACKEND_URL ?? "http://localhost:8000";
 export async function POST(req: NextRequest) {
   const body = await req.json();
 
-  const backendRes = await fetch(`${BACKEND_URL}/api/chat`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(body),
-  });
+  let backendRes: Response;
+  try {
+    backendRes = await fetch(`${BACKEND_URL}/api/chat`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(body),
+    });
+  } catch (e) {
+    console.error("[proxy] fetch failed:", e);
+    return new Response(JSON.stringify({ error: String(e) }), {
+      status: 502,
+      headers: { "Content-Type": "application/json" },
+    });
+  }
 
   if (!backendRes.ok) {
-    return new Response(JSON.stringify({ error: "Backend error" }), {
+    const text = await backendRes.text();
+    console.error("[proxy] backend error:", backendRes.status, text);
+    return new Response(JSON.stringify({ error: "Backend error", detail: text }), {
       status: backendRes.status,
       headers: { "Content-Type": "application/json" },
     });
