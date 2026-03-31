@@ -26,5 +26,10 @@ app.add_middleware(
 app.include_router(chat_router)
 app.include_router(health_router)
 
+
+@app.get("/")
+async def root():
+    return {"status": "ok"}
+
 # AWS Lambda / Vercel Serverless 向けハンドラー
 handler = Mangum(app, lifespan="off")
