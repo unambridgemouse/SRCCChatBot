@@ -27,18 +27,30 @@ PREFECTURES = [
 ]
 
 # 店舗クエリを示すキーワード
-_STORE_TRIGGER_WORDS = ["体験", "購入", "買え", "試せ", "買いたい"]
+_EXPERIENCE_WORDS = ["体験", "試せ"]   # 「どこ」でも店舗フローへ
+_BUY_WORDS = ["購入", "買え", "買いたい"]  # 具体的な場所指定がある場合のみ店舗フローへ
+# 「どこ」は購入方法の質問（どこで買えますか）にも使われるため除外
+_SPECIFIC_LOCATION_WORDS = ["場所", "店", "ショップ", "県", "都", "道", "府", "オンライン"]
 _LOCATION_WORDS = ["場所", "どこ", "店", "ショップ", "県", "都", "道", "府", "オンライン"]
 
 
 def is_store_query(query: str) -> bool:
-    """クエリが店舗検索かどうか判定する"""
-    has_trigger = any(w in query for w in _STORE_TRIGGER_WORDS)
-    if not has_trigger:
-        return False
-    has_location = any(w in query for w in _LOCATION_WORDS)
+    """クエリが店舗検索かどうか判定する。
+    体験系（体験/試せ）はlocation指定があれば店舗フロー。
+    購入系（購入/買え/買いたい）は「どこ」単体では購入方法の質問と区別できないため、
+    都道府県名または具体的な場所指定（店/ショップ/場所など）がある場合のみ店舗フローへ。
+    """
     has_prefecture = any(p in query for p in PREFECTURES)
-    return has_location or has_prefecture
+
+    if any(w in query for w in _EXPERIENCE_WORDS):
+        has_location = any(w in query for w in _LOCATION_WORDS)
+        return has_location or has_prefecture
+
+    if any(w in query for w in _BUY_WORDS):
+        has_specific = any(w in query for w in _SPECIFIC_LOCATION_WORDS)
+        return has_specific or has_prefecture
+
+    return False
 
 
 _FOLLOWUP_WORDS = ["はどう", "は？", "も教えて", "も同様", "市", "区"]
