@@ -36,7 +36,7 @@ class Settings(BaseSettings):
     log_level: str = "INFO"
     debug_mode: bool = False  # True のとき system_prompt をレスポンスに含める
     max_search_results: int = 10
-    rerank_top_n: int = 3
+    rerank_top_n: int = 7
     session_ttl_seconds: int = 1800
     max_conversation_turns: int = 5
 
