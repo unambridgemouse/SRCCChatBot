@@ -1,9 +1,8 @@
 """
 SenseRobot 体験・購入店舗情報スクレイパー。
-https://www.senserobot-jp.com/store からPlaywrightで最新情報を取得し、
+https://www.senserobot-jp.com/store から最新情報を取得し、
 1時間キャッシュする。
 """
-import asyncio
 import re
 import time
 
@@ -53,7 +52,7 @@ async def get_store_text() -> str:
         return _cache_text
 
     logger.info(f"Fetching store page: {STORE_URL}")
-    text = await _fetch_with_playwright()
+    text = await _fetch_with_httpx()
     text = _clean_text(text)
 
     _cache_text = text
@@ -62,24 +61,18 @@ async def get_store_text() -> str:
     return text
 
 
-async def _fetch_with_playwright() -> str:
-    """Playwright で動的レンダリングされたページのテキストを取得する"""
-    try:
-        from playwright.async_api import async_playwright
-    except ImportError:
-        logger.warning("Playwright not available (Vercel environment). Store scraping disabled.")
-        return "（店舗情報の自動取得はこの環境では利用できません。senserobot-jp.com/store をご確認ください。）"
+async def _fetch_with_httpx() -> str:
+    """httpx + BeautifulSoup でページのテキストを取得する"""
+    import httpx
+    from bs4 import BeautifulSoup
 
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
-        try:
-            page = await browser.new_page()
-            await page.goto(STORE_URL, wait_until="networkidle", timeout=30000)
-            await page.wait_for_timeout(2000)
-            text = await page.inner_text("body")
-        finally:
-            await browser.close()
-    return text
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; SRCCBot/1.0)"}
+    async with httpx.AsyncClient(follow_redirects=True, timeout=20) as client:
+        resp = await client.get(STORE_URL, headers=headers)
+        resp.raise_for_status()
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+    return soup.get_text(separator="\n")
 
 
 def _clean_text(text: str) -> str:
