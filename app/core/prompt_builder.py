@@ -157,8 +157,10 @@ def build_retrieved_context(nodes: list) -> str:
         doc_id = meta.get("doc_id", "unknown")
         doc_type = meta.get("type", "")
         score = getattr(node, "score", 0.0) or 0.0
+        is_related = meta.get("_is_related", False)
+        label = "【関連FAQ・必ず回答に含めること】" if is_related else f"スコア: {score:.3f}"
         lines.append(
-            f"[{i}] ({doc_type}) {doc_id} (スコア: {score:.3f})\n{text}"
+            f"[{i}] ({doc_type}) {doc_id} ({label})\n{text}"
         )
     return "\n\n".join(lines)
 

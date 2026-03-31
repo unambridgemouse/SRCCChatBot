@@ -194,8 +194,8 @@ class RAGPipeline:
                 extra_nodes.append(SearchNode(
                     doc_id=related_id,
                     text=item.get("answer") or item.get("embedding_text", ""),
-                    metadata={**item, "type": "faq"},
-                    score=0.0,
+                    metadata={**item, "type": "faq", "_is_related": True},
+                    score=node.score,  # 親ノードと同スコアを付与
                 ))
                 logger.info(f"Related FAQ appended: {related_id}")
 
