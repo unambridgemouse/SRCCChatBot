@@ -498,7 +498,9 @@
         "やり直し",
         "打ち直し"
       ],
-      "related_faq_ids": [],
+      "related_faq_ids": [
+        "faq-029"
+      ],
       "tags": [
         "手を修正したい",
         "一手戻す",
@@ -908,7 +910,9 @@
         "やり直し",
         "手を戻す"
       ],
-      "related_faq_ids": [],
+      "related_faq_ids": [
+        "faq-016"
+      ],
       "tags": [
         "待った",
         "打ち直し",

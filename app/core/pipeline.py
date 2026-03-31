@@ -46,6 +46,12 @@ class RAGPipeline:
         with open(self.settings.glossary_data_path, encoding="utf-8") as f:
             return json.load(f)
 
+    def _load_faq_index(self) -> dict:
+        """FAQ IDをキーにしたインデックスを返す"""
+        with open(self.settings.faq_data_path, encoding="utf-8") as f:
+            data = json.load(f)
+        return {item["id"]: item for item in data.get("items", [])}
+
     @cached_property
     def entity_extractor(self) -> EntityExtractor:
         if self._glossary is None:
@@ -98,6 +104,9 @@ class RAGPipeline:
 
         # Step 2: Hybrid Search
         nodes = await self.hybrid_searcher.search(expanded_query, metadata_filter)
+
+        # Step 2.5: related_faq_ids で関連FAQを補完
+        nodes = self._append_related_faqs(nodes)
 
         # Step 3: 会話履歴
         history_text = self.context_manager.format_for_prompt(session_id)
@@ -160,6 +169,34 @@ class RAGPipeline:
             "expanded_query": query,
             "session_id": session_id,
         }
+
+    def _append_related_faqs(self, nodes: list) -> list:
+        """取得ノードのrelated_faq_idsに含まれるFAQを未取得なら補完する"""
+        from app.core.hybrid_search import SearchNode
+        try:
+            faq_index = self._load_faq_index()
+        except Exception as e:
+            logger.warning(f"Failed to load FAQ index for related FAQs: {e}")
+            return nodes
+
+        retrieved_ids = {n.doc_id for n in nodes}
+        extra_nodes = []
+        for node in list(nodes):
+            for related_id in node.metadata.get("related_faq_ids", []):
+                if related_id in retrieved_ids or related_id in {n.doc_id for n in extra_nodes}:
+                    continue
+                item = faq_index.get(related_id)
+                if not item:
+                    continue
+                extra_nodes.append(SearchNode(
+                    doc_id=related_id,
+                    text=item.get("answer") or item.get("embedding_text", ""),
+                    metadata={**item, "type": "faq"},
+                    score=0.0,
+                ))
+                logger.info(f"Related FAQ appended: {related_id}")
+
+        return nodes + extra_nodes
 
     def save_turn(self, session_id: str, user_msg: str, assistant_msg: str) -> None:
         """回答確定後にセッションへ保存"""
