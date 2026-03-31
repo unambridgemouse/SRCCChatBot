@@ -41,6 +41,22 @@ def is_store_query(query: str) -> bool:
     return has_location or has_prefecture
 
 
+_FOLLOWUP_WORDS = ["はどう", "は？", "も教えて", "も同様", "市", "区"]
+
+
+def is_store_followup(query: str, history: list[dict]) -> bool:
+    """前の会話が店舗検索だった場合、場所のみの短いフォローアップを検出する"""
+    if not history:
+        return False
+    user_turns = [h for h in history if h["role"] == "user"]
+    if not user_turns:
+        return False
+    if not is_store_query(user_turns[-1]["content"]):
+        return False
+    has_location = any(p in query for p in PREFECTURES) or any(w in query for w in _FOLLOWUP_WORDS)
+    return has_location
+
+
 async def get_store_text() -> str:
     """
     店舗ページのテキストを返す。キャッシュが有効な場合はキャッシュを使用する。

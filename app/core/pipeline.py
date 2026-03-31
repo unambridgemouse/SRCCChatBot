@@ -25,7 +25,7 @@ from app.core.entity_extractor import EntityExtractor
 from app.core.hybrid_search import HybridSearcher
 from app.core.context_manager import ConversationContextManager
 from app.core import prompt_builder
-from app.core.store_scraper import is_store_query, get_store_text
+from app.core.store_scraper import is_store_query, is_store_followup, get_store_text
 from app.models.response import SourceItem
 from app.utils import get_logger
 
@@ -88,7 +88,8 @@ class RAGPipeline:
             }
         """
         # 店舗クエリ（体験・購入場所の検索）は専用フローで処理
-        if is_store_query(query):
+        history = self.context_manager.get_history(session_id)
+        if is_store_query(query) or is_store_followup(query, history):
             return await self._run_store_query(session_id, query)
 
         # Step 1: Entity抽出・クエリ拡張
@@ -111,16 +112,23 @@ class RAGPipeline:
         )
 
         # Step 5: ソース情報の整形（フロントエンド表示用）
-        sources = [
-            SourceItem(
-                doc_id=n.doc_id,
-                type=n.metadata.get("type", ""),
-                title=n.metadata.get("doc_id", ""),
-                score=round(n.score, 3),
-                source=n.metadata.get("source"),
-            )
-            for n in nodes
-        ]
+        # スコアが低い場合は関連ナレッジなしとみなしてsourcesを返さない
+        MIN_SCORE = 0.05
+        top_score = max((n.score for n in nodes), default=0.0)
+        sources = (
+            [
+                SourceItem(
+                    doc_id=n.doc_id,
+                    type=n.metadata.get("type", ""),
+                    title=n.metadata.get("doc_id", ""),
+                    score=round(n.score, 3),
+                    source=n.metadata.get("source"),
+                )
+                for n in nodes
+            ]
+            if top_score >= MIN_SCORE
+            else []
+        )
 
         return {
             "system_prompt": system_prompt,
