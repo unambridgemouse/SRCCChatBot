@@ -9,10 +9,13 @@ type Source = {
 export default function SourceCitation({ sources }: { sources: Source[] }) {
   if (!sources || sources.length === 0) return null;
 
-  // source があるものだけ取り出し、重複を除去
+  const MIN_SCORE = 0.05;
+
+  // スコアが低いものは関連ナレッジなしとみなして非表示。source があるものだけ取り出し重複除去
   const manuals = Array.from(
     new Set(
       sources
+        .filter((s) => s.score >= MIN_SCORE || s.type === "store")
         .map((s) => s.source ?? "")
         .filter((s) => s.length > 0)
     )

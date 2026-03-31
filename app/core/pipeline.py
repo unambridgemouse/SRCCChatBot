@@ -112,23 +112,16 @@ class RAGPipeline:
         )
 
         # Step 5: ソース情報の整形（フロントエンド表示用）
-        # スコアが低い場合は関連ナレッジなしとみなしてsourcesを返さない
-        MIN_SCORE = 0.05
-        top_score = max((n.score for n in nodes), default=0.0)
-        sources = (
-            [
-                SourceItem(
-                    doc_id=n.doc_id,
-                    type=n.metadata.get("type", ""),
-                    title=n.metadata.get("doc_id", ""),
-                    score=round(n.score, 3),
-                    source=n.metadata.get("source"),
-                )
-                for n in nodes
-            ]
-            if top_score >= MIN_SCORE
-            else []
-        )
+        sources = [
+            SourceItem(
+                doc_id=n.doc_id,
+                type=n.metadata.get("type", ""),
+                title=n.metadata.get("doc_id", ""),
+                score=round(n.score, 3),
+                source=n.metadata.get("source"),
+            )
+            for n in nodes
+        ]
 
         return {
             "system_prompt": system_prompt,
