@@ -182,7 +182,10 @@ class RAGPipeline:
         retrieved_ids = {n.doc_id for n in nodes}
         extra_nodes = []
         for node in list(nodes):
-            for related_id in node.metadata.get("related_faq_ids", []):
+            # node.metadataではなくfaq_index（最新のfaq_master.json）からrelated_faq_idsを取得
+            faq_item = faq_index.get(node.doc_id)
+            related_ids = faq_item.get("related_faq_ids", []) if faq_item else []
+            for related_id in related_ids:
                 if related_id in retrieved_ids or related_id in {n.doc_id for n in extra_nodes}:
                     continue
                 item = faq_index.get(related_id)
