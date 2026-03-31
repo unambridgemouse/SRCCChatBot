@@ -1,14 +1,14 @@
 import os
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from functools import lru_cache
+from dotenv import load_dotenv
 
-_env_file = ".env.local" if os.path.exists(".env.local") else None
+# ローカル環境では .env.local を読み込む（Railway では無視される）
+load_dotenv(".env.local", override=False)
 
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
-        env_file=_env_file,
-        env_file_encoding="utf-8",
         case_sensitive=False,
     )
 
@@ -54,4 +54,12 @@ class Settings(BaseSettings):
 
 @lru_cache
 def get_settings() -> Settings:
-    return Settings()
+    # pydantic-settings の env 自動読み込みが Railway で動作しないケースへの対策
+    # os.environ から直接渡すことで確実に読み込む
+    return Settings(
+        anthropic_api_key=os.environ.get("ANTHROPIC_API_KEY", ""),
+        pinecone_api_key=os.environ.get("PINECONE_API_KEY", ""),
+        cohere_api_key=os.environ.get("COHERE_API_KEY", ""),
+        upstash_redis_rest_url=os.environ.get("UPSTASH_REDIS_REST_URL", ""),
+        upstash_redis_rest_token=os.environ.get("UPSTASH_REDIS_REST_TOKEN", ""),
+    )
