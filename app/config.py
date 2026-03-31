@@ -10,6 +10,7 @@ load_dotenv(".env.local", override=False)
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
         case_sensitive=False,
+        extra="ignore",
     )
 
     # Anthropic
@@ -54,12 +55,4 @@ class Settings(BaseSettings):
 
 @lru_cache
 def get_settings() -> Settings:
-    # pydantic-settings の env 自動読み込みが Railway で動作しないケースへの対策
-    # os.environ から直接渡すことで確実に読み込む
-    return Settings(
-        anthropic_api_key=os.environ.get("ANTHROPIC_API_KEY", ""),
-        pinecone_api_key=os.environ.get("PINECONE_API_KEY", ""),
-        cohere_api_key=os.environ.get("COHERE_API_KEY", ""),
-        upstash_redis_rest_url=os.environ.get("UPSTASH_REDIS_REST_URL", ""),
-        upstash_redis_rest_token=os.environ.get("UPSTASH_REDIS_REST_TOKEN", ""),
-    )
+    return Settings()
