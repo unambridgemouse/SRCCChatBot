@@ -4,6 +4,10 @@
 dev:
 	uvicorn app.main:app --reload --port 8000
 
+# バージョン同期: VERSION → frontend/lib/version.ts
+sync-version:
+	python scripts/sync_version.py
+
 # データ投入 (BM25 + Pinecone)
 ingest:
 	python scripts/validate_data.py
