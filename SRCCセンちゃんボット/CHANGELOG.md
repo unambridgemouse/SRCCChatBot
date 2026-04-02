@@ -1,0 +1,35 @@
+# SRCCセンちゃんBot — 変更履歴
+
+> バージョン管理ルール:
+> - **Patch (x.x.1)**: ナレッジ追加・FAQ修正・用語集更新
+> - **Minor (x.1.0)**: プロンプト変更・RAGロジック変更・UI機能追加
+> - **Major (2.0.0)**: アーキテクチャ変更・破壊的変更
+
+---
+
+## Ver 1.0 — 2026-04-02（オペレーター公開）
+
+### 初回リリース
+
+**システム構成**
+- バックエンド: FastAPI + Railway
+- フロントエンド: Next.js + Vercel
+- RAG: BM25 + Pinecone (Cohere embed-multilingual-v3.0) + RRF + Cohere Rerank
+- セッション管理: Upstash Redis
+
+**ナレッジ**
+- FAQ: 83件（faq-001〜faq-083）
+- 用語集: 226件
+
+**主要機能**
+- Hybrid Search & Re-ranking（BM25 + Vector + RRF + Cohere Rerank）
+- Entity-Focused Query Expansion（用語集直接照合・クエリ拡張）
+- Multi-turn Context Management（Upstash Redis、TTL 30分・最大5ターン）
+- 店舗検索フロー（senserobot-jp.com/store リアルタイムスクレイピング）
+- クエリログ（Railway stdout + Upstash Redis、/api/logs で閲覧）
+- SSEストリーミング回答
+
+**このバージョンでの主な変更（リリース直前）**
+- 購入フロー改訂: 該当県に購入店舗なしの場合、近隣県店舗を先案内 → 伊藤電機直販・Amazonを付記する形に変更（旧: 伊藤電機・Amazonのみ）
+- FAQ追加: faq-082（メインメニュー構成）、faq-083（システム設定メニュー構成）
+- CLAUDE.md修正: OPENAI_API_KEY を不要に変更、Obsidianパス修正、rerank件数誤記修正（3→7）

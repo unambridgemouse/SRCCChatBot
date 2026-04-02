@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import ChatWindow, { Message } from "@/components/ChatWindow";
 import Sidebar, { ChatSession } from "@/components/Sidebar";
+import { APP_VERSION, APP_VERSION_DATE } from "@/lib/version";
 
 const STORAGE_KEY = "srcc_chat_sessions";
 
@@ -120,11 +121,16 @@ export default function Home() {
         onClearAll={handleClearAll}
       />
       <div className="flex-1 flex flex-col overflow-hidden">
-        <header className="px-6 py-3 border-b border-gray-200 bg-white flex-shrink-0">
-          <h1 className="text-lg font-bold text-gray-800">SRCCセンちゃんBot</h1>
-          <p className="text-xs text-gray-500">
-            センスロボットコールセンターサポートシステム
-          </p>
+        <header className="px-6 py-3 border-b border-gray-200 bg-white flex-shrink-0 flex items-center justify-between">
+          <div>
+            <h1 className="text-lg font-bold text-gray-800">SRCCセンちゃんBot</h1>
+            <p className="text-xs text-gray-500">
+              センスロボットコールセンターサポートシステム
+            </p>
+          </div>
+          <span className="text-xs text-gray-400 tabular-nums">
+            Ver {APP_VERSION} ({APP_VERSION_DATE})
+          </span>
         </header>
         <div className="flex-1 overflow-hidden p-4">
           {activeSession && (
