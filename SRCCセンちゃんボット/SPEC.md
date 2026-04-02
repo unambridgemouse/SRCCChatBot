@@ -1,7 +1,7 @@
 # SRCCセンちゃんBot — システム仕様書
 
 > 作成: 2026-04-02 / 更新: 随時
-> **現在のバージョン: Ver 1.0（2026-04-02 オペレーター公開）**
+> **現在のバージョン: Ver 1.0.1（2026-04-02）**
 > 変更履歴は [[CHANGELOG]] を参照。
 
 ---
@@ -159,7 +159,7 @@ is_store_query(query) or is_store_followup(query, history)
 | `session_id` | セッションID |
 | `query` | オペレーターのクエリ |
 | `expanded_query` | エンティティ抽出後の拡張クエリ |
-| `answer` | 回答（先頭300文字） |
+| `answer` | 回答（全文） |
 | `sources` | 参照ナレッジID・スコア |
 | `system_prompt` | 思考回路（注入されたFAQ・ルール全文） |
 
