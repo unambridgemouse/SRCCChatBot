@@ -174,8 +174,8 @@ export default function ChatWindow({ sessionId, initialMessages, onMessagesUpdat
         {messages.length === 0 && (
           <div className="flex items-center justify-center h-full text-gray-400 text-sm">
             <div className="text-center">
-              <p className="text-lg mb-2">SRCC についてご質問ください</p>
-              <p className="text-xs">例: 「アタリとは何ですか？」「思考時間の変更方法は？」</p>
+              <p className="text-lg mb-2">センちゃんについて何でも聞いてください</p>
+              <p className="text-xs">例：「ロボットの強さは？」「ダメ詰めとは何ですか？」</p>
             </div>
           </div>
         )}
