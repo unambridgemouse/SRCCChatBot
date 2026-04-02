@@ -43,21 +43,21 @@ make test-unit  # ユニットテストのみ
 
 ## Key Design Decisions
 1. **BM25キャッシュ**: コールドスタート対策でPickleを `/tmp` にキャッシュ（Vercel対応）
-2. **Cohereリランク**: 上位10件→3件に絞る（精度/コストバランス）
+2. **Cohereリランク**: 上位10件→7件に絞る（精度/コストバランス）
 3. **Redisセッション**: キー `session:{session_id}` TTL=1800秒・最大5ターン保持
 4. **モデル分離**: Entity抽出はHaiku（速度優先）、回答生成はSonnet（精度優先）
 5. **streaming**: SSE (Server-Sent Events) でトークンをストリーミング配信
 
 ## Environment Variables (required)
 ```
-ANTHROPIC_API_KEY       # Claude API
-OPENAI_API_KEY          # text-embedding-3-small
+ANTHROPIC_API_KEY       # Claude API（Haiku=Entity抽出 / Sonnet=回答生成）
 PINECONE_API_KEY        # ベクトルDB
 PINECONE_INDEX_NAME     # 例: srcc-faq
-COHERE_API_KEY          # Re-ranking
-UPSTASH_REDIS_REST_URL  # セッション管理
+COHERE_API_KEY          # Embedding（embed-multilingual-v3.0）+ Re-ranking
+UPSTASH_REDIS_REST_URL  # セッション管理・クエリログ
 UPSTASH_REDIS_REST_TOKEN
 ```
+※ `OPENAI_API_KEY` はCohere移行済みのため不要（config.py でオプション扱い）
 
 ## Data Update Workflow
 1. `data/faq/faq_master.json` または `data/glossary/glossary_master.json` を編集
@@ -70,3 +70,9 @@ UPSTASH_REDIS_REST_TOKEN
 - [ ] 複数ターン会話で前の文脈を参照できるか
 - [ ] 未知の質問に対して「情報なし」と回答するか（幻覚なし）
 - [ ] SRCC固有機能の質問が一般囲碁FAQと混合しないか
+
+## Obsidian Integration & Documentation Rules
+- **Documentation Path**: 全ての仕様書と開発ログは `SRCCセンちゃんボット/` ディレクトリ内の Markdown ファイルで管理する（Obsidian vault）。
+- **Auto-Update**: コードのロジックやファイル構成に変更を加えた際は、関連する `SRCCセンちゃんボット/SPEC.md` または `SRCCセンちゃんボット/STRUCTURE.md` を必ず最新の状態に更新すること。
+- **Memory for Obsidian**: 重要な意思決定（なぜこのライブラリを選んだか、Difyからどうロジックを変えたか）は、`SRCCセンちゃんボット/DECISIONS.md` に記録を残すこと。
+- **Formatting**: Obsidian のグラフビューで繋がりが見えるよう、関連するノート間には `[[ファイル名]]` 形式で内部リンクを貼ること。
