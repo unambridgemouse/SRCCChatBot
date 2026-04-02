@@ -18,7 +18,14 @@ MAX_LOG_ENTRIES = 500  # Redis に保持する最大件数
 JST = timezone(timedelta(hours=9))
 
 
-def _build_entry(session_id: str, query: str, answer: str, sources: list, expanded_query: str) -> dict:
+def _build_entry(
+    session_id: str,
+    query: str,
+    answer: str,
+    sources: list,
+    expanded_query: str,
+    system_prompt: str = "",
+) -> dict:
     now = datetime.now(JST)
     return {
         "ts":             now.strftime("%Y-%m-%d %H:%M:%S"),
@@ -31,6 +38,7 @@ def _build_entry(session_id: str, query: str, answer: str, sources: list, expand
             {"id": s.get("doc_id", ""), "score": s.get("score", 0)}
             for s in (sources or [])
         ],
+        "system_prompt":  system_prompt,
     }
 
 
@@ -41,8 +49,9 @@ def save_query_log(
     answer: str,
     sources: list,
     expanded_query: str,
+    system_prompt: str = "",
 ) -> None:
-    entry = _build_entry(session_id, query, answer, sources, expanded_query)
+    entry = _build_entry(session_id, query, answer, sources, expanded_query, system_prompt)
 
     # ① Railway stdout（構造化JSON）
     logger.info("[QUERY_LOG] " + json.dumps(entry, ensure_ascii=False))

@@ -32,15 +32,25 @@ async def logs(
 
     # ── HTML 表形式で返す ──
     rows = ""
-    for e in entries:
+    for i, e in enumerate(entries):
         sources = ", ".join(s["id"] for s in e.get("sources", []))
+        sp = _esc(e.get("system_prompt", ""))
+        expanded = _esc(e.get("expanded_query", ""))
+        sp_id = f"sp_{i}"
         rows += f"""
         <tr>
           <td>{e.get('ts','')}</td>
           <td class="q">{_esc(e.get('query',''))}</td>
+          <td class="eq">{expanded}</td>
           <td class="a">{_esc(e.get('answer',''))}</td>
           <td>{_esc(sources)}</td>
           <td class="sid">{e.get('session_id','')[:8]}</td>
+          <td class="sp">
+            <details>
+              <summary>表示</summary>
+              <pre>{sp}</pre>
+            </details>
+          </td>
         </tr>"""
 
     html = f"""<!DOCTYPE html>
@@ -56,9 +66,15 @@ async def logs(
   th {{ background: #1f4e79; color: #fff; padding: 8px 10px; text-align: left; position: sticky; top: 0; }}
   td {{ padding: 7px 10px; border-bottom: 1px solid #e0e0e0; vertical-align: top; }}
   tr:hover td {{ background: #eef4fb; }}
-  .q  {{ max-width: 220px; font-weight: bold; }}
-  .a  {{ max-width: 340px; color: #333; white-space: pre-wrap; }}
+  .q  {{ max-width: 180px; font-weight: bold; }}
+  .eq {{ max-width: 150px; color: #555; font-size: 11px; }}
+  .a  {{ max-width: 300px; color: #333; white-space: pre-wrap; }}
   .sid {{ color: #999; font-size: 11px; }}
+  .sp {{ max-width: 120px; }}
+  .sp details summary {{ cursor: pointer; color: #1f4e79; font-size: 11px; }}
+  .sp pre {{ margin: 6px 0 0; white-space: pre-wrap; font-size: 11px; color: #333;
+             background: #f0f4f8; padding: 8px; border-radius: 4px;
+             max-height: 300px; overflow-y: auto; width: 500px; }}
   a {{ color: #1f4e79; }}
 </style>
 </head>
@@ -68,10 +84,10 @@ async def logs(
   <a href="?format=json&limit={limit}">JSONで見る</a></p>
 <table>
   <thead><tr>
-    <th>日時(JST)</th><th>クエリ</th><th>回答（先頭300字）</th>
-    <th>参照ナレッジ</th><th>セッションID</th>
+    <th>日時(JST)</th><th>クエリ</th><th>拡張クエリ</th><th>回答（先頭300字）</th>
+    <th>参照ナレッジ</th><th>セッションID</th><th>思考回路</th>
   </tr></thead>
-  <tbody>{rows if rows else '<tr><td colspan="5" style="text-align:center;color:#999;">ログなし</td></tr>'}</tbody>
+  <tbody>{rows if rows else '<tr><td colspan="7" style="text-align:center;color:#999;">ログなし</td></tr>'}</tbody>
 </table>
 </body></html>"""
 

@@ -75,6 +75,7 @@ async def chat(req: ChatRequest):
                         answer=answer_text,
                         sources=result["sources"],
                         expanded_query=result.get("expanded_query", ""),
+                        system_prompt=result.get("system_prompt", ""),
                     )
                 except Exception as log_err:
                     logger.warning(f"Query log failed (non-critical): {log_err}")
