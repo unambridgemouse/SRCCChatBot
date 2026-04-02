@@ -170,8 +170,11 @@ export default function ChatWindow({ sessionId, initialMessages, onMessagesUpdat
           ].join(","),
         }}>
         <RobotAvatar isTalking={isLoading} size={140} />
-        <p className="text-xs mt-2 h-4 transition-all duration-300"
-           style={{ color: isLoading ? "#60a5fa" : "#6b7280" }}>
+        <p className="text-xs mt-2 h-4 transition-all duration-300 font-bold"
+           style={{
+             color: isLoading ? "#bfefff" : "#ffffff",
+             textShadow: "0 1px 3px rgba(0,0,0,0.7)",
+           }}>
           {isLoading ? "回答中..." : messages.length === 0 ? "ご質問をどうぞ" : "待機中"}
         </p>
       </div>
