@@ -54,18 +54,44 @@ def is_store_query(query: str) -> bool:
 
 
 _FOLLOWUP_WORDS = ["はどう", "は？", "も教えて", "も同様", "市", "区"]
+# 最寄り・近隣を聞くキーワード
+_PROXIMITY_WORDS = ["近い", "近く", "最寄り", "一番近い", "近いのは", "近場"]
+# 居住地・所在地を示すキーワード
+_RESIDENCE_WORDS = ["住んでる", "住んでいる", "住む", "最寄", "在住", "近隣", "周辺", "付近", "近くに住"]
 
 
 def is_store_followup(query: str, history: list[dict]) -> bool:
-    """前の会話が店舗検索だった場合、場所のみの短いフォローアップを検出する"""
+    """直近の会話に店舗検索コンテキストがある場合、地名・最寄り系フォローアップを検出する"""
     if not history:
         return False
-    user_turns = [h for h in history if h["role"] == "user"]
-    if not user_turns:
+
+    # 直近6ターン（3往復）を確認
+    recent = history[-6:]
+    had_store_context = False
+
+    for h in recent:
+        # ユーザーターンが store_query だった
+        if h["role"] == "user" and is_store_query(h["content"]):
+            had_store_context = True
+            break
+        # アシスタントが店舗一覧を返していた（表形式 or store URL）
+        if h["role"] == "assistant" and (
+            "体験・購入" in h["content"]
+            or "senserobot-jp.com/store" in h["content"]
+            or "体験/購入" in h["content"]
+        ):
+            had_store_context = True
+            break
+
+    if not had_store_context:
         return False
-    if not is_store_query(user_turns[-1]["content"]):
-        return False
-    has_location = any(p in query for p in PREFECTURES) or any(w in query for w in _FOLLOWUP_WORDS)
+
+    has_location = (
+        any(p in query for p in PREFECTURES)
+        or any(w in query for w in _FOLLOWUP_WORDS)
+        or any(w in query for w in _PROXIMITY_WORDS)
+        or any(w in query for w in _RESIDENCE_WORDS)
+    )
     return has_location
 
 
