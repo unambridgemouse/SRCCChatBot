@@ -64,19 +64,37 @@ export default function RobotAvatar({ isTalking, size = 160 }: Props) {
           }
         `}</style>
 
-        {/* ── 本体 ── */}
-        <rect x="4" y="4" width="192" height="152" rx="38" ry="38" fill="#0f0f0f" />
+        <defs>
+          {/* 碁盤の木目グラデーション */}
+          <linearGradient id="woodGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%"   stopColor="#D9A84E" />
+            <stop offset="50%"  stopColor="#C8923A" />
+            <stop offset="100%" stopColor="#B07828" />
+          </linearGradient>
+          {/* 碁盤グリッドパターン（格子線） */}
+          <pattern id="goGrid" x="4" y="4" width="16" height="12.5" patternUnits="userSpaceOnUse">
+            <line x1="0" y1="0" x2="16"  y2="0"    stroke="#5C3010" strokeWidth="0.7" opacity="0.55" />
+            <line x1="0" y1="0" x2="0"   y2="12.5" stroke="#5C3010" strokeWidth="0.7" opacity="0.55" />
+          </pattern>
+          {/* クリップパス（角丸に合わせてパターンを切り抜く） */}
+          <clipPath id="boardClip">
+            <rect x="4" y="4" width="192" height="152" rx="38" ry="38" />
+          </clipPath>
+        </defs>
+
+        {/* ── 本体：碁盤背景 ── */}
+        <rect x="4" y="4" width="192" height="152" rx="38" ry="38" fill="url(#woodGrad)" />
+        {/* 格子線（クリップで角丸の外にはみ出さない） */}
+        <rect x="0" y="0" width="200" height="160" fill="url(#goGrid)" clipPath="url(#boardClip)" />
+        {/* 枠線 */}
+        <rect x="4" y="4" width="192" height="152" rx="38" ry="38" fill="none" stroke="#7A4A18" strokeWidth="2.5" />
         {/* 光沢 */}
-        <ellipse cx="100" cy="28" rx="68" ry="16" fill="rgba(255,255,255,0.07)" />
-        {/* 下部の台座的ハイライト */}
-        <rect x="4" y="148" width="192" height="8" rx="8" fill="rgba(255,255,255,0.04)" />
+        <ellipse cx="100" cy="28" rx="68" ry="14" fill="rgba(255,255,255,0.12)" />
 
         {/* ── 左目 ── */}
         <g opacity={blink ? 0 : 1} style={{ transition: "opacity 0.05s" }}>
-          {/* リング */}
-          <circle cx="48" cy="74" r="20" fill="none" stroke="#d4d4d4" strokeWidth="3.5" />
-          {/* × マーク（リング左上） */}
-          <g stroke="#d4d4d4" strokeWidth="2.5" strokeLinecap="round">
+          <circle cx="48" cy="74" r="20" fill="rgba(255,255,255,0.25)" stroke="#3A2008" strokeWidth="3.5" />
+          <g stroke="#3A2008" strokeWidth="2.5" strokeLinecap="round">
             <line x1="33" y1="57" x2="39" y2="63" />
             <line x1="39" y1="57" x2="33" y2="63" />
           </g>
@@ -84,10 +102,8 @@ export default function RobotAvatar({ isTalking, size = 160 }: Props) {
 
         {/* ── 右目 ── */}
         <g opacity={blink ? 0 : 1} style={{ transition: "opacity 0.05s" }}>
-          {/* リング */}
-          <circle cx="152" cy="74" r="20" fill="none" stroke="#d4d4d4" strokeWidth="3.5" />
-          {/* × マーク（リング左上） */}
-          <g stroke="#d4d4d4" strokeWidth="2.5" strokeLinecap="round">
+          <circle cx="152" cy="74" r="20" fill="rgba(255,255,255,0.25)" stroke="#3A2008" strokeWidth="3.5" />
+          <g stroke="#3A2008" strokeWidth="2.5" strokeLinecap="round">
             <line x1="137" y1="57" x2="143" y2="63" />
             <line x1="143" y1="57" x2="137" y2="63" />
           </g>
@@ -95,28 +111,26 @@ export default function RobotAvatar({ isTalking, size = 160 }: Props) {
 
         {/* ── 口 ── */}
         {isTalking ? (
-          /* 話し中: 楕円が縦に開閉 */
           <ellipse
             cx="100"
             cy="114"
             rx="20"
             ry="11"
-            fill="#d4d4d4"
+            fill="#3A2008"
             className="mouth-talking"
           />
         ) : (
-          /* 待機中: スマイルカーブ */
           <path
             d="M 76 108 Q 100 126 124 108"
-            stroke="#d4d4d4"
+            stroke="#3A2008"
             fill="none"
             strokeWidth="4"
             strokeLinecap="round"
           />
         )}
 
-        {/* ── 右下の小さなスターマーク（元画像に合わせた装飾）── */}
-        <g fill="#333" transform="translate(176, 144)">
+        {/* ── 右下スター装飾 ── */}
+        <g fill="#7A4A18" transform="translate(176, 144)">
           <polygon points="0,-5 1.5,-1.5 5,-1.5 2.5,1 3.5,4.5 0,2.5 -3.5,4.5 -2.5,1 -5,-1.5 -1.5,-1.5" />
         </g>
       </svg>
