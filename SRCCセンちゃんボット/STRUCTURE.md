@@ -195,7 +195,7 @@ frontend/
 ```
 data/
 ├── faq/
-│   └── faq_master.json      # FAQ本体（81件）
+│   └── faq_master.json      # FAQ本体（83件）
 ├── glossary/
 │   └── glossary_master.json # 用語集（226件）
 ├── bm25_index.pkl           # BM25インデックス（make ingest で生成）
@@ -270,7 +270,7 @@ scripts/
 
 ### export_to_excel.py の動作
 
-- 3シート構成: サマリー / FAQ（81件）/ 用語集（226件）
+- 3シート構成: サマリー / FAQ（83件）/ 用語集（226件）
 - ヘッダースタイル付き（openpyxl）
 - 出力先: `data/excel/srcc_knowledge_YYYYMMDD_HHMMSS.xlsx`
 - post-commitフックで自動実行（`scripts/install_hooks.py` でフック設定）

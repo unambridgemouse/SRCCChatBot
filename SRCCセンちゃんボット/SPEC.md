@@ -191,8 +191,8 @@ MessageBubble.tsx の `renderInline()` で独自パース：
 
 ### FAQ（data/faq/faq_master.json）
 
-- **件数**: 81件（faq-001〜faq-081）
-- **主なカテゴリ**: 操作・トラブル・バージョン確認・囲碁ルール・対局設定・店舗・価格
+- **件数**: 83件（faq-001〜faq-083）
+- **主なカテゴリ**: 操作・トラブル・バージョン確認・囲碁ルール・対局設定・店舗・価格・メニュー構成
 
 **JSONスキーマ**
 
@@ -204,7 +204,9 @@ MessageBubble.tsx の `renderInline()` で独自パース：
   "embedding_text": "...",   // ベクトル検索用テキスト（questionと異なる場合あり）
   "related_faq_ids": ["faq-002"],
   "tags": ["操作", "トラブル"],
-  "metadata_filter": {}
+  "category": "操作方法",    // 仕様・機能 / 操作方法 / トラブル / セットアップ / 方針・規定 / サポート対応 / その他
+  "type": "faq",
+  "metadata_filter": null
 }
 ```
 
