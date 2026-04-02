@@ -123,7 +123,7 @@ export default function Home() {
         <header className="px-6 py-3 border-b border-gray-200 bg-white flex-shrink-0">
           <h1 className="text-lg font-bold text-gray-800">SRCC FAQ Bot</h1>
           <p className="text-xs text-gray-500">
-            囲碁ロボット(SRCC) コールセンター サポートシステム
+            センスロボットコールセンターサポートシステム
           </p>
         </header>
         <div className="flex-1 overflow-hidden p-4">
