@@ -11,14 +11,10 @@
             "id": "077b52c4fe8e8b41",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docs/LEGACY_LOG.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "LEGACY_LOG"
+              "title": "新規タブ"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docs/LEGACY_LOG.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "LEGACY_LOGへのバックリンク"
+              "title": "バックリンク"
             }
           },
           {
@@ -113,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docs/LEGACY_LOG.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "LEGACY_LOGからのアウトゴーイングリンク"
+              "title": "アウトゴーイングリンク"
             }
           },
           {
@@ -156,13 +150,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docs/LEGACY_LOG.md",
+                "file": "SPEC.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "LEGACY_LOGのアウトライン"
+              "title": "SPECのアウトライン"
             }
           }
         ]
@@ -185,13 +179,19 @@
   },
   "active": "b11e791a2486de83",
   "lastOpenFiles": [
+    "SPEC.md.tmp.36008.1775116532823",
+    "SPEC.md.tmp.36008.1775113412841",
+    "CHANGELOG.md",
+    "STRUCTURE.md.tmp.36008.1775113016237",
+    "SPEC.md.tmp.36008.1775113007584",
+    "SPEC.md.tmp.36008.1775112990897",
+    "STRUCTURE.md",
+    "SPEC.md",
+    "ようこそ.md",
+    "docs/LEGACY_LOG.md",
     "SPEC.md.tmp.36008.1775109369811",
     "SPEC.md.tmp.36008.1775101947131",
-    "docs/LEGACY_LOG.md",
-    "SPEC.md",
-    "STRUCTURE.md",
     "docs",
-    "ようこそ.md",
     "SPEC.md.tmp.5488.1775097759673"
   ]
 }

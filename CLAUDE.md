@@ -72,7 +72,7 @@ UPSTASH_REDIS_REST_TOKEN
 - [ ] SRCC固有機能の質問が一般囲碁FAQと混合しないか
 
 ## Obsidian Integration & Documentation Rules
-- **Documentation Path**: 全ての仕様書と開発ログは `SRCCセンちゃんボット/` ディレクトリ内の Markdown ファイルで管理する（Obsidian vault）。
-- **Auto-Update**: コードのロジックやファイル構成に変更を加えた際は、関連する `SRCCセンちゃんボット/SPEC.md` または `SRCCセンちゃんボット/STRUCTURE.md` を必ず最新の状態に更新すること。
-- **Memory for Obsidian**: 重要な意思決定（なぜこのライブラリを選んだか、Difyからどうロジックを変えたか）は、`SRCCセンちゃんボット/DECISIONS.md` に記録を残すこと。
+- **Documentation Path**: 全ての仕様書と開発ログは `docs/` ディレクトリ内の Markdown ファイルで管理する。ObsidianのVaultはプロジェクトルート（srcc-faq-bot/）に設定する。
+- **Auto-Update**: コードのロジックやファイル構成に変更を加えた際は、関連する `docs/SPEC.md` または `docs/STRUCTURE.md` を必ず最新の状態に更新すること。また `docs/CHANGELOG.md` にバージョンと変更内容を記録すること。
+- **Memory for Obsidian**: 重要な意思決定（なぜこのライブラリを選んだか、Difyからどうロジックを変えたか）は、`docs/DECISIONS.md` に記録を残すこと。
 - **Formatting**: Obsidian のグラフビューで繋がりが見えるよう、関連するノート間には `[[ファイル名]]` 形式で内部リンクを貼ること。

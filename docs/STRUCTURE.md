@@ -13,7 +13,8 @@ srcc-faq-bot/
 ├── data/                   # ナレッジデータ（FAQ・用語集・インデックス）
 ├── scripts/                # データ管理・運用スクリプト
 ├── tests/                  # テスト
-├── SRCCセンちゃんボット/    # Obsidian ドキュメント（このファイル）
+├── docs/                   # Obsidian ドキュメント（仕様書・変更履歴）
+├── .obsidian/              # Obsidian設定（Vaultルート = プロジェクトルート）
 ├── Makefile                # 開発コマンド定義
 ├── Procfile                # Railway 起動定義（参照のみ、railway.tomlが優先）
 ├── railway.toml            # Railway デプロイ設定
@@ -291,15 +292,19 @@ tests/
 
 ---
 
-## SRCCセンちゃんボット/ — Obsidianドキュメント
+## docs/ — Obsidianドキュメント
 
 ```
-SRCCセンちゃんボット/
-├── .obsidian/          # Obsidian設定（Git管理）
-├── SPEC.md             # システム仕様書（このプロジェクトのSPEC）
+docs/
+├── SPEC.md             # システム仕様書
 ├── STRUCTURE.md        # ディレクトリ構成（このファイル）
+├── CHANGELOG.md        # バージョン変更履歴
+├── LEGACY_LOG.md       # 開発経緯・旧システムからの移行ログ
 └── ようこそ.md         # Obsidianデフォルトファイル
 ```
+
+ObsidianのVaultルートはプロジェクトルート（srcc-faq-bot/）に設定する。
+`.obsidian/` フォルダがプロジェクトルートに配置されている。
 
 ---
 
