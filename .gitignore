@@ -27,3 +27,6 @@ frontend/node_modules/
 
 # Claude Code
 .claude/
+
+# Auto-generated Excel exports
+data/excel/
