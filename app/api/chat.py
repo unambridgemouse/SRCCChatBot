@@ -10,6 +10,8 @@ from fastapi.responses import StreamingResponse
 
 from app.models.request import ChatRequest
 from app.core.pipeline import RAGPipeline
+from app.core.context_manager import ConversationContextManager
+from app.core.query_logger import save_query_log
 from app.config import get_settings
 from app.utils import get_logger
 
@@ -62,6 +64,20 @@ async def chat(req: ChatRequest):
                 # ストリーム完了: メタデータ（引用元・エンティティ）を最後に送信
                 answer_text = "".join(full_answer)
                 pipeline.save_turn(req.session_id, req.message, answer_text)
+
+                # クエリログ保存（Railway stdout + Upstash Redis）
+                try:
+                    ctx = ConversationContextManager()
+                    save_query_log(
+                        redis=ctx.redis,
+                        session_id=req.session_id,
+                        query=req.message,
+                        answer=answer_text,
+                        sources=result["sources"],
+                        expanded_query=result.get("expanded_query", ""),
+                    )
+                except Exception as log_err:
+                    logger.warning(f"Query log failed (non-critical): {log_err}")
 
                 metadata = {
                     "type": "done",
