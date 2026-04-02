@@ -33,7 +33,10 @@ async def logs(
     # ── HTML 表形式で返す ──
     rows = ""
     for i, e in enumerate(entries):
-        sources = ", ".join(s["id"] for s in e.get("sources", []))
+        sources = "<br>".join(
+            f'{_esc(s["id"])} <span class="score">({s.get("score", 0):.3f})</span>'
+            for s in e.get("sources", [])
+        )
         sp = _esc(e.get("system_prompt", ""))
         expanded = _esc(e.get("expanded_query", ""))
         sp_id = f"sp_{i}"
@@ -43,7 +46,7 @@ async def logs(
           <td class="q">{_esc(e.get('query',''))}</td>
           <td class="eq">{expanded}</td>
           <td class="a">{_esc(e.get('answer',''))}</td>
-          <td>{_esc(sources)}</td>
+          <td class="src">{sources}</td>
           <td class="sid">{e.get('session_id','')[:8]}</td>
           <td class="sp">
             <details>
@@ -70,6 +73,8 @@ async def logs(
   .eq {{ max-width: 150px; color: #555; font-size: 11px; }}
   .a  {{ max-width: 300px; color: #333; white-space: pre-wrap; }}
   .sid {{ color: #999; font-size: 11px; }}
+  .src {{ font-size: 11px; white-space: nowrap; }}
+  .score {{ color: #888; }}
   .sp {{ max-width: 120px; }}
   .sp details summary {{ cursor: pointer; color: #1f4e79; font-size: 11px; }}
   .sp pre {{ margin: 6px 0 0; white-space: pre-wrap; font-size: 11px; color: #333;
