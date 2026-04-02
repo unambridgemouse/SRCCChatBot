@@ -161,7 +161,14 @@ export default function ChatWindow({ sessionId, initialMessages, onMessagesUpdat
   return (
     <div className="flex flex-col h-full bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
       {/* ロボットアバター + ステータス */}
-      <div className="flex flex-col items-center py-4 border-b border-gray-100 bg-gray-950">
+      <div className="flex flex-col items-center py-4 border-b border-gray-100"
+        style={{
+          backgroundColor: "#C8923A",
+          backgroundImage: [
+            "repeating-linear-gradient(0deg,   rgba(92,48,16,0.55) 0px, rgba(92,48,16,0.55) 1px, transparent 1px, transparent 18px)",
+            "repeating-linear-gradient(90deg,  rgba(92,48,16,0.55) 0px, rgba(92,48,16,0.55) 1px, transparent 1px, transparent 18px)",
+          ].join(","),
+        }}>
         <RobotAvatar isTalking={isLoading} size={140} />
         <p className="text-xs mt-2 h-4 transition-all duration-300"
            style={{ color: isLoading ? "#60a5fa" : "#6b7280" }}>
