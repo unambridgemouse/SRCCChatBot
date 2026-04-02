@@ -4,9 +4,6 @@
  */
 import { NextRequest } from "next/server";
 
-// Vercel サーバーレス関数のタイムアウトを60秒に延長（デフォルト10秒）
-export const maxDuration = 60;
-
 const BACKEND_URL = process.env.BACKEND_URL ?? "http://localhost:8000";
 
 export async function POST(req: NextRequest) {

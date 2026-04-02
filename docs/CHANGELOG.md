@@ -7,11 +7,18 @@
 
 ---
 
+## Ver 1.1.4 — 2026-04-02
+
+**Vercel 500エラー修正（緊急）**
+- `frontend/app/api/chat/route.ts` から `export const maxDuration = 60` を削除
+  - Hobby プランの上限は10秒。60秒を設定するとデプロイ時に `FUNCTION_INVOCATION_FAILED (500)` でクラッシュする
+  - Vercel ダッシュボードで Framework Preset を Next.js / Root Directory を `frontend` に変更済みのため、maxDuration 設定は不要
+
 ## Ver 1.1.3 — 2026-04-02
 
-**Vercelエラー修正（インフラ）**
-- `frontend/app/api/chat/route.ts` に `maxDuration = 60` を追加（Vercelのデフォルト10秒タイムアウトによる504エラーを解消）
-- `vercel.json` をレガシー形式（`builds`+`routes`）からモダン形式（`rootDirectory`+`framework`）に更新
+**Vercel設定修正（インフラ）**
+- `vercel.json` をモダン形式に更新、`frontend/vercel.json` を追加
+- Vercel ダッシュボードで Framework Preset を FastAPI → Next.js、Root Directory を `frontend` に変更
 
 ---
 
