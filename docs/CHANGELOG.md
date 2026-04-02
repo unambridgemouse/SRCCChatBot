@@ -7,6 +7,14 @@
 
 ---
 
+## Ver 1.1.3 — 2026-04-02
+
+**Vercelエラー修正（インフラ）**
+- `frontend/app/api/chat/route.ts` に `maxDuration = 60` を追加（Vercelのデフォルト10秒タイムアウトによる504エラーを解消）
+- `vercel.json` をレガシー形式（`builds`+`routes`）からモダン形式（`rootDirectory`+`framework`）に更新
+
+---
+
 ## Ver 1.1.2 — 2026-04-02
 
 **ログ表示修正**
