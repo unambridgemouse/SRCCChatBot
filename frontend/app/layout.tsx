@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SRCC FAQ Bot",
+  title: "SRCCセンちゃんBot",
   description: "囲碁ロボット(SRCC) コールセンター用 FAQ・用語集ボット",
 };
 

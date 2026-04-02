@@ -47,7 +47,7 @@ export default function Sidebar({ sessions, activeId, onSelect, onNewChat, onDel
     <div className="w-64 flex-shrink-0 flex flex-col h-full bg-gray-900 text-white">
       {/* ヘッダー */}
       <div className="px-4 py-4 border-b border-gray-700">
-        <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">SRCC FAQ Bot</p>
+        <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider">SRCCセンちゃんBot</p>
       </div>
 
       {/* New Chat ボタン */}
