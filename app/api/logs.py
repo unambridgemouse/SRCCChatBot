@@ -39,13 +39,19 @@ async def logs(
         )
         sp = _esc(e.get("system_prompt", ""))
         expanded = _esc(e.get("expanded_query", ""))
-        sp_id = f"sp_{i}"
+        answer = _esc(e.get("answer", ""))
+        answer_preview = answer[:80].replace("\n", " ")
         rows += f"""
         <tr>
           <td>{e.get('ts','')}</td>
           <td class="q">{_esc(e.get('query',''))}</td>
           <td class="eq">{expanded}</td>
-          <td class="a">{_esc(e.get('answer',''))}</td>
+          <td class="a">
+            <details>
+              <summary>{answer_preview}{'…' if len(answer) > 80 else ''}</summary>
+              <pre>{answer}</pre>
+            </details>
+          </td>
           <td class="src">{sources}</td>
           <td class="sid">{e.get('session_id','')[:8]}</td>
           <td class="sp">
@@ -71,7 +77,11 @@ async def logs(
   tr:hover td {{ background: #eef4fb; }}
   .q  {{ max-width: 180px; font-weight: bold; }}
   .eq {{ max-width: 150px; color: #555; font-size: 11px; }}
-  .a  {{ max-width: 300px; color: #333; white-space: pre-wrap; }}
+  .a  {{ max-width: 260px; color: #333; }}
+  .a details summary {{ cursor: pointer; color: #333; font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 240px; }}
+  .a pre {{ margin: 6px 0 0; white-space: pre-wrap; font-size: 11px; color: #333;
+            background: #f0f4f8; padding: 8px; border-radius: 4px;
+            max-height: 400px; overflow-y: auto; width: 520px; }}
   .sid {{ color: #999; font-size: 11px; }}
   .src {{ font-size: 11px; white-space: nowrap; }}
   .score {{ color: #888; }}
@@ -89,7 +99,7 @@ async def logs(
   <a href="?format=json&limit={limit}">JSONで見る</a></p>
 <table>
   <thead><tr>
-    <th>日時(JST)</th><th>クエリ</th><th>拡張クエリ</th><th>回答（先頭300字）</th>
+    <th>日時(JST)</th><th>クエリ</th><th>拡張クエリ</th><th>回答（全文）</th>
     <th>参照ナレッジ</th><th>セッションID</th><th>思考回路</th>
   </tr></thead>
   <tbody>{rows if rows else '<tr><td colspan="7" style="text-align:center;color:#999;">ログなし</td></tr>'}</tbody>

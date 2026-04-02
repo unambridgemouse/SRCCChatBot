@@ -33,7 +33,7 @@ def _build_entry(
         "session_id":     session_id,
         "query":          query,
         "expanded_query": expanded_query,
-        "answer":         answer[:300],          # 先頭300文字
+        "answer":         answer,                  # 全文保存
         "sources":        [
             {"id": s.get("doc_id", ""), "score": s.get("score", 0)}
             for s in (sources or [])
