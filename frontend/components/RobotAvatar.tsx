@@ -33,10 +33,12 @@ export default function RobotAvatar({ isTalking, size = 160 }: Props) {
       style={{
         width: size,
         height: h,
-        filter: isTalking
-          ? "drop-shadow(0 0 12px rgba(96, 165, 250, 0.6))"
-          : "drop-shadow(0 4px 8px rgba(0,0,0,0.4))",
-        transition: "filter 0.3s ease",
+        borderRadius: "22px",
+        overflow: "hidden",
+        boxShadow: isTalking
+          ? "0 0 16px 4px rgba(96,165,250,0.55)"
+          : "0 4px 12px rgba(0,0,0,0.45)",
+        transition: "box-shadow 0.3s ease",
         animation: isTalking ? "robotBounce 0.5s ease-in-out infinite" : "none",
       }}
     >
@@ -64,30 +66,12 @@ export default function RobotAvatar({ isTalking, size = 160 }: Props) {
           }
         `}</style>
 
-        <defs>
-          {/* 碁盤の木目グラデーション（背景全体） */}
-          <linearGradient id="woodGrad" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%"   stopColor="#D9A84E" />
-            <stop offset="50%"  stopColor="#C8923A" />
-            <stop offset="100%" stopColor="#B07828" />
-          </linearGradient>
-          {/* 碁盤グリッドパターン */}
-          <pattern id="goGrid" x="0" y="0" width="16" height="12.5" patternUnits="userSpaceOnUse">
-            <line x1="0" y1="0" x2="16"  y2="0"    stroke="#5C3010" strokeWidth="0.8" opacity="0.6" />
-            <line x1="0" y1="0" x2="0"   y2="12.5" stroke="#5C3010" strokeWidth="0.8" opacity="0.6" />
-          </pattern>
-        </defs>
-
-        {/* ── 碁盤背景（SVG全体） ── */}
-        <rect x="0" y="0" width="200" height="160" fill="url(#woodGrad)" />
-        <rect x="0" y="0" width="200" height="160" fill="url(#goGrid)" />
-
-        {/* ── ロボット本体（黒） ── */}
-        <rect x="20" y="12" width="160" height="136" rx="30" ry="30" fill="#0f0f0f" />
+        {/* ── 黒背景（角丸はコンテナ div の overflow:hidden で処理） ── */}
+        <rect x="0" y="0" width="200" height="160" fill="#0f0f0f" />
         {/* 光沢 */}
-        <ellipse cx="100" cy="34" rx="56" ry="13" fill="rgba(255,255,255,0.07)" />
+        <ellipse cx="100" cy="22" rx="68" ry="14" fill="rgba(255,255,255,0.07)" />
         {/* 下部ハイライト */}
-        <rect x="20" y="142" width="160" height="6" rx="6" fill="rgba(255,255,255,0.04)" />
+        <rect x="0" y="152" width="200" height="8" rx="4" fill="rgba(255,255,255,0.04)" />
 
         {/* ── 左目 ── */}
         <g opacity={blink ? 0 : 1} style={{ transition: "opacity 0.05s" }}>
