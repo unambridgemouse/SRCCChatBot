@@ -26,12 +26,21 @@ function isEmphasizedSection(heading: string) {
   return EMPHASIZED_SECTIONS.some((s) => heading.includes(s));
 }
 
-/** **text** をインライン太字に変換して React 要素の配列を返す */
+/** **text** と [text](url) をインライン変換して React 要素の配列を返す */
 function renderInline(text: string, key: string | number) {
-  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\(https?:\/\/[^)]+\))/g);
   return parts.map((part, i) => {
     if (part.startsWith("**") && part.endsWith("**")) {
       return <strong key={`${key}-${i}`}>{part.slice(2, -2)}</strong>;
+    }
+    const linkMatch = part.match(/^\[([^\]]+)\]\((https?:\/\/[^)]+)\)$/);
+    if (linkMatch) {
+      return (
+        <a key={`${key}-${i}`} href={linkMatch[2]} target="_blank" rel="noopener noreferrer"
+           className="text-blue-600 underline hover:text-blue-800">
+          {linkMatch[1]}
+        </a>
+      );
     }
     return part;
   });
