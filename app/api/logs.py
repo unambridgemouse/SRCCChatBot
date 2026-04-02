@@ -81,7 +81,7 @@ async def logs(
   .a details summary {{ cursor: pointer; color: #333; font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 240px; }}
   .a pre {{ margin: 6px 0 0; white-space: pre-wrap; font-size: 11px; color: #333;
             background: #f0f4f8; padding: 8px; border-radius: 4px;
-            max-height: 400px; overflow-y: auto; width: 520px; }}
+            width: max-content; max-width: 800px; }}
   .sid {{ color: #999; font-size: 11px; }}
   .src {{ font-size: 11px; white-space: nowrap; }}
   .score {{ color: #888; }}
