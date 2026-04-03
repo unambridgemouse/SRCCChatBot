@@ -26,9 +26,9 @@ function isEmphasizedSection(heading: string) {
   return EMPHASIZED_SECTIONS.some((s) => heading.includes(s));
 }
 
-/** **text** と [text](url) をインライン変換して React 要素の配列を返す */
+/** **text** と [text](url) と裸のURLをインライン変換して React 要素の配列を返す */
 function renderInline(text: string, key: string | number) {
-  const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\(https?:\/\/[^)]+\))/g);
+  const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\(https?:\/\/[^)]+\)|https?:\/\/\S+)/g);
   return parts.map((part, i) => {
     if (part.startsWith("**") && part.endsWith("**")) {
       return <strong key={`${key}-${i}`}>{part.slice(2, -2)}</strong>;
@@ -39,6 +39,14 @@ function renderInline(text: string, key: string | number) {
         <a key={`${key}-${i}`} href={linkMatch[2]} target="_blank" rel="noopener noreferrer"
            className="text-blue-600 underline hover:text-blue-800">
           {linkMatch[1]}
+        </a>
+      );
+    }
+    if (part.match(/^https?:\/\/\S+$/)) {
+      return (
+        <a key={`${key}-${i}`} href={part} target="_blank" rel="noopener noreferrer"
+           className="text-blue-600 underline hover:text-blue-800 break-all">
+          {part}
         </a>
       );
     }
