@@ -8,6 +8,8 @@ class SourceItem(BaseModel):
     score: float
     source: str | None = None
     source_label: str | None = None
+    source2: str | None = None
+    source2_label: str | None = None
 
 
 class ChatResponse(BaseModel):

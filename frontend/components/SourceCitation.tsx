@@ -5,6 +5,8 @@ type Source = {
   score: number;
   source?: string;
   source_label?: string;
+  source2?: string;
+  source2_label?: string;
 };
 
 export default function SourceCitation({ sources }: { sources: Source[] }) {
@@ -12,16 +14,20 @@ export default function SourceCitation({ sources }: { sources: Source[] }) {
 
   const MIN_SCORE = 0.01;
 
-  // source ごとに {url or name, label} を収集・重複除去
+  // source / source2 ごとに {url or name, label} を収集・重複除去
   const seen = new Set<string>();
   const manuals: { value: string; label: string }[] = [];
 
   for (const s of sources) {
     if (s.score < MIN_SCORE && s.type !== "store") continue;
-    const value = s.source ?? "";
-    if (!value || seen.has(value)) continue;
-    seen.add(value);
-    manuals.push({ value, label: s.source_label ?? value });
+    for (const [val, lbl] of [
+      [s.source, s.source_label],
+      [s.source2, s.source2_label],
+    ] as [string | undefined, string | undefined][]) {
+      if (!val || seen.has(val)) continue;
+      seen.add(val);
+      manuals.push({ value: val, label: lbl ?? val });
+    }
   }
 
   if (manuals.length === 0) return null;
