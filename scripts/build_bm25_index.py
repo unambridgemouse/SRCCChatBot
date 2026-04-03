@@ -28,6 +28,7 @@ def load_documents(base: Path) -> list[dict]:
             "category": item.get("category", ""),
             "tags": item.get("tags", []),
             "source": item.get("source", ""),
+            "source_label": item.get("source_label"),
         })
 
     glossary_path = base / "data/glossary/glossary_master.json"

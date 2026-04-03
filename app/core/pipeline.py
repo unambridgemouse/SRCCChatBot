@@ -143,6 +143,7 @@ class RAGPipeline:
                 title=n.metadata.get("doc_id", ""),
                 score=round(n.score, 3),
                 source=n.metadata.get("source"),
+                source_label=n.metadata.get("source_label"),
             )
             for n in nodes
         ]

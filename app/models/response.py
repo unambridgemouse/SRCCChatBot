@@ -7,6 +7,7 @@ class SourceItem(BaseModel):
     title: str
     score: float
     source: str | None = None
+    source_label: str | None = None
 
 
 class ChatResponse(BaseModel):
