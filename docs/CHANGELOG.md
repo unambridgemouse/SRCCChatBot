@@ -7,6 +7,37 @@
 
 ---
 
+## Ver 1.1.8 — 2026-04-03
+
+**参照マニュアルのリンク表示（テスト）**
+- `faq-015`（友達対戦）の `source` フィールドをGoogleドライブURLに変更
+- `source_label` フィールドを追加し、リンクテキストとしてファイル名を表示
+- `SourceCitation.tsx`: URLの場合はファイル名テキストのクリッカブルリンクとして表示
+- `SourceItem` モデル・`pipeline.py`・`build_bm25_index.py` に `source_label` を追加
+- ※テスト中。本格導入時は全マニュアルに対応予定
+
+---
+
+## Ver 1.1.7 — 2026-04-03
+
+**都道府県名のみ入力への対応**
+- 「神奈川」のような都道府県名のみの入力に対して体験/購入の二択で確認するフローを追加
+- 「体験」→ 該当県の体験店舗一覧、「購入」→ 購入店舗一覧、「いいえ/違う」→ ナレッジなし
+- `is_prefecture_only_query()` / `extract_prefecture()` を `store_scraper.py` に追加
+- `pipeline.py` に `_run_prefecture_clarification()` / `_check_prefecture_clarification_followup()` / `_not_found_response()` を追加
+
+---
+
+## Ver 1.1.6 — 2026-04-03
+
+**体験クエリの地名なし対応**
+- 「体験したい」「どこで体験できますか」等、都道府県名が含まれない体験クエリは都道府県を問い返すように変更
+- `needs_location_clarification()` を `store_scraper.py` に追加
+- 都道府県名が含まれる場合（「滋賀県で体験したい」等）は直接店舗一覧を返す
+- `_LOCATION_WORDS` に「ところ」を追加
+
+---
+
 ## Ver 1.1.5 — 2026-04-03
 
 **ナレッジ追加**
