@@ -25,7 +25,7 @@ from app.core.entity_extractor import EntityExtractor
 from app.core.hybrid_search import HybridSearcher
 from app.core.context_manager import ConversationContextManager
 from app.core import prompt_builder
-from app.core.store_scraper import is_store_query, is_store_followup, get_store_text
+from app.core.store_scraper import is_store_query, is_store_followup, get_store_text, needs_location_clarification
 from app.models.response import SourceItem
 from app.utils import get_logger
 
@@ -145,8 +145,27 @@ class RAGPipeline:
         """
         体験・購入場所クエリ専用フロー。
         senserobot-jp.com/store から最新情報を取得してClaudeに渡す。
+        地名が指定されていない体験クエリの場合は都道府県を問い返す。
         """
         logger.info(f"Store query detected: {query}")
+
+        if needs_location_clarification(query):
+            logger.info("Experience query without location — asking for prefecture")
+            return {
+                "system_prompt": (
+                    "あなたはSRCC（囲碁ロボット）コールセンターのサポートAIです。\n"
+                    "回答の読み手はSRCCのオペレーターです。\n\n"
+                    "ユーザーが体験店舗を探していますが、地名（都道府県）が指定されていません。\n"
+                    "必ず以下の1文だけを返してください。余計な情報は一切追加しないこと。\n\n"
+                    "「お客様のご所在地（都道府県）をお聞かせいただけますか？最寄りの体験店舗をご案内いたします。」"
+                ),
+                "messages": [{"role": "user", "content": query}],
+                "sources": [],
+                "extracted_entities": [],
+                "expanded_query": query,
+                "session_id": session_id,
+            }
+
         store_text = await get_store_text()
         history_text = self.context_manager.format_for_prompt(session_id)
         system_prompt = prompt_builder.build_store_system_prompt(
