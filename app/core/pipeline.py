@@ -25,7 +25,10 @@ from app.core.entity_extractor import EntityExtractor
 from app.core.hybrid_search import HybridSearcher
 from app.core.context_manager import ConversationContextManager
 from app.core import prompt_builder
-from app.core.store_scraper import is_store_query, is_store_followup, get_store_text, needs_location_clarification
+from app.core.store_scraper import (
+    is_store_query, is_store_followup, get_store_text,
+    needs_location_clarification, is_prefecture_only_query, extract_prefecture,
+)
 from app.models.response import SourceItem
 from app.utils import get_logger
 
@@ -95,6 +98,18 @@ class RAGPipeline:
         """
         # 店舗クエリ（体験・購入場所の検索）は専用フローで処理
         history = self.context_manager.get_history(session_id)
+
+        # 都道府県のみ → 体験/購入どちらかを確認
+        if is_prefecture_only_query(query):
+            return self._run_prefecture_clarification(session_id, query)
+
+        # 都道府県確認フローへの回答を処理
+        prefecture_followup = self._check_prefecture_clarification_followup(query, history)
+        if prefecture_followup is not None:
+            if prefecture_followup == "not_found":
+                return self._not_found_response(session_id, query)
+            return await self._run_store_query(session_id, prefecture_followup)
+
         if is_store_query(query) or is_store_followup(query, history):
             return await self._run_store_query(session_id, query)
 
@@ -138,6 +153,84 @@ class RAGPipeline:
             "sources": [s.model_dump() for s in sources],
             "extracted_entities": entity_result["entities"],
             "expanded_query": expanded_query,
+            "session_id": session_id,
+        }
+
+    def _run_prefecture_clarification(self, session_id: str, query: str) -> dict:
+        """都道府県名のみのクエリに対して体験/購入どちらかを問い返す。"""
+        pref = extract_prefecture(query) or query.strip()
+        logger.info(f"Prefecture-only query detected: {pref}")
+        return {
+            "system_prompt": (
+                "あなたはSRCC（囲碁ロボット）コールセンターのサポートAIです。\n"
+                "回答の読み手はSRCCのオペレーターです。\n\n"
+                f"お客様が「{pref}」とだけ入力しました。"
+                "体験または購入のどちらをご希望か確認するため、必ず以下の2文だけを返してください。\n\n"
+                f"「{pref}県でロボットの体験をご希望ですか？」\n"
+                f"「{pref}県でロボットの購入をご希望ですか？」"
+            ),
+            "messages": [{"role": "user", "content": query}],
+            "sources": [],
+            "extracted_entities": [],
+            "expanded_query": query,
+            "session_id": session_id,
+        }
+
+    def _check_prefecture_clarification_followup(
+        self, query: str, history: list[dict]
+    ) -> str | None:
+        """直近の会話が都道府県確認フローなら、クエリ内容に応じて展開済みクエリ文字列を返す。
+        - 「体験」系 → "{pref}で体験したい"
+        - 「購入」系 → "{pref}で購入したい"
+        - 「いいえ」系 → "not_found"
+        - 関係ない → None（通常フロー）
+        """
+        if not history:
+            return None
+        # 直近アシスタントターンが体験/購入の確認メッセージか
+        for h in reversed(history[-4:]):
+            if h["role"] == "assistant" and "ご希望ですか" in h["content"]:
+                break
+        else:
+            return None
+
+        # 確認時のユーザー入力から都道府県を取り出す
+        pref = None
+        for h in reversed(history[-6:]):
+            if h["role"] == "user":
+                pref = extract_prefecture(h["content"])
+                if pref:
+                    break
+        if not pref:
+            return None
+
+        _NO_WORDS = ["いいえ", "違う", "違います", "no", "ない", "別", "異なる"]
+        _EXPERIENCE_WORDS = ["体験", "試し", "試せ"]
+        _BUY_WORDS = ["購入", "買", "ほしい"]
+
+        if any(w in query for w in _NO_WORDS):
+            return "not_found"
+        if any(w in query for w in _EXPERIENCE_WORDS):
+            return f"{pref}で体験したい"
+        if any(w in query for w in _BUY_WORDS):
+            return f"{pref}で購入したい"
+        # 「はい」だけの場合はどちらか不明 → 再度確認を促す（None で通常フロー）
+        return None
+
+    def _not_found_response(self, session_id: str, query: str) -> dict:
+        """ナレッジなし固定レスポンス。"""
+        return {
+            "system_prompt": (
+                "あなたはSRCC（囲碁ロボット）コールセンターのサポートAIです。\n"
+                "回答の読み手はSRCCのオペレーターです。\n\n"
+                "必ず以下の1文だけを返してください。\n\n"
+                "「申し訳ありませんが、その内容に関するナレッジが見つかりませんでした。"
+                "質問を言い換えてもう一度入力するか、伊藤電機へのエスカレーションをご検討ください。」"
+            ),
+            "messages": [{"role": "user", "content": query}],
+            "sources": [],
+            "extracted_entities": [],
+            "expanded_query": query,
             "session_id": session_id,
         }
 
