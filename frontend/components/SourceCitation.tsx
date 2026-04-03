@@ -37,8 +37,8 @@ export default function SourceCitation({ sources }: { sources: Source[] }) {
               </svg>
               {isUrl ? (
                 <a href={name} target="_blank" rel="noopener noreferrer"
-                  className="text-blue-500 hover:underline break-all">
-                  {name}
+                  className="text-blue-500 hover:underline">
+                  マニュアルを開く
                 </a>
               ) : (
                 <span>{name}</span>
