@@ -717,7 +717,9 @@
         "初心者",
         "段位差"
       ],
-      "related_faq_ids": [],
+      "related_faq_ids": [
+        "faq-077"
+      ],
       "category": "囲碁用語",
       "difficulty_level": "beginner",
       "tags": [
@@ -2623,7 +2625,9 @@
         "ハンデ戦",
         "自由配置"
       ],
-      "related_faq_ids": [],
+      "related_faq_ids": [
+        "faq-077"
+      ],
       "category": "囲碁用語",
       "difficulty_level": "beginner",
       "tags": [

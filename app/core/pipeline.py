@@ -286,7 +286,9 @@ class RAGPipeline:
         }
 
     def _append_related_faqs(self, nodes: list) -> list:
-        """取得ノードのrelated_faq_idsに含まれるFAQを未取得なら補完する"""
+        """取得ノードのrelated_faq_idsに含まれるFAQを未取得なら補完する。
+        FAQ・用語集の両方の `related_faq_ids` をたどる。
+        """
         from app.core.hybrid_search import SearchNode
         try:
             faq_index = self._load_faq_index()
@@ -294,12 +296,20 @@ class RAGPipeline:
             logger.warning(f"Failed to load FAQ index for related FAQs: {e}")
             return nodes
 
+        # 用語集インデックスも作成（glossaryアイテムのrelated_faq_idsをたどるため）
+        glossary_index: dict = {}
+        try:
+            glossary = self._load_glossary()
+            glossary_index = {item["id"]: item for item in glossary.get("items", [])}
+        except Exception as e:
+            logger.warning(f"Failed to load glossary index for related FAQs: {e}")
+
         retrieved_ids = {n.doc_id for n in nodes}
         extra_nodes = []
         for node in list(nodes):
-            # node.metadataではなくfaq_index（最新のfaq_master.json）からrelated_faq_idsを取得
-            faq_item = faq_index.get(node.doc_id)
-            related_ids = faq_item.get("related_faq_ids", []) if faq_item else []
+            # FAQ・用語集どちらのノードかをfaq_index/glossary_indexで判定
+            source_item = faq_index.get(node.doc_id) or glossary_index.get(node.doc_id)
+            related_ids = source_item.get("related_faq_ids", []) if source_item else []
             for related_id in related_ids:
                 if related_id in retrieved_ids or related_id in {n.doc_id for n in extra_nodes}:
                     continue
@@ -312,10 +322,11 @@ class RAGPipeline:
                     metadata={**item, "type": "faq", "_is_related": True},
                     score=node.score,  # 親ノードと同スコアを付与
                 ))
-                logger.info(f"Related FAQ appended: {related_id}")
+                logger.info(f"Related FAQ appended: {related_id} (from {node.doc_id})")
 
         return nodes + extra_nodes
 
     def save_turn(self, session_id: str, user_msg: str, assistant_msg: str) -> None:
         """回答確定後にセッションへ保存"""
         self.context_manager.add_turn(session_id, user_msg, assistant_msg)
+test
