@@ -329,4 +329,3 @@ class RAGPipeline:
     def save_turn(self, session_id: str, user_msg: str, assistant_msg: str) -> None:
         """回答確定後にセッションへ保存"""
         self.context_manager.add_turn(session_id, user_msg, assistant_msg)
-test
