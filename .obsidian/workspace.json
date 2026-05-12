@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "38706fb5d59d637f",
+        "id": "8aac06a1bec61dc8",
         "type": "tabs",
         "children": [
           {
-            "id": "077b52c4fe8e8b41",
+            "id": "b6c19a0d48163db9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docs/SPEC.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新規タブ"
+              "title": "SPEC"
             }
           }
         ]
@@ -177,21 +181,27 @@
       "bases:新規ベースを作成": false
     }
   },
-  "active": "b11e791a2486de83",
+  "active": "b6c19a0d48163db9",
   "lastOpenFiles": [
-    "SPEC.md.tmp.36008.1775116532823",
-    "SPEC.md.tmp.36008.1775113412841",
+    "scripts/measure_prompt_tokens.py",
+    "data/excel/srcc_knowledge_20260430_201216.xlsx",
+    "VERSION.tmp.32752.1777546806722",
+    "data/excel/srcc_knowledge_20260430_195242.xlsx",
+    "frontend/lib/version.ts.tmp.32752.1777546355740",
+    "VERSION.tmp.32752.1777546351419",
+    "SRCCセンちゃんBotベースナレッジ_20260325.xlsx",
+    "アイゴーFAQ（Dify）用再構築ナレッジ_20260325.xlsx",
+    "data/excel/srcc_knowledge_20260403_182618.xlsx",
+    "data/excel/srcc_knowledge_20260403_180937.xlsx",
+    "VERSION.tmp.84112.1775206697977",
+    "docs/STRUCTURE.md",
+    "docs/SPEC.md",
+    "docs/LEGACY_LOG.md",
+    "docs/CHANGELOG.md",
+    "CLAUDE.md",
     "CHANGELOG.md",
-    "STRUCTURE.md.tmp.36008.1775113016237",
-    "SPEC.md.tmp.36008.1775113007584",
-    "SPEC.md.tmp.36008.1775112990897",
     "STRUCTURE.md",
     "SPEC.md",
-    "ようこそ.md",
-    "docs/LEGACY_LOG.md",
-    "SPEC.md.tmp.36008.1775109369811",
-    "SPEC.md.tmp.36008.1775101947131",
-    "docs",
-    "SPEC.md.tmp.5488.1775097759673"
+    "ようこそ.md"
   ]
 }
