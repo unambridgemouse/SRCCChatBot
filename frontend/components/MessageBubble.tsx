@@ -54,16 +54,18 @@ function renderInline(text: string, key: string | number) {
   });
 }
 
-/** テキスト全体を行単位でパースし、見出し行はグレー小さめ・結論/手順の本文は強調表示 */
+/** テキスト全体を行単位でパースし、見出し行はグレー小さめ・メイン回答部分は強調表示 */
 function renderContent(content: string) {
   const lines = content.split("\n");
   let emphasized = false;
+  let seenHeading = false;
 
   return lines.map((line, i) => {
     const isLast = i === lines.length - 1;
     const headingMatch = line.match(/^\*\*(.+)\*\*$/);
 
     if (headingMatch) {
+      seenHeading = true;
       emphasized = isEmphasizedSection(headingMatch[1]);
       return (
         <div key={i} className="text-xs font-semibold text-gray-400 mt-3 mb-0.5 uppercase tracking-wide">
@@ -72,12 +74,12 @@ function renderContent(content: string) {
       );
     }
 
-    if (emphasized && line.trim() !== "") {
+    // ヘッダー出現前の非空行 OR 結論/手順/詳細セクション配下の非空行 → メイン回答として強調
+    if ((!seenHeading || emphasized) && line.trim() !== "") {
       return (
-        <span key={i} className="font-semibold text-gray-900">
+        <div key={i} className="font-bold text-[15px] text-teal-700 my-1">
           {renderInline(line, i)}
-          {!isLast && "\n"}
-        </span>
+        </div>
       );
     }
 
