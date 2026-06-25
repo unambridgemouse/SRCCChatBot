@@ -9,16 +9,10 @@ type Source = {
   source2_label?: string;
 };
 
-function scoreColor(score: number): string {
-  if (score >= 0.7) return "bg-green-100 text-green-700";
-  if (score >= 0.5) return "bg-yellow-100 text-yellow-700";
-  return "bg-gray-100 text-gray-500";
-}
-
 export default function SourceCitation({ sources }: { sources: Source[] }) {
   if (!sources || sources.length === 0) return null;
 
-  const MIN_SCORE = 0.35;
+  const MIN_SCORE = 0.25;
 
   // source / source2 ごとに {url, label, score} を収集・重複除去
   const seen = new Set<string>();
@@ -58,8 +52,8 @@ export default function SourceCitation({ sources }: { sources: Source[] }) {
               ) : (
                 <span className="flex-1">{label}</span>
               )}
-              <span className={`text-[10px] font-mono px-1.5 py-0.5 rounded ${scoreColor(score)}`}>
-                {(score * 100).toFixed(0)}%
+              <span className="text-[10px] font-mono text-gray-400 ml-1">
+                {score.toFixed(2)}
               </span>
             </li>
           );
