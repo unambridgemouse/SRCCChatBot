@@ -9,14 +9,20 @@ type Source = {
   source2_label?: string;
 };
 
+function scoreColor(score: number): string {
+  if (score >= 0.7) return "bg-green-100 text-green-700";
+  if (score >= 0.5) return "bg-yellow-100 text-yellow-700";
+  return "bg-gray-100 text-gray-500";
+}
+
 export default function SourceCitation({ sources }: { sources: Source[] }) {
   if (!sources || sources.length === 0) return null;
 
   const MIN_SCORE = 0.35;
 
-  // source / source2 ごとに {url or name, label} を収集・重複除去
+  // source / source2 ごとに {url, label, score} を収集・重複除去
   const seen = new Set<string>();
-  const manuals: { value: string; label: string }[] = [];
+  const manuals: { value: string; label: string; score: number }[] = [];
 
   for (const s of sources) {
     if (s.score < MIN_SCORE && s.type !== "store") continue;
@@ -26,7 +32,7 @@ export default function SourceCitation({ sources }: { sources: Source[] }) {
     ] as [string | undefined, string | undefined][]) {
       if (!val || seen.has(val)) continue;
       seen.add(val);
-      manuals.push({ value: val, label: lbl ?? val });
+      manuals.push({ value: val, label: lbl ?? val, score: s.score });
     }
   }
 
@@ -36,7 +42,7 @@ export default function SourceCitation({ sources }: { sources: Source[] }) {
     <div className="mt-3 pt-3 border-t border-gray-200">
       <p className="text-xs font-semibold text-gray-500 mb-1">参照マニュアル</p>
       <ul className="space-y-1">
-        {manuals.map(({ value, label }) => {
+        {manuals.map(({ value, label, score }) => {
           const isUrl = value.startsWith("http://") || value.startsWith("https://");
           return (
             <li key={value} className="flex items-center gap-2 text-xs text-gray-600">
@@ -46,12 +52,15 @@ export default function SourceCitation({ sources }: { sources: Source[] }) {
               </svg>
               {isUrl ? (
                 <a href={value} target="_blank" rel="noopener noreferrer"
-                  className="text-blue-500 hover:underline">
+                  className="text-blue-500 hover:underline flex-1">
                   {label}
                 </a>
               ) : (
-                <span>{label}</span>
+                <span className="flex-1">{label}</span>
               )}
+              <span className={`text-[10px] font-mono px-1.5 py-0.5 rounded ${scoreColor(score)}`}>
+                {(score * 100).toFixed(0)}%
+              </span>
             </li>
           );
         })}
