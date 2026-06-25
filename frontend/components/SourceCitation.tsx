@@ -22,18 +22,47 @@ export default function SourceCitation({ sources }: { sources: Source[] }) {
   const seen = new Set<string>();
   const manuals: { value: string; label: string; score: number }[] = [];
 
-  for (let i = 0; i < sources.length; i++) {
-    const s = sources[i];
-    // Cohere失敗時: RRF 1位のドキュメントのソースのみ表示
-    if (isCohereFallback && i > 0) break;
-    if (!isCohereFallback && s.score < MIN_SCORE && s.type !== "store") continue;
-    for (const [val, lbl] of [
-      [s.source, s.source_label],
-      [s.source2, s.source2_label],
-    ] as [string | undefined, string | undefined][]) {
-      if (!val || seen.has(val)) continue;
-      seen.add(val);
-      manuals.push({ value: val, label: lbl ?? val, score: s.score });
+  const addSource = (val: string | undefined, lbl: string | undefined, score: number) => {
+    if (!val || seen.has(val)) return;
+    seen.add(val);
+    manuals.push({ value: val, label: lbl ?? val, score });
+  };
+
+  if (isCohereFallback) {
+    // Cohere失敗時：多数決（全文書の2/3以上が同じソースを持つ場合はそれを表示）
+    // 無関係文書がベクトル検索でrank-0に来た場合の誤表示を防ぐ
+    const srcCount: Record<string, { label: string | undefined; score: number; count: number }> = {};
+    for (const s of sources) {
+      for (const [val, lbl] of [
+        [s.source, s.source_label],
+        [s.source2, s.source2_label],
+      ] as [string | undefined, string | undefined][]) {
+        if (!val) continue;
+        if (!srcCount[val]) srcCount[val] = { label: lbl, score: s.score, count: 0 };
+        srcCount[val].count++;
+      }
+    }
+
+    const majorityThreshold = Math.ceil(sources.length * 2 / 3);
+    const majorityEntries = Object.entries(srcCount).filter(([, v]) => v.count >= majorityThreshold);
+
+    if (majorityEntries.length > 0) {
+      // 多数決ソースを表示
+      for (const [val, info] of majorityEntries) {
+        addSource(val, info.label, info.score);
+      }
+    } else {
+      // 多数決なし → rank-0文書のsource/source2を表示
+      const s = sources[0];
+      addSource(s.source, s.source_label, s.score);
+      addSource(s.source2, s.source2_label, s.score);
+    }
+  } else {
+    // 通常時：MIN_SCORE以上のみ表示
+    for (const s of sources) {
+      if (s.score < MIN_SCORE && s.type !== "store") continue;
+      addSource(s.source, s.source_label, s.score);
+      addSource(s.source2, s.source2_label, s.score);
     }
   }
 
