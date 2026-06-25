@@ -14,12 +14,19 @@ export default function SourceCitation({ sources }: { sources: Source[] }) {
 
   const MIN_SCORE = 0.25;
 
+  // Cohereリランク失敗時はスコアが均一に低くなる（RRFスコアそのまま）
+  const maxScore = Math.max(...sources.map(s => s.score));
+  const isCohereFallback = maxScore < 0.1;
+
   // source / source2 ごとに {url, label, score} を収集・重複除去
   const seen = new Set<string>();
   const manuals: { value: string; label: string; score: number }[] = [];
 
-  for (const s of sources) {
-    if (s.score < MIN_SCORE && s.type !== "store") continue;
+  for (let i = 0; i < sources.length; i++) {
+    const s = sources[i];
+    // Cohere失敗時: RRF 1位のドキュメントのソースのみ表示
+    if (isCohereFallback && i > 0) break;
+    if (!isCohereFallback && s.score < MIN_SCORE && s.type !== "store") continue;
     for (const [val, lbl] of [
       [s.source, s.source_label],
       [s.source2, s.source2_label],
