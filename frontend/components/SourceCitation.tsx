@@ -12,7 +12,7 @@ type Source = {
 export default function SourceCitation({ sources }: { sources: Source[] }) {
   if (!sources || sources.length === 0) return null;
 
-  const MIN_SCORE = 0.01;
+  const MIN_SCORE = 0.35;
 
   // source / source2 ごとに {url or name, label} を収集・重複除去
   const seen = new Set<string>();
