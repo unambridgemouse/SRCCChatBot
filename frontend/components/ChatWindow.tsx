@@ -31,8 +31,8 @@ type Props = {
 // タイプライター描画のチューニング
 // SSEトークンは不規則な塊で届くため、受信と描画を分離して一定速度で吐き出す。
 const TYPE_TICK_MS = 16; // 描画間隔（約60fps）
-const TYPE_BASE_CPS = 95; // 基本の表示速度（文字/秒）。トークン到着速度に近づけるほど速いが、超えても意味はない
-const TYPE_CATCHUP_GAIN = 4.0; // 未表示分に応じた加速（遅れを吸収し、全体の完了時間を伸ばさない）
+const TYPE_BASE_CPS = 55; // 基本の表示速度（文字/秒）
+const TYPE_CATCHUP_GAIN = 2.5; // 未表示分に応じた加速（遅れを吸収し、全体の完了時間を伸ばさない）
 const TYPE_MAX_DT = 0.25; // 1tickで進める最大秒数（タブ復帰時の一気出しを防ぐ）
 
 export default function ChatWindow({ sessionId, initialMessages, onMessagesUpdate }: Props) {
