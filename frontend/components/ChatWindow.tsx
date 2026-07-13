@@ -28,6 +28,13 @@ type Props = {
   onMessagesUpdate: (messages: Message[]) => void;
 };
 
+// タイプライター描画のチューニング
+// SSEトークンは不規則な塊で届くため、受信と描画を分離して一定速度で吐き出す。
+const TYPE_TICK_MS = 16; // 描画間隔（約60fps）
+const TYPE_BASE_CPS = 55; // 基本の表示速度（文字/秒）
+const TYPE_CATCHUP_GAIN = 2.5; // 未表示分に応じた加速（遅れを吸収し、全体の完了時間を伸ばさない）
+const TYPE_MAX_DT = 0.25; // 1tickで進める最大秒数（タブ復帰時の一気出しを防ぐ）
+
 export default function ChatWindow({ sessionId, initialMessages, onMessagesUpdate }: Props) {
   const [messages, setMessages] = useState<Message[]>(initialMessages);
   const [input, setInput] = useState("");
@@ -61,6 +68,16 @@ export default function ChatWindow({ sessionId, initialMessages, onMessagesUpdat
     ];
     setMessages(withPlaceholder);
 
+    // 受信（target）と描画（shown）を分離し、一定速度で滑らかに吐き出す
+    let target = ""; // 受信済みの全文
+    let shown = 0; // 表示済み文字数（小数で保持し、tickごとに進める）
+    let streamEnded = false;
+    let typeTimer: ReturnType<typeof setInterval> | null = null;
+    const stopTypewriter = () => {
+      if (typeTimer) clearInterval(typeTimer);
+      typeTimer = null;
+    };
+
     try {
       const res = await fetch("/api/chat", {
         method: "POST",
@@ -73,66 +90,85 @@ export default function ChatWindow({ sessionId, initialMessages, onMessagesUpdat
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
       let buffer = "";
-      let accumulatedText = "";
       let sources: Source[] = [];
       let entities: string[] = [];
       let expandedQuery: string | undefined;
       let systemPrompt: string | undefined;
 
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
+      const updateLast = (content: string, isStreaming: boolean) =>
+        setMessages((prev) =>
+          prev.map((m, i) => (i === prev.length - 1 ? { ...m, content, isStreaming } : m))
+        );
 
-        buffer += decoder.decode(value, { stream: true });
-        const lines = buffer.split("\n");
-        buffer = lines.pop() ?? "";
+      // 一定速度で1文字ずつ描画。未表示分が溜まるほど緩やかに加速して受信に追いつく。
+      let lastTs = performance.now();
+      const drained = new Promise<void>((resolve) => {
+        typeTimer = setInterval(() => {
+          const now = performance.now();
+          const dt = Math.min((now - lastTs) / 1000, TYPE_MAX_DT);
+          lastTs = now;
 
-        for (const line of lines) {
-          if (!line.startsWith("data: ")) continue;
-          try {
-            const data = JSON.parse(line.slice(6));
-            if (data.type === "text") {
-              accumulatedText += data.text;
-              setMessages((prev) =>
-                prev.map((m, i) =>
-                  i === prev.length - 1
-                    ? { ...m, content: accumulatedText, isStreaming: true }
-                    : m
-                )
-              );
-            } else if (data.type === "done") {
-              sources = data.sources ?? [];
-              entities = data.extracted_entities ?? [];
-              expandedQuery = data.expanded_query;
-              systemPrompt = data.system_prompt;
-            } else if (data.type === "error") {
-              accumulatedText =
-                "申し訳ありません、エラーが発生しました。しばらくしてから再試行してください。";
-              setMessages((prev) =>
-                prev.map((m, i) =>
-                  i === prev.length - 1
-                    ? { ...m, content: accumulatedText, isStreaming: false }
-                    : m
-                )
-              );
+          const backlog = target.length - shown;
+          if (backlog > 0) {
+            const speed = TYPE_BASE_CPS + backlog * TYPE_CATCHUP_GAIN;
+            shown = Math.min(target.length, shown + speed * dt);
+            updateLast(target.slice(0, Math.floor(shown)), true);
+          }
+
+          if (streamEnded && shown >= target.length) {
+            stopTypewriter();
+            resolve();
+          }
+        }, TYPE_TICK_MS);
+      });
+
+      try {
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+
+          buffer += decoder.decode(value, { stream: true });
+          const lines = buffer.split("\n");
+          buffer = lines.pop() ?? "";
+
+          for (const line of lines) {
+            if (!line.startsWith("data: ")) continue;
+            try {
+              const data = JSON.parse(line.slice(6));
+              if (data.type === "text") {
+                target += data.text; // 描画はtimerに任せ、ここでは溜めるだけ
+              } else if (data.type === "done") {
+                sources = data.sources ?? [];
+                entities = data.extracted_entities ?? [];
+                expandedQuery = data.expanded_query;
+                systemPrompt = data.system_prompt;
+              } else if (data.type === "error") {
+                target =
+                  "申し訳ありません、エラーが発生しました。しばらくしてから再試行してください。";
+              }
+            } catch {
+              // malformed JSON は無視
             }
-          } catch {
-            // malformed JSON は無視
           }
         }
+      } finally {
+        streamEnded = true; // 受信終了。残りを描き切ったらdrainedが解決する
       }
+
+      await drained; // 描画が受信に追いつくのを待ってから確定させる
 
       // ストリーム完了: isStreaming解除・メタデータ付与・localStorage保存
       setMessages((prev) => {
         const completed = prev.map((m, i) =>
           i === prev.length - 1
-            ? { ...m, isStreaming: false, sources, entities, expandedQuery, systemPrompt }
+            ? { ...m, content: target, isStreaming: false, sources, entities, expandedQuery, systemPrompt }
             : m
         );
         onMessagesUpdate(completed);
         return completed;
       });
     } catch {
+      stopTypewriter();
       setMessages((prev) => {
         const errored = prev.map((m, i) =>
           i === prev.length - 1
@@ -147,6 +183,7 @@ export default function ChatWindow({ sessionId, initialMessages, onMessagesUpdat
         return errored;
       });
     } finally {
+      stopTypewriter();
       setIsLoading(false);
     }
   }, [input, isLoading, messages, sessionId, onMessagesUpdate]);
