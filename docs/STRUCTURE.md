@@ -121,8 +121,12 @@ app/
 #### app/core/query_logger.py
 - 各チャットのクエリ・回答・参照ナレッジ・思考回路をログ保存
 - Railway stdout: `[QUERY_LOG]` タグ付きJSON（Railway Logsで検索可能）
-- Upstash Redis: `query_log` キー、LPUSH + LTRIM（最大500件）
+- Upstash Redis: `query_log` キー、LPUSH + LTRIM（最大10,000件）
 - ログフィールド: ts, ts_unix, session_id, query, expanded_query, answer[:300], sources, system_prompt
+- 月次カウンタ（TTLなし・永久保持／利用実績報告用）:
+  - `query_count:YYYY-MM` を INCR（その月の応答件数）
+  - `query_sessions:YYYY-MM` に session_id を SADD（SCARD でセッション数）
+- `get_monthly_stats(redis)`: 月次カウンタを `{"YYYY-MM": {"answers": N, "sessions": M}}` で返す
 
 #### app/core/store_scraper.py
 - `get_store_text()`: senserobot-jp.com/store をスクレイピングして店舗リスト取得
@@ -259,6 +263,8 @@ scripts/
 │                         # （faq_master.json/glossary_master.json変更時に自動Excel出力）
 ├── convert_csv_to_faq.py     # CSV → faq_master.json 変換
 ├── convert_csv_to_glossary.py # CSV → glossary_master.json 変換
+├── usage_report.py       # 利用実績レポート生成（docs/USAGE_REPORT.md）
+├── backfill_query_counters.py # query_log から月次カウンタを再構築（一時対応用）
 └── test_connections.py   # 外部サービス（Pinecone/Cohere/Redis）疎通確認
 ```
 
@@ -268,6 +274,21 @@ scripts/
 2. `embedding_text` フィールドをCohereでバッチ埋め込み（96件/バッチ）
 3. Pineconeにupsert（idが同じベクトルは上書き）
 4. BM25インデックスを再生成 → `data/bm25_index.pkl` に保存
+
+### usage_report.py の動作
+
+四半期ごとの利用実績（工数削減の根拠）を Markdown で出力する。
+
+1. Redis の `query_log` 全件と月次カウンタ `query_count:*` を取得
+2. 総応答件数・セッション数・稼働日数・ナレッジ紐づけ率・月別内訳・時間帯別・参照TOP15 を集計
+3. 削減工数を「応答件数 × 1件あたり分数」で試算（`--minutes` で調整、既定5分）
+
+```bash
+python scripts/usage_report.py --out docs/USAGE_REPORT.md
+python scripts/usage_report.py --from 2026-09-01 --to 2026-11-30 --minutes 8
+```
+
+出力先: [[USAGE_REPORT]]
 
 ### export_to_excel.py の動作
 

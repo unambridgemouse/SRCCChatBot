@@ -14,8 +14,12 @@ from app.utils import get_logger
 logger = get_logger(__name__)
 
 REDIS_LOG_KEY = "query_log"
-MAX_LOG_ENTRIES = 500  # Redis に保持する最大件数
+MAX_LOG_ENTRIES = 10000  # Redis に保持する最大件数（約8年分）
 JST = timezone(timedelta(hours=9))
+
+# 月次カウンタ（ログ本体がトリムされても件数だけは永久に残す。四半期報告の根拠用）
+COUNT_KEY_PREFIX = "query_count:"       # query_count:YYYY-MM  → 応答件数（INCR）
+SESSION_KEY_PREFIX = "query_sessions:"  # query_sessions:YYYY-MM → セッションID集合（SADD）
 
 
 def _build_entry(
@@ -64,6 +68,14 @@ def save_query_log(
     except Exception as e:
         logger.warning(f"Query log Redis write failed: {e}")
 
+    # ③ 月次カウンタ（TTLなし・永久保持）
+    month = entry["ts"][:7]
+    try:
+        redis.incr(f"{COUNT_KEY_PREFIX}{month}")
+        redis.sadd(f"{SESSION_KEY_PREFIX}{month}", session_id)
+    except Exception as e:
+        logger.warning(f"Query counter Redis write failed: {e}")
+
 
 def get_query_logs(redis, limit: int = 100) -> list[dict]:
     """Redis から直近 limit 件のログを取得する"""
@@ -73,3 +85,28 @@ def get_query_logs(redis, limit: int = 100) -> list[dict]:
     except Exception as e:
         logger.warning(f"Query log Redis read failed: {e}")
         return []
+
+
+def get_monthly_stats(redis) -> dict[str, dict]:
+    """月次カウンタを {"YYYY-MM": {"answers": N, "sessions": M}} で返す。
+
+    query_log がトリムされた過去分についても件数を取得できる。
+    """
+    stats: dict[str, dict] = {}
+    try:
+        cursor = 0
+        keys: list[str] = []
+        while True:
+            cursor, batch = redis.scan(cursor, match=f"{COUNT_KEY_PREFIX}*", count=500)
+            keys.extend(batch)
+            if str(cursor) == "0":
+                break
+        for key in keys:
+            month = key.split(":", 1)[1]
+            stats[month] = {
+                "answers":  int(redis.get(key) or 0),
+                "sessions": int(redis.scard(f"{SESSION_KEY_PREFIX}{month}") or 0),
+            }
+    except Exception as e:
+        logger.warning(f"Monthly stats Redis read failed: {e}")
+    return dict(sorted(stats.items()))

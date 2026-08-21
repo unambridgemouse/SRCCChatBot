@@ -7,6 +7,22 @@
 
 ---
 
+## Ver 1.4.0 — 2026-08-21
+
+**利用実績の計測基盤**
+- `MAX_LOG_ENTRIES` を 500 → 10,000 に引き上げ（489件で上限間近だったため、四半期報告前にログが消失する恐れがあった）
+- 月次カウンタを追加（TTLなし・永久保持）
+  - `query_count:YYYY-MM` を応答ごとに INCR
+  - `query_sessions:YYYY-MM` に session_id を SADD（SCARD でセッション数）
+  - `query_log` がトリムされても件数だけは永久に残るため、長期の報告値の根拠となる
+- `get_monthly_stats(redis)` を追加
+- `scripts/usage_report.py` を追加 — 利用実績レポートを Markdown 生成（[[USAGE_REPORT]]）
+- `scripts/backfill_query_counters.py` を追加 — 既存 query_log から月次カウンタを再構築
+  - 導入時に 2026-04〜08 の 489 件 / 160 セッションをバックフィル済み
+- [[SPEC]] 3-4 / [[STRUCTURE]] を更新
+
+---
+
 ## Ver 1.3.0 — 2026-07-30
 
 **ナレッジ修正**

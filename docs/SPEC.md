@@ -147,12 +147,13 @@ is_store_query(query) or is_store_followup(query, history)
 
 ### 3-4. クエリログ
 
-各チャットの記録を2箇所に保存：
+各チャットの記録を3箇所に保存：
 
 | 保存先 | 内容 |
 |--------|------|
 | Railway stdout | `[QUERY_LOG] {JSON}` タグ付き構造化ログ |
-| Upstash Redis | キー `query_log`（LPUSH/LTRIM、最大500件） |
+| Upstash Redis | キー `query_log`（LPUSH/LTRIM、最大10,000件） |
+| Upstash Redis | 月次カウンタ `query_count:YYYY-MM`（INCR）/ `query_sessions:YYYY-MM`（SADD）、TTLなし |
 
 **ログに含まれるフィールド**
 
@@ -167,6 +168,19 @@ is_store_query(query) or is_store_followup(query, history)
 | `system_prompt` | 思考回路（注入されたFAQ・ルール全文） |
 
 **ログ閲覧**: `GET /api/logs`（HTML表形式）、`?format=json`、`?limit=N`
+
+**月次カウンタ（利用実績報告用）**
+
+`query_log` はリストのため上限を超えると古い順にトリムされる。四半期ごとの利用実績報告で
+過去の件数を失わないよう、応答1件ごとに月次カウンタを別途 INCR / SADD する。
+これらは TTL を持たず永久に残るため、長期の報告値としてはカウンタが正となる。
+
+| キー | 型 | 内容 |
+|------|----|------|
+| `query_count:YYYY-MM` | String | その月の総応答件数 |
+| `query_sessions:YYYY-MM` | Set | その月に発生したセッションIDの集合（SCARD でセッション数） |
+
+集計は `scripts/usage_report.py` で行い、`docs/USAGE_REPORT.md` に出力する（[[USAGE_REPORT]]）。
 
 ### 3-5. SSEストリーミング
 
